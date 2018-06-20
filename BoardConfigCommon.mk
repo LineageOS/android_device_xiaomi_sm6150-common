@@ -8,6 +8,9 @@ BOARD_VENDOR := xiaomi
 
 COMMON_PATH := device/xiaomi/sm6150-common
 
+# We blob our own hwcomposer and sdmcore
+BUILD_BROKEN_DUP_RULES := true
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
