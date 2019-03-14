@@ -211,6 +211,9 @@ TARGET_USES_PRE_UPLINK_FEATURES_NETMGRD := true
 # Security
 VENDOR_SECURITY_PATCH := 2020-01-01
 
+# Sensor
+USE_SENSOR_HAL_VER := 2.0
+
 # Sepolicy
 TARGET_SEPOLICY_DIR := msmsteppe
 include device/qcom/sepolicy/sepolicy.mk
