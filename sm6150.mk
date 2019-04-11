@@ -408,8 +408,9 @@ PRODUCT_COPY_FILES += \
 
 # Sensor
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@1.0-impl \
-    android.hardware.sensors@1.0-service \
+    android.hardware.sensors@2.0-impl \
+    android.hardware.sensors@2.0-service \
+    android.hardware.sensors@2.0-service.rc \
     libsensorndkbridge
 
 # Soong namespaces
