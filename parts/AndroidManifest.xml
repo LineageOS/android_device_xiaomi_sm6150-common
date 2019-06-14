@@ -89,5 +89,10 @@
             android:name=".thermal.ThermalService"
             android:permission="ThermalService">
         </service>
+
+        <service
+            android:name=".popupcamera.PopupCameraService"
+            android:permission="PopupCameraService">
+        </service>
     </application>
 </manifest>
