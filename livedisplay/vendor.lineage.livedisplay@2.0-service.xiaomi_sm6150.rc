@@ -3,6 +3,8 @@ on boot
     chown system system /sys/devices/platform/soc/soc:qcom,dsi-display/hbm
 
 service vendor.livedisplay-hal-2-0 /vendor/bin/hw/vendor.lineage.livedisplay@2.0-service.xiaomi_sm6150
+    interface vendor.lineage.livedisplay@2.0::IPictureAdjustment default
+    interface vendor.lineage.livedisplay@2.0::ISunlightEnhancement default
     class hal
     user system
     group system
