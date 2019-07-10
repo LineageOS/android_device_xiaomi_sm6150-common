@@ -190,6 +190,7 @@ persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 
 # Media
+debug.stagefright.c2inputsurface=-1
 vendor.media.omx=0
 
 # Netflix
