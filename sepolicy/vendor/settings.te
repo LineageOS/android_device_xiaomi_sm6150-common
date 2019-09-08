@@ -8,12 +8,18 @@ allow settings { app_api_service audioserver_service drmserver_service mediaextr
 # Allow settings to find hal_motor_hwservice
 allow settings hal_motor_hwservice:hwservice_manager find;
 
+# Allow settings to find hal_displayfeature_hwservice
+allow settings hal_displayfeature_hwservice:hwservice_manager find;
+
 # Allow settings read and write /data/data subdirectory
 allow settings system_app_data_file:dir create_dir_perms;
 allow settings system_app_data_file:{ file lnk_file } create_file_perms;
 
 # Allow binder communication with hal_motor
 binder_call(settings, hal_motor)
+
+# Allow binder communication with hal_motor
+binder_call(settings, hal_displayfeature)
 
 # Allow binder communication with gpuservice
 binder_call(settings, gpuservice)
