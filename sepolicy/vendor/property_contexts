@@ -6,6 +6,30 @@ camera. u:object_r:vendor_camera_prop:s0
 persist.camera. u:object_r:vendor_camera_prop:s0
 vendor.camera.  u:object_r:vendor_camera_prop:s0
 
+# Display feature
+ro.vendor.eyecare.threshold                  u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.eyecare.level                      u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.hist.threshold                     u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.histogram.enable                   u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.whitepoint_calibration_enable      u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.df.effect.conflict                 u:object_r:vendor_displayfeature_prop:s0
+persist.vendor.df.extcolor.proc              u:object_r:vendor_displayfeature_prop:s0
+vendor.displayfeature.entry.enable           u:object_r:vendor_displayfeature_prop:s0
+persist.vendor.df.color.temp                 u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.bl.notify                          u:object_r:vendor_displayfeature_prop:s0
+persist.vendor.dc_backlight.enable           u:object_r:vendor_displayfeature_prop:s0
+persist.vendor.dc_backlight.threshold        u:object_r:vendor_displayfeature_prop:s0
+persist.vendor.fod.modified.dc_status        u:object_r:vendor_displayfeature_prop:s0
+vendor.hbm.enable                            u:object_r:vendor_displayfeature_prop:s0
+persist.vendor.max.brightness                u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.bl.poll                            u:object_r:vendor_displayfeature_prop:s0
+persist.vendor.dfps.level                    u:object_r:vendor_displayfeature_prop:s0
+persist.vendor.power.dfps.level              u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.display.default_fps                u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.cabc.enable                        u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.bcbc.enable                        u:object_r:vendor_displayfeature_prop:s0
+ro.vendor.dfps.enable                        u:object_r:vendor_displayfeature_prop:s0
+
 # Fingerprint
 gf.debug.                  u:object_r:vendor_fp_prop:s0
 persist.vendor.sys.fp.     u:object_r:vendor_fp_prop:s0

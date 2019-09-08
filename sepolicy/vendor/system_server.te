@@ -1,2 +1,3 @@
 get_prop(system_server, vendor_fp_prop);
 get_prop(system_server, vendor_camera_prop)
+binder_call(system_server, hal_displayfeature_default)
