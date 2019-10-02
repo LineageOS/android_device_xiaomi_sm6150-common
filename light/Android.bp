@@ -14,8 +14,8 @@
 // limitations under the License.
 
 cc_binary {
-    defaults: ["hidl_defaults"],
     name: "android.hardware.light@2.0-service.xiaomi_sm6150",
+    defaults: ["hidl_defaults"],
     init_rc: ["android.hardware.light@2.0-service.xiaomi_sm6150.rc"],
     srcs: [
         "service.cpp",
@@ -24,7 +24,6 @@ cc_binary {
     shared_libs: [
         "libbase",
         "libhidlbase",
-        "libhidltransport",
         "libutils",
         "android.hardware.light@2.0",
     ],
