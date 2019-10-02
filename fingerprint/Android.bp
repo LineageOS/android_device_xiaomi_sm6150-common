@@ -15,8 +15,8 @@
 
 cc_binary {
     name: "android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sm6150",
-    relative_install_path: "hw",
     defaults: ["hidl_defaults"],
+    relative_install_path: "hw",
     init_rc: ["android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sm6150.rc"],
     srcs: [
         "service.cpp",
@@ -26,8 +26,6 @@ cc_binary {
         "libbase",
         "libhardware",
         "libhidlbase",
-        "libhidltransport",
-        "libhwbinder",
         "liblog",
         "libutils",
         "libcutils",
