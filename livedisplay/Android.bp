@@ -15,9 +15,9 @@
 
 cc_binary {
     name: "vendor.lineage.livedisplay@2.0-service.xiaomi_sm6150",
+    defaults: ["hidl_defaults"],
     init_rc: ["vendor.lineage.livedisplay@2.0-service.xiaomi_sm6150.rc"],
     vintf_fragments: ["vendor.lineage.livedisplay@2.0-service.xiaomi_sm6150.xml"],
-    defaults: ["hidl_defaults"],
     relative_install_path: "hw",
     srcs: [
         ":vendor.lineage.livedisplay@2.0-sdm-utils",
@@ -29,7 +29,6 @@ cc_binary {
         "libbase",
         "libbinder",
         "libhidlbase",
-        "libhidltransport",
         "libutils",
         "vendor.lineage.livedisplay@2.0",
     ],
