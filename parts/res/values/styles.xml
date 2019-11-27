@@ -60,4 +60,5 @@
         <item name="android:thumbTint">@color/switchbar_switch_thumb_tint</item>
     </style>
     <style name="TextAppearance.Medium" parent="@android:style/TextAppearance.Material.Medium" />
+    <style name="SystemAlertDialogTheme" parent="@*android:style/Theme.DeviceDefault.Dialog.Alert.DayNight" />
 </resources>
