@@ -315,13 +315,7 @@ on boot
     # bond0 used by FST Manager
     chown wifi wifi /sys/class/net/bond0/bonding/queue_id
 
-    # Allow access to emmc rawdump block partition and dload sysfs node
-    chown root system /dev/block/bootdevice/by-name/rawdump
-    chmod 0660 /dev/block/bootdevice/by-name/rawdump
-    chown root system /sys/kernel/dload/emmc_dload
-    chmod 0660 /sys/kernel/dload/emmc_dload
-    chown root system /dev/block/bootdevice/by-name/ramdump
-    chmod 0660 /dev/block/bootdevice/by-name/ramdump
+    # Allow access to dload sysfs node
     chown root system /sys/kernel/dload/dload_mode
     chmod 0660 /sys/kernel/dload/dload_mode
 
@@ -532,12 +526,6 @@ on property:persist.vendor.ssr.enable_ramdumps=1 && property:ro.boot.mode!=charg
 
 on property:persist.vendor.ssr.enable_ramdumps=0
     write /sys/module/subsystem_restart/parameters/enable_ramdumps 0
-
-on property:persist.vendor.sys.rawdump_copy=1
-    write /sys/kernel/dload/emmc_dload 1
-
-on property:persist.vendor.sys.rawdump_copy=0
-    write /sys/kernel/dload/emmc_dload 0
 
 on property:sys.boot_completed=1
     setprop vendor.setup.power 1
