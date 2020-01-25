@@ -81,16 +81,23 @@ Return<void> FingerprintInscreen::onFinishEnroll() {
     return Void();
 }
 
+Return<void> FingerprintInscreen::switchHbm(bool enabled) {
+    if (enabled) {
+        set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_ON);
+    } else {
+        set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_OFF);
+    }
+    return Void();
+}
+
 Return<void> FingerprintInscreen::onPress() {
     set(DIM_LAYER_PATH, 1);
-    set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_ON);
     TouchFeatureService->setTouchMode(Touch_Fod_Enable, 1);
     xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_630_FOD);
     return Void();
 }
 
 Return<void> FingerprintInscreen::onRelease() {
-    set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_OFF);
     TouchFeatureService->resetTouchMode(Touch_Fod_Enable);
     xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_NONE);
     return Void();
@@ -126,11 +133,12 @@ Return<void> FingerprintInscreen::setLongPressEnabled(bool) {
 
 Return<int32_t> FingerprintInscreen::getDimAmount(int32_t brightness) {
     float alpha;
+    int realBrightness = brightness * 2047 / 255;
 
-    if (brightness > 62) {
-        alpha = 1.0 - pow(brightness / 255.0 * 430.0 / 600.0, 0.45);
+    if (realBrightness > 500) {
+        alpha = 1.0 - pow(realBrightness / 2047.0 * 430.0 / 600.0, 0.455);
     } else {
-        alpha = 1.0 - pow(brightness / 200.0, 0.45);
+        alpha = 1.0 - pow(realBrightness / 1680.0, 0.455);
     }
 
     return 255 * alpha;
