@@ -14,10 +14,10 @@
 // limitations under the License.
 
 cc_binary {
-    name: "vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_sm6150",
+    name: "vendor.lineage.biometrics.fingerprint.inscreen@1.1-service.xiaomi_sm6150",
     relative_install_path: "hw",
-    vintf_fragments: ["vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_sm6150.xml"],
-    init_rc: ["vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_sm6150.rc"],
+    vintf_fragments: ["vendor.lineage.biometrics.fingerprint.inscreen@1.1-service.xiaomi_sm6150.xml"],
+    init_rc: ["vendor.lineage.biometrics.fingerprint.inscreen@1.1-service.xiaomi_sm6150.rc"],
     defaults: ["hidl_defaults"],
     srcs: [
         "service.cpp",
@@ -32,6 +32,7 @@ cc_binary {
         "libhwbinder",
         "libutils",
         "vendor.lineage.biometrics.fingerprint.inscreen@1.0",
+        "vendor.lineage.biometrics.fingerprint.inscreen@1.1",
         "//hardware/xiaomi:vendor.goodix.hardware.biometrics.fingerprint@2.1",
         "//hardware/xiaomi:vendor.xiaomi.hardware.displayfeature@1.0",
         "//hardware/xiaomi:vendor.xiaomi.hardware.fingerprintextension@1.0",
