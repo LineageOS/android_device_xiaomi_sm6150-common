@@ -223,7 +223,7 @@ PRODUCT_COPY_FILES += \
 
 ifeq ($(strip $(TARGET_USES_FOD)),true)
 PRODUCT_PACKAGES += \
-    vendor.lineage.biometrics.fingerprint.inscreen@1.0-service.xiaomi_sm6150
+    vendor.lineage.biometrics.fingerprint.inscreen@1.1-service.xiaomi_sm6150
 endif
 
 # FM
