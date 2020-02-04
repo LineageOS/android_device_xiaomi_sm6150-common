@@ -253,7 +253,6 @@ on boot
     setprop vendor.usb.dpl.inst.name "dpl"
     setprop vendor.usb.qdss.inst.name "qdss"
     setprop vendor.usb.controller a600000.dwc3
-    setprop sys.usb.configfs 1
 
     # Set the default voltage to 5v
     setprop persist.vendor.cp.taper_term_mv 5000
