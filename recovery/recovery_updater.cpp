@@ -38,8 +38,8 @@
 #define ALPHABET_LEN 256
 
 #define BASEBAND_PART_PATH "/dev/block/bootdevice/by-name/modem"
-#define BASEBAND_VER_STR_START "QC_IMAGE_VERSION_STRING=MPSS.AT."
-#define BASEBAND_VER_STR_START_LEN 32
+#define BASEBAND_VER_STR_START "QC_IMAGE_VERSION_STRING=MPSS.AT.4.3.c"
+#define BASEBAND_VER_STR_START_LEN 37
 #define BASEBAND_VER_BUF_LEN 255
 
 /* Boyer-Moore string search implementation from Wikipedia */
@@ -180,7 +180,7 @@ Value * VerifyBasebandFn(const char *name, State *state,
     ret = 0;
     for (auto &baseband_version : args) {
         if (strncmp(baseband_version.c_str(), current_baseband_version,
-                strlen(baseband_version.c_str())) == 0) {
+                strlen(baseband_version.c_str())) <= 0) {
             ret = 1;
             break;
         }
