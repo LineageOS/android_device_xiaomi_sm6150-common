@@ -118,16 +118,23 @@ static void handleNotification(const LightState& state) {
 
     /* Disable breathing or blinking */
     set(WHITE_LED BREATH, 0);
+    set(WHITE_LED BRIGHTNESS, 0);
     set(WHITE_LED DELAY_OFF, 0);
     set(WHITE_LED DELAY_ON, 0);
 
     set(BLUE_LED BREATH, 0);
+    set(BLUE_LED BRIGHTNESS, 0);
     set(BLUE_LED DELAY_OFF, 0);
     set(BLUE_LED DELAY_ON, 0);
 
     set(GREEN_LED BREATH, 0);
+    set(GREEN_LED BRIGHTNESS, 0);
     set(GREEN_LED DELAY_OFF, 0);
     set(GREEN_LED DELAY_ON, 0);
+
+    if (!whiteBrightness && !blueBrightness && !greenBrightness) {
+        return;
+    }
 
     switch (state.flashMode) {
         case Flash::HARDWARE:
