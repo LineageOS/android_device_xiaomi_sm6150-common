@@ -32,6 +32,9 @@
 #define DISPPARAM_HBM_FOD_ON "0x20000"
 #define DISPPARAM_HBM_FOD_OFF "0xE0000"
 
+#define FLICKER_FREE_NODE                                                      \
+  "/sys/devices/platform/soc/soc:qcom,dsi-display/ea_enable"
+
 #define Touch_Fod_Enable 10
 #define Touch_Aod_Enable 11
 
@@ -48,9 +51,34 @@ namespace V1_0 {
 namespace implementation {
 
 template <typename T>
+static T get(const std::string& path, const T& def) {
+    std::ifstream file(path);
+    T result;
+
+    file >> result;
+    return file.fail() ? def : result;
+}
+
+template <typename T>
 static void set(const std::string& path, const T& value) {
     std::ofstream file(path);
     file << value;
+}
+
+auto DcDimmingStatus = get<std::string>(FLICKER_FREE_NODE, "");
+
+void dcdimmingprecheck() {
+    if (DcDimmingStatus != "1") {
+	shouldRestoreDcDimming = false;
+    }
+}
+
+void dcdimmingcheck() {
+    if (!shouldRestoreDcDimming && DcDimmingStatus == "0") {
+        set(FLICKER_FREE_NODE, 0);
+    } else {
+        set(FLICKER_FREE_NODE, 1);
+    }
 }
 
 FingerprintInscreen::FingerprintInscreen() {
@@ -80,6 +108,8 @@ Return<void> FingerprintInscreen::onFinishEnroll() {
 }
 
 Return<void> FingerprintInscreen::onPress() {
+    dcdimmingprecheck();
+    set(FLICKER_FREE_NODE, 0);
     set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_ON);
     TouchFeatureService->setTouchMode(Touch_Fod_Enable, 1);
     xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_630_FOD);
@@ -101,6 +131,7 @@ Return<void> FingerprintInscreen::onShowFODView() {
 
 Return<void> FingerprintInscreen::onHideFODView() {
     set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_OFF);
+    dcdimmingcheck();
     TouchFeatureService->resetTouchMode(Touch_Fod_Enable);
     this->mFodCircleVisible = false;
     return Void();
