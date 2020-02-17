@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "77e8e998_4d7ac597",
+        "filename": "fod/FingerprintInscreen.cpp",
+        "patchSetId": 8
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 24438
+      },
+      "writtenOn": "2020-02-17T16:25:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "150b4aa0_f719f2e3",
+      "revId": "304c7e50ed5efc178094a540946762b0432c84dd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "075494d8_e8e25b53",
         "filename": "fod/FingerprintInscreen.cpp",
         "patchSetId": 8
@@ -57,6 +75,30 @@
       "revId": "304c7e50ed5efc178094a540946762b0432c84dd",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "361974b8_5053afcf",
+        "filename": "fod/FingerprintInscreen.cpp",
+        "patchSetId": 8
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 24438
+      },
+      "writtenOn": "2020-02-17T16:25:57Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "075494d8_e8e25b53",
+      "range": {
+        "startLine": 72,
+        "startChar": 0,
+        "endLine": 72,
+        "endChar": 1
+      },
+      "revId": "304c7e50ed5efc178094a540946762b0432c84dd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
