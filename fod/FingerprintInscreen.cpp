@@ -32,6 +32,9 @@
 #define DISPPARAM_HBM_FOD_ON "0x20000"
 #define DISPPARAM_HBM_FOD_OFF "0xE0000"
 
+#define FLICKER_FREE_NODE                                                      \
+  "/sys/devices/platform/soc/soc:qcom,dsi-display/ea_enable"
+
 #define Touch_Fod_Enable 10
 #define Touch_Aod_Enable 11
 
@@ -48,9 +51,32 @@ namespace V1_0 {
 namespace implementation {
 
 template <typename T>
+static T get(const std::string& path, const T& def) {
+    std::ifstream file(path);
+    T result;
+
+    file >> result;
+    return file.fail() ? def : result;
+}
+
+template <typename T>
 static void set(const std::string& path, const T& value) {
     std::ofstream file(path);
     file << value;
+}
+
+static void dcdimmingcheck() {
+    auto DcDimmingStatus = get<std::string>(FLICKER_FREE_NODE, "");
+    bool enabled = false;
+    if (DcDimmingStatus == "1") {
+        enabled = true;
+        set(FLICKER_FREE_NODE, 0);
+    }
+    if (enabled == true) {
+        set(FLICKER_FREE_NODE, 1);
+    } else {
+        set(FLICKER_FREE_NODE, 0);
+    }
 }
 
 FingerprintInscreen::FingerprintInscreen() {
@@ -95,6 +121,7 @@ Return<void> FingerprintInscreen::onRelease() {
 
 Return<void> FingerprintInscreen::onShowFODView() {
     TouchFeatureService->setTouchMode(Touch_Fod_Enable, 1);
+    dcdimmingcheck();
     this->mFodCircleVisible = true;
     return Void();
 }
@@ -102,6 +129,7 @@ Return<void> FingerprintInscreen::onShowFODView() {
 Return<void> FingerprintInscreen::onHideFODView() {
     set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_OFF);
     TouchFeatureService->resetTouchMode(Touch_Fod_Enable);
+    dcdimmingcheck();
     this->mFodCircleVisible = false;
     return Void();
 }
