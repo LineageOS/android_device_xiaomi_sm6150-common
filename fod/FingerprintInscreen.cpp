@@ -32,6 +32,8 @@
 #define DISPPARAM_HBM_FOD_ON "0x20000"
 #define DISPPARAM_HBM_FOD_OFF "0xE0000"
 
+#define FLICKER_FREE_NODE = "/sys/devices/platform/soc/soc:qcom,dsi-display/ea_enable"
+
 #define Touch_Fod_Enable 10
 #define Touch_Aod_Enable 11
 
@@ -95,6 +97,7 @@ Return<void> FingerprintInscreen::onRelease() {
 
 Return<void> FingerprintInscreen::onShowFODView() {
     TouchFeatureService->setTouchMode(Touch_Fod_Enable, 1);
+    set(FLICKER_FREE_NODE, 0)
     this->mFodCircleVisible = true;
     return Void();
 }
@@ -102,6 +105,7 @@ Return<void> FingerprintInscreen::onShowFODView() {
 Return<void> FingerprintInscreen::onHideFODView() {
     set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_OFF);
     TouchFeatureService->resetTouchMode(Touch_Fod_Enable);
+    set(FLICKER_FREE_NODE, 1)
     this->mFodCircleVisible = false;
     return Void();
 }
