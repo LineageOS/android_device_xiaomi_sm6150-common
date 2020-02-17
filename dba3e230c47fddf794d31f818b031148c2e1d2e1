@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "7913caff_d0aa800f",
+        "filename": "fod/FingerprintInscreen.cpp",
+        "patchSetId": 13
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 16208
+      },
+      "writtenOn": "2020-02-17T17:04:06Z",
+      "side": 1,
+      "message": "simplify this (see line58)",
+      "revId": "dba3e230c47fddf794d31f818b031148c2e1d2e1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "ea297d52_791bb4da",
         "filename": "fod/FingerprintInscreen.cpp",
         "patchSetId": 13
