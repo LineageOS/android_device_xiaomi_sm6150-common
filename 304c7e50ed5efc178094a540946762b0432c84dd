@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0eb0d32e_fe9c2d62",
+        "filename": "fod/FingerprintInscreen.cpp",
+        "patchSetId": 8
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 1063
+      },
+      "writtenOn": "2020-02-17T05:19:31Z",
+      "side": 1,
+      "message": "This will only be updated once (on HAL start) ... I doubt that\u0027s what you want.",
+      "revId": "304c7e50ed5efc178094a540946762b0432c84dd",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
