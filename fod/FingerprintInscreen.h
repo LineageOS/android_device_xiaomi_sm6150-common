@@ -56,13 +56,14 @@ public:
 
 private:
     bool mFodCircleVisible;
+    bool enabled;
     sp<ITouchFeature> TouchFeatureService;
     sp<IXiaomiFingerprint> xiaomiFingerprintService;
 };
 
 }  // namespace implementation
 }  // namespace V1_0
-}  // namespace inscreenx
+} // namespace inscreen
 }  // namespace fingerprint
 }  // namespace biometrics
 }  // namespace lineage
