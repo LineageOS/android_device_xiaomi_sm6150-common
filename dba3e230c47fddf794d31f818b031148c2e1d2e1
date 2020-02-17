@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ea297d52_791bb4da",
+        "filename": "fod/FingerprintInscreen.cpp",
+        "patchSetId": 13
+      },
+      "lineNbr": 81,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-02-17T17:01:29Z",
+      "side": 1,
+      "message": "Isn\u0027t this better?\n\nset(FLICKER_FREE_NODE, shouldRestoreDcDimming);",
+      "range": {
+        "startLine": 77,
+        "startChar": 0,
+        "endLine": 81,
+        "endChar": 5
+      },
+      "revId": "dba3e230c47fddf794d31f818b031148c2e1d2e1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
