@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e9ed4cc5_d8d513c8",
+        "filename": "fod/FingerprintInscreen.cpp",
+        "patchSetId": 10
+      },
+      "lineNbr": 68,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-02-17T16:25:45Z",
+      "side": 1,
+      "message": "Why are you placing opening and closing brackets differently from the rest of the file?",
+      "revId": "c4d28f488eb67d56d4d46d581deb881849fdfcd1",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
