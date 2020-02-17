@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f17fe049_453cbbec",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-02-17T12:31:36Z",
+      "side": 0,
+      "message": "Can this also be removed?",
+      "range": {
+        "startLine": 41,
+        "startChar": 113,
+        "endLine": 41,
+        "endChar": 138
+      },
+      "revId": "6e05d873ceb205b6cfae72dc7fabefdd49598daf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
