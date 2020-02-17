@@ -22,6 +22,30 @@
       "revId": "6e05d873ceb205b6cfae72dc7fabefdd49598daf",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c8f80cd9_6f20e2ba",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 24438
+      },
+      "writtenOn": "2020-02-17T12:53:34Z",
+      "side": 0,
+      "message": "it doesn\u0027t exist on stock somehow https://github.com/AndroidDumps/redmi_phoenix_dump/blob/ac8545017ba5f5a314e8b0a4beb497affed13bc5/bootimg/img_info#L12\n\nhttps://github.com/AndroidDumps/xiaomi_davinci_dump/blob/21870bdbe5b846d74c4a058307829d621172ed8b/boot/img_info#L12\n\nletme try and see if it matters w/o this.",
+      "parentUuid": "f17fe049_453cbbec",
+      "range": {
+        "startLine": 41,
+        "startChar": 113,
+        "endLine": 41,
+        "endChar": 138
+      },
+      "revId": "6e05d873ceb205b6cfae72dc7fabefdd49598daf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
