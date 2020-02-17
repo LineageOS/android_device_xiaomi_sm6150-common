@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d1987c6d_056e8ae6",
+        "filename": "bluetooth/include/bdroid_buildcfg.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-02-17T21:07:45Z",
+      "side": 1,
+      "message": "this",
+      "range": {
+        "startLine": 26,
+        "startChar": 1,
+        "endLine": 31,
+        "endChar": 28
+      },
+      "revId": "7a0773db07e164726281d2d4a65643ecfec13824",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b3f8c909_3b2b8a71",
+        "filename": "bluetooth/include/bdroid_buildcfg.h",
+        "patchSetId": 1
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-02-17T21:07:45Z",
+      "side": 1,
+      "message": "and this",
+      "range": {
+        "startLine": 73,
+        "startChar": 0,
+        "endLine": 73,
+        "endChar": 39
+      },
+      "revId": "7a0773db07e164726281d2d4a65643ecfec13824",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
