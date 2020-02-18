@@ -16,6 +16,29 @@
       "revId": "a6ead3f020428f4e933790d3bd03188854a5abb8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7273f63a_2b0df757",
+        "filename": "recovery/recovery_updater.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 183,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2020-02-18T15:48:21Z",
+      "side": 1,
+      "message": "if you want a free commit please use str.length() instead of strlen...",
+      "range": {
+        "startLine": 183,
+        "startChar": 16,
+        "endLine": 183,
+        "endChar": 49
+      },
+      "revId": "a6ead3f020428f4e933790d3bd03188854a5abb8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
