@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3ae52fde_b7a4f012",
+        "filename": "bluetooth/include/bdroid_buildcfg.h",
+        "patchSetId": 8
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-02-18T21:10:54Z",
+      "side": 1,
+      "message": "I wonder if it should be Xiaomi Mi 9T instead. That\u0027s how we set it up on mi 8996 and mi 845.",
+      "range": {
+        "startLine": 41,
+        "startChar": 27,
+        "endLine": 41,
+        "endChar": 32
+      },
+      "revId": "52321bf9f1cd19d670b4472e9aa7fb6b4ec76e95",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
