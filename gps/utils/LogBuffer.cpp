@@ -28,7 +28,7 @@
  */
 
 #include "LogBuffer.h"
-#include <utils/Log.h>
+#include <log/log.h>
 
 #define LOG_TAG "LocSvc_LogBuffer"
 
