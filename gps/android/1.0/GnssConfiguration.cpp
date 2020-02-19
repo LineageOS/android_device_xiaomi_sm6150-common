@@ -37,7 +37,7 @@ GnssConfiguration::GnssConfiguration(Gnss* gnss) : mGnss(gnss) {
 }
 
 // Methods from ::android::hardware::gps::V1_0::IGnssConfiguration follow.
-Return<bool> GnssConfiguration::setSuplEs(bool enabled)  {
+Return<bool> GnssConfiguration::setSuplEs(__maybe_unused bool enabled)  {
     if (mGnss == nullptr) {
         LOC_LOGE("%s]: mGnss is nullptr", __FUNCTION__);
         return false;

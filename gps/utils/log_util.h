@@ -34,7 +34,7 @@
 
 #if defined (USE_ANDROID_LOGGING) || defined (ANDROID)
 // Android and LE targets with logcat support
-#include <utils/Log.h>
+#include <log/log.h>
 #include <unistd.h>
 #include <sys/syscall.h>
 

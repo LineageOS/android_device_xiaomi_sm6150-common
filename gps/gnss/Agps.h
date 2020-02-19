@@ -155,11 +155,11 @@ private:
 public:
     /* CONSTRUCTOR */
     AgpsStateMachine(AgpsManager* agpsManager, AGpsExtType agpsType):
-        mFrameworkStatusV4Cb(NULL),
         mAgpsManager(agpsManager), mSubscriberList(),
-        mCurrentSubscriber(NULL), mState(AGPS_STATE_RELEASED),
         mAgpsType(agpsType), mAPN(NULL), mAPNLen(0),
-        mBearer(AGPS_APN_BEARER_INVALID) {};
+        mBearer(AGPS_APN_BEARER_INVALID),
+        mCurrentSubscriber(NULL), mState(AGPS_STATE_RELEASED),
+        mFrameworkStatusV4Cb(NULL) {};
 
     virtual ~AgpsStateMachine() { if(NULL != mAPN) delete[] mAPN; };
 
