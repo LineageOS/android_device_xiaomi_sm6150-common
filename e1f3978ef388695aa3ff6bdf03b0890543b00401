@@ -16,6 +16,29 @@
       "revId": "e1f3978ef388695aa3ff6bdf03b0890543b00401",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "648616ed_dd2335e3",
+        "filename": "sm6150.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 430,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-02-19T14:45:11Z",
+      "side": 1,
+      "message": "Why don\u0027t you simply move these to system.prop? I know it\u0027s not the same, but does the job.",
+      "range": {
+        "startLine": 418,
+        "startChar": 0,
+        "endLine": 430,
+        "endChar": 58
+      },
+      "revId": "e1f3978ef388695aa3ff6bdf03b0890543b00401",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
