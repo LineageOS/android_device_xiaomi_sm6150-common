@@ -45,10 +45,10 @@ LocAdapterBase::LocAdapterBase(const LOC_API_ADAPTER_EVENT_MASK_T mask,
                                ContextBase* context, bool isMaster,
                                LocAdapterProxyBase *adapterProxyBase,
                                bool waitForDoneInit) :
+    mIsEngineCapabilitiesKnown(ContextBase::sIsEngineCapabilitiesKnown),
     mIsMaster(isMaster), mEvtMask(mask), mContext(context),
     mLocApi(context->getLocApi()), mLocAdapterProxyBase(adapterProxyBase),
-    mMsgTask(context->getMsgTask()),
-    mIsEngineCapabilitiesKnown(ContextBase::sIsEngineCapabilitiesKnown)
+    mMsgTask(context->getMsgTask())
 {
     LOC_LOGd("waitForDoneInit: %d", waitForDoneInit);
     if (!waitForDoneInit) {
@@ -87,9 +87,7 @@ void LocAdapterBase::
     reportPositionEvent(const UlpLocation& location,
                         const GpsLocationExtended& locationExtended,
                         enum loc_sess_status status,
-                        LocPosTechMask loc_technology_mask,
-                        GnssDataNotification* pDataNotify,
-                        int msInWeek)
+                        LocPosTechMask loc_technology_mask)
 {
     if (mLocAdapterProxyBase != NULL) {
         mLocAdapterProxyBase->reportPositionEvent((UlpLocation&)location,
@@ -161,8 +159,7 @@ DEFAULT_IMPL(false)
 
 bool LocAdapterBase::
     requestNiNotifyEvent(const GnssNiNotification &/*notify*/,
-                         const void* /*data*/,
-                         const LocInEmergency emergencyState)
+                         const void* /*data*/)
 DEFAULT_IMPL(false)
 
 void LocAdapterBase::
@@ -331,7 +328,7 @@ LocAdapterBase::updateClientsEventMask()
 DEFAULT_IMPL()
 
 void
-LocAdapterBase::stopClientSessions(LocationAPI* client)
+LocAdapterBase::stopClientSessions()
 DEFAULT_IMPL()
 
 void

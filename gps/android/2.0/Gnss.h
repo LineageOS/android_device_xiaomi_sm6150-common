@@ -71,9 +71,7 @@ struct Gnss : public IGnss {
     Return<bool> injectLocation(double latitudeDegrees,
                                 double longitudeDegrees,
                                 float accuracyMeters)  override;
-    Return<bool> injectTime(int64_t timeMs,
-                            int64_t timeReferenceMs,
-                            int32_t uncertaintyMs) override;
+    Return<bool> injectTime() override;
     Return<void> deleteAidingData(V1_0::IGnss::GnssAidingData aidingDataFlags)  override;
     Return<bool> setPositionMode(V1_0::IGnss::GnssPositionMode mode,
                                  V1_0::IGnss::GnssPositionRecurrence recurrence,
