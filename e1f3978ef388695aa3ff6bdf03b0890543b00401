@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "72bc9d7d_0f23ad94",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 190,
+      "author": {
+        "id": 24438
+      },
+      "writtenOn": "2020-02-19T17:04:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "1899be85_16930e29",
+      "revId": "e1f3978ef388695aa3ff6bdf03b0890543b00401",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "648616ed_dd2335e3",
         "filename": "sm6150.mk",
         "patchSetId": 3
@@ -39,6 +57,30 @@
       "revId": "e1f3978ef388695aa3ff6bdf03b0890543b00401",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9af15353_1796050d",
+        "filename": "sm6150.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 430,
+      "author": {
+        "id": 24438
+      },
+      "writtenOn": "2020-02-19T17:04:28Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "648616ed_dd2335e3",
+      "range": {
+        "startLine": 418,
+        "startChar": 0,
+        "endLine": 430,
+        "endChar": 58
+      },
+      "revId": "e1f3978ef388695aa3ff6bdf03b0890543b00401",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
