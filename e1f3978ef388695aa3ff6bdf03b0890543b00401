@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1899be85_16930e29",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 190,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-02-19T14:44:20Z",
+      "side": 1,
+      "message": "Looks like this is not needed (only needed on pre api 26).",
+      "revId": "e1f3978ef388695aa3ff6bdf03b0890543b00401",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
