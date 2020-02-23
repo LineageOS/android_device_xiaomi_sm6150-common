@@ -18,8 +18,8 @@
 
 #include "FingerprintInscreen.h"
 
+#include <android-base/file.h>
 #include <android-base/logging.h>
-#include <fstream>
 #include <cmath>
 
 #define COMMAND_NIT 10
@@ -30,6 +30,26 @@
 #define FOD_SENSOR_Y 1931
 #define FOD_SENSOR_SIZE 190
 
+namespace {
+
+#define PPCAT_NX(A, B) A/B
+#define PPCAT(A, B) PPCAT_NX(A, B)
+#define STRINGIFY_INNER(x) #x
+#define STRINGIFY(x) STRINGIFY_INNER(x)
+
+#define DRM(x) PPCAT(/sys/class/drm/, x)
+#define DSI(x) STRINGIFY(PPCAT(DRM(card0-DSI-1), x))
+
+using ::android::base::ReadFileToString;
+using ::android::base::WriteStringToFile;
+
+// Write value to path and close file.
+bool WriteToFile(const std::string& path, uint32_t content) {
+    return WriteStringToFile(std::to_string(content), path);
+}
+
+} // anonymous namespace
+
 namespace vendor {
 namespace lineage {
 namespace biometrics {
@@ -37,12 +57,6 @@ namespace fingerprint {
 namespace inscreen {
 namespace V1_0 {
 namespace implementation {
-
-template <typename T>
-static void set(const std::string& path, const T& value) {
-    std::ofstream file(path);
-    file << value;
-}
 
 FingerprintInscreen::FingerprintInscreen() {
     TouchFeatureService = ITouchFeature::getService();
@@ -72,12 +86,14 @@ Return<void> FingerprintInscreen::onFinishEnroll() {
 
 Return<void> FingerprintInscreen::onPress() {
     xiaomiDisplayFeatureService->setFeature(0, 11, 1, 4);
+    WriteToFile(DSI(dim_layer_enable), 1);
     xiaomiDisplayFeatureService->setFeature(0, 11, 1, 3);
     xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_630_FOD);
     return Void();
 }
 
 Return<void> FingerprintInscreen::onRelease() {
+    WriteToFile(DSI(dim_layer_enable), 0);
     xiaomiDisplayFeatureService->setFeature(0, 11, 0, 3);
     xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_NONE);
     return Void();
