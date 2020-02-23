@@ -25,10 +25,8 @@ cc_binary {
     ],
     shared_libs: [
         "libbase",
-        "libhardware",
         "libhidlbase",
         "libhidltransport",
-        "liblog",
         "libhwbinder",
         "libutils",
         "vendor.lineage.biometrics.fingerprint.inscreen@1.0",
