@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2017-2018 The LineageOS Project
+# Copyright (C) 2017-2020 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -22,7 +22,7 @@ import sys
 device='sm6150-common'
 vendor='xiaomi'
 
-lines = [ line for line in open('proprietary-files.txt', 'r') ]
+lines = [ line for line in open('proprietary-files-qc.txt', 'r') ]
 vendorPath = '../../../vendor/' + vendor + '/' + device + '/proprietary'
 needSHA1 = False
 
@@ -72,7 +72,7 @@ if len(sys.argv) == 2 and sys.argv[1] == '-c':
 else:
   update()
 
-with open('proprietary-files.txt', 'w') as file:
+with open('proprietary-files-qc.txt', 'w') as file:
   for line in lines:
     file.write(line)
 
