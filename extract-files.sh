@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# Copyright (C) 2018-2019 The LineageOS Project
+# Copyright (C) 2018-2020 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -24,6 +24,7 @@ source "${HELPER}"
 CLEAN_VENDOR=true
 
 ONLY_COMMON=
+ONLY_OEM=
 SECTION=
 KANG=
 
@@ -31,6 +32,9 @@ while [ "${#}" -gt 0 ]; do
     case "${1}" in
         -o | --only-common )
                 ONLY_COMMON=false
+                ;;
+        -oo | --only-oem )
+                ONLY_OEM=false
                 ;;
         -n | --no-cleanup )
                 CLEAN_VENDOR=false
@@ -76,6 +80,12 @@ if [ -z "${ONLY_COMMON}" ] && [ -s "${MY_DIR}/../${DEVICE}/proprietary-files.txt
     setup_vendor "${DEVICE}" "${VENDOR}" "${LINEAGE_ROOT}" false "${CLEAN_VENDOR}"
 
     extract "${MY_DIR}/../${DEVICE}/proprietary-files.txt" "${SRC}" \
+            "${KANG}" --section "${SECTION}"
+fi
+
+if [ -z "${ONLY_OEM}" ] && [ -s "${MY_DIR}/proprietary-files-qc.txt" ]; then
+    setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${LINEAGE_ROOT}" true "${CLEAN_VENDOR}"
+    extract "${MY_DIR}/proprietary-files-qc.txt" "${SRC}" \
             "${KANG}" --section "${SECTION}"
 fi
 
