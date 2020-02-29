@@ -444,7 +444,10 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service
+    android.hardware.usb@1.1-service.xiaomi_sm6150
+
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/usb/,$(TARGET_COPY_OUT_VENDOR)/etc/vintf/manifest)
 
 # Vibrator
 PRODUCT_PACKAGES += \
