@@ -439,7 +439,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
          <instance>default</instance>
        </interface>
    </hal>
-<!--    <hal format="hidl">
+    <hal format="hidl">
         <name>vendor.qti.data.factory</name>
         <transport>hwbinder</transport>
         <version>2.1</version>
@@ -447,7 +447,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <name>IFactory</name>
             <instance>default</instance>
         </interface>
-    </hal> -->
+    </hal>
     <!-- Data Link Latency -->
     <hal format="hidl">
         <name>vendor.qti.hardware.data.latency</name>
