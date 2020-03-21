@@ -1,6 +1,6 @@
 /*
  * Copyright (C) 2017 The Android Open Source Project
- * Copyright (C) 2018 The LineageOS Project
+ * Copyright (C) 2018-2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,15 +14,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#define LOG_TAG "android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sdm660"
+#define LOG_TAG "android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sm6150"
+
+#include <android-base/properties.h>
+#include <cutils/properties.h>
 
 #include <hardware/hw_auth_token.h>
 
 #include <hardware/hardware.h>
 #include <hardware/fingerprint.h>
 #include "BiometricsFingerprint.h"
+#include "Hardware.h"
 
-#include <cutils/properties.h>
 #include <inttypes.h>
 #include <unistd.h>
 
@@ -32,6 +35,8 @@ namespace biometrics {
 namespace fingerprint {
 namespace V2_1 {
 namespace implementation {
+
+using android::base::GetProperty;
 
 // Supported fingerprint HAL version
 static const uint16_t kVersion = HARDWARE_MODULE_API_VERSION(2, 1);
@@ -214,15 +219,31 @@ IBiometricsFingerprint* BiometricsFingerprint::getInstance() {
 
 void setFpVendorProp(const char *fp_vendor) {
     property_set("persist.vendor.sys.fp.vendor", fp_vendor);
-    property_set("ro.boot.fpsensor", fp_vendor);
 }
 
 fingerprint_device_t* getDeviceForVendor(const char *class_name)
 {
     const hw_module_t *hw_module = nullptr;
     int err;
+    if (GetProperty("ro.hardware.fp.fod", "") == "true") {
+        class_name = "goodix_fod";
+    }
 
-    err = hw_get_module_by_class(FINGERPRINT_HARDWARE_MODULE_ID, class_name, &hw_module);
+    if (!strcmp(class_name, "fpc")) {
+        setFpVendorProp("fpc");
+        err = load("/vendor/lib64/hw/fingerprint.fpc.so", &hw_module);
+    } else if (!strcmp(class_name, "goodix")) {
+        setFpVendorProp("goodix");
+        err = load("/vendor/lib64/hw/fingerprint.goodix.so", &hw_module);
+    } else if (!strcmp(class_name, "goodix_fod")) {
+        setFpVendorProp("goodix_fod");
+        err = load("/vendor/lib64/hw/fingerprint.goodix_fod.so", &hw_module);
+    } else {
+        setFpVendorProp("none");
+        ALOGE("No fingerprint module class specified.");
+        err = 1;
+    }
+
     if (err) {
         ALOGE("Failed to get fingerprint module: class %s, error %d", class_name, err);
         return nullptr;
@@ -264,25 +285,17 @@ fingerprint_device_t* getDeviceForVendor(const char *class_name)
 fingerprint_device_t* getFingerprintDevice()
 {
     fingerprint_device_t *fp_device;
+    char class_name[PROPERTY_VALUE_MAX];
 
-    fp_device = getDeviceForVendor("fpc");
+    property_get("ro.boot.fpsensor",
+        class_name, NULL);
+
+    fp_device = getDeviceForVendor(class_name);
     if (fp_device == nullptr) {
-        ALOGE("Failed to load fpc fingerprint module");
+        ALOGE("Failed to load %s fingerprint module", class_name);
     } else {
-        setFpVendorProp("fpc");
         return fp_device;
     }
-
-    fp_device = getDeviceForVendor("goodix");
-    if (fp_device == nullptr) {
-        ALOGE("Failed to load goodix fingerprint module");
-    } else {
-        setFpVendorProp("goodix");
-        return fp_device;
-    }
-
-    setFpVendorProp("none");
-
     return nullptr;
 }
 
