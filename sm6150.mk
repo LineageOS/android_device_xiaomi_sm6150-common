@@ -199,12 +199,16 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.2-service.clearkey
 
 # Fingerprint feature
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sm6150
+
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
 ifeq ($(strip $(TARGET_USES_FOD)),true)
 PRODUCT_PACKAGES += \
-    vendor.lineage.biometrics.fingerprint.inscreen@1.1-service.xiaomi_sm6150
+    vendor.lineage.biometrics.fingerprint.inscreen@1.1-service.xiaomi_sm6150 \
+    vendor.xiaomi.hardware.fingerprintextension@1.0-service
 endif
 
 # FM

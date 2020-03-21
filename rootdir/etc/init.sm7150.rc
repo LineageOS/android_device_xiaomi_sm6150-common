@@ -41,3 +41,6 @@ on fs
 on post-fs-data
     mkdir /data/vendor/nfc 0770 nfc nfc
 
+on init
+    chown system system /dev/input/event2
+    chmod 0666 /dev/input/event2
