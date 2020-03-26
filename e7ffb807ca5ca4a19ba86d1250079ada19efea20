@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8b0b6031_c8c8aa6e",
+        "filename": "sepolicy/vendor/hal_power_default.te",
+        "patchSetId": 8
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-03-26T22:22:02Z",
+      "side": 1,
+      "message": "Is this even needed for anything? If not, remove it in another commit and don\u0027t touch the line bellow in this change.",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 6,
+        "endChar": 63
+      },
+      "revId": "e7ffb807ca5ca4a19ba86d1250079ada19efea20",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
