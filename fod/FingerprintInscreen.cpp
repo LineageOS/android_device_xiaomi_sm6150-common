@@ -45,7 +45,7 @@ static void set(const std::string& path, const T& value) {
 }
 
 FingerprintInscreen::FingerprintInscreen() {
-    TouchFeatureService = ITouchFeature::getService();
+    xiaomiTouchFeatureService = ITouchFeature::getService();
     xiaomiDisplayFeatureService = IDisplayFeature::getService();
     xiaomiFingerprintService = IXiaomiFingerprint::getService();
 }
@@ -81,26 +81,26 @@ Return<void> FingerprintInscreen::switchHbm(bool enabled) {
 }
 
 Return<void> FingerprintInscreen::onPress() {
-    TouchFeatureService->setTouchMode(Touch_Fod_Enable, 1);
+    xiaomiTouchFeatureService->setTouchMode(Touch_Fod_Enable, 1);
     xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_630_FOD);
     return Void();
 }
 
 Return<void> FingerprintInscreen::onRelease() {
-    TouchFeatureService->resetTouchMode(Touch_Fod_Enable);
+    xiaomiTouchFeatureService->resetTouchMode(Touch_Fod_Enable);
     xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_NONE);
     return Void();
 }
 
 Return<void> FingerprintInscreen::onShowFODView() {
-    TouchFeatureService->setTouchMode(Touch_Fod_Enable, 1);
+    xiaomiTouchFeatureService->setTouchMode(Touch_Fod_Enable, 1);
     xiaomiDisplayFeatureService->setFeature(0, 17, 1, 255);
     xiaomiDisplayFeatureService->setFeature(0, 11, 1, 4);
     return Void();
 }
 
 Return<void> FingerprintInscreen::onHideFODView() {
-    TouchFeatureService->resetTouchMode(Touch_Fod_Enable);
+    xiaomiTouchFeatureService->resetTouchMode(Touch_Fod_Enable);
     xiaomiDisplayFeatureService->setFeature(0, 17, 0, 255);
     return Void();
 }
