@@ -174,6 +174,26 @@ vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 -vendor/lib64/libplatformconfig.so
 -vendor/lib64/vendor.qti.hardware.capabilityconfigstore@1.0.so
 
+# Display feature	
+vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
+vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
+vendor/lib64/hw/displayfeature.default.so
+vendor/etc/dsi_ss_fhd_ea_f10_cmd_display_mi.xml
+vendor/etc/dsi_ss_fhd_eb_f10_cmd_display_mi.xml
+vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc
+vendor/lib/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
+vendor/lib/hw/displayfeature.default.so
+
+# Display - Hardware
+vendor/lib64/hw/hwcomposer.sm6150.so
+vendor/lib64/libclient2slpi.notifier.so
+vendor/lib64/libsdmcore.so
+vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so
+vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so
+vendor/lib/hw/hwcomposer.sm6150.so
+vendor/lib/libclient2slpi.notifier.so
+vendor/lib/libsdmcore.so
+
 # DPM
 framework/tcmclient.jar
 lib64/libdiag_system.so
