@@ -59,8 +59,7 @@
 #define BDS_NUM     (37)
 #define GAL_NUM     (36)
 #define NAVIC_NUM   (14)
-#define SV_ALL_NUM_MIN  (GPS_NUM + GLO_NUM + QZSS_NUM + BDS_NUM + GAL_NUM) //=134
-#define SV_ALL_NUM      (SV_ALL_NUM_MIN + NAVIC_NUM) //=148
+#define SV_ALL_NUM  (GPS_NUM+GLO_NUM+QZSS_NUM+BDS_NUM+GAL_NUM+NAVIC_NUM) //=148
 
 namespace loc_core
 {
@@ -87,7 +86,6 @@ public:
         return *this;
     }
     virtual void dump(void) {};
-    inline virtual bool ignore() { return false; };
 };
 
 class SystemStatusLocation : public SystemStatusItemBase
@@ -104,7 +102,7 @@ public:
         mLocation(location),
         mLocationEx(locationEx) {}
     bool equals(const SystemStatusLocation& peer);
-    void dump(void) override;
+    void dump(void);
 };
 
 class SystemStatusPQWM1;
@@ -134,7 +132,7 @@ public:
         mTimeUncNs(0ULL) {}
     inline SystemStatusTimeAndClock(const SystemStatusPQWM1& nmea);
     bool equals(const SystemStatusTimeAndClock& peer);
-    void dump(void) override;
+    void dump(void);
 };
 
 class SystemStatusXoState : public SystemStatusItemBase
@@ -145,7 +143,7 @@ public:
         mXoState(0) {}
     inline SystemStatusXoState(const SystemStatusPQWM1& nmea);
     bool equals(const SystemStatusXoState& peer);
-    void dump(void) override;
+    void dump(void);
 };
 
 class SystemStatusRfAndParams : public SystemStatusItemBase
@@ -192,7 +190,7 @@ public:
         mGalBpAmpQ(0) {}
     inline SystemStatusRfAndParams(const SystemStatusPQWM1& nmea);
     bool equals(const SystemStatusRfAndParams& peer);
-    void dump(void) override;
+    void dump(void);
 };
 
 class SystemStatusErrRecovery : public SystemStatusItemBase
@@ -203,8 +201,7 @@ public:
         mRecErrorRecovery(0) {};
     inline SystemStatusErrRecovery(const SystemStatusPQWM1& nmea);
     bool equals(const SystemStatusErrRecovery& peer);
-    inline bool ignore() override { return 0 == mRecErrorRecovery; };
-    void dump(void) override;
+    void dump(void);
 };
 
 class SystemStatusPQWP1;
@@ -228,7 +225,7 @@ public:
         mEpiSrc(0) {}
     inline SystemStatusInjectedPosition(const SystemStatusPQWP1& nmea);
     bool equals(const SystemStatusInjectedPosition& peer);
-    void dump(void) override;
+    void dump(void);
 };
 
 class SystemStatusPQWP2;
@@ -250,7 +247,7 @@ public:
         mBestAltUnc(0) {}
     inline SystemStatusBestPosition(const SystemStatusPQWP2& nmea);
     bool equals(const SystemStatusBestPosition& peer);
-    void dump(void) override;
+    void dump(void);
 };
 
 class SystemStatusPQWP3;
@@ -286,7 +283,7 @@ public:
         mNavicXtraValid(0) {}
     inline SystemStatusXtra(const SystemStatusPQWP3& nmea);
     bool equals(const SystemStatusXtra& peer);
-    void dump(void) override;
+    void dump(void);
 };
 
 class SystemStatusPQWP4;
@@ -306,7 +303,7 @@ public:
         mQzssEpheValid(0) {}
     inline SystemStatusEphemeris(const SystemStatusPQWP4& nmea);
     bool equals(const SystemStatusEphemeris& peer);
-    void dump(void) override;
+    void dump(void);
 };
 
 class SystemStatusPQWP5;
@@ -352,7 +349,7 @@ public:
         mNavicBadMask(0) {}
     inline SystemStatusSvHealth(const SystemStatusPQWP5& nmea);
     bool equals(const SystemStatusSvHealth& peer);
-    void dump(void) override;
+    void dump(void);
 };
 
 class SystemStatusPQWP6;
@@ -364,7 +361,7 @@ public:
         mFixInfoMask(0) {}
     inline SystemStatusPdr(const SystemStatusPQWP6& nmea);
     bool equals(const SystemStatusPdr& peer);
-    void dump(void) override;
+    void dump(void);
 };
 
 class SystemStatusPQWP7;
@@ -388,7 +385,7 @@ public:
     }
     inline SystemStatusNavData(const SystemStatusPQWP7& nmea);
     bool equals(const SystemStatusNavData& peer);
-    void dump(void) override;
+    void dump(void);
 };
 
 class SystemStatusPQWS1;
@@ -402,7 +399,7 @@ public:
         mHepeLimit(0) {}
     inline SystemStatusPositionFailure(const SystemStatusPQWS1& nmea);
     bool equals(const SystemStatusPositionFailure& peer);
-    void dump(void) override;
+    void dump(void);
 };
 
 /******************************************************************************
@@ -761,7 +758,7 @@ public:
     inline bool equals(const SystemStatusTac& peer) {
         return (mValue == peer.mValue);
     }
-    inline void dump(void) override {
+    inline void dump(void) {
         LOC_LOGD("Tac: value=%s", mValue.c_str());
     }
 };
@@ -777,7 +774,7 @@ public:
     inline bool equals(const SystemStatusMccMnc& peer) {
         return (mValue == peer.mValue);
     }
-    inline void dump(void) override {
+    inline void dump(void) {
         LOC_LOGD("TacMccMnc value=%s", mValue.c_str());
     }
 };
