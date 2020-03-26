@@ -281,6 +281,9 @@ vendor/firmware/ipa_fws.b04
 vendor/firmware/ipa_fws.elf
 vendor/firmware/ipa_fws.mdt
 
+# Firmware - from LA.UM.8.9.r1-07000-SM6xx.0
+vendor/firmware/a618_gmu.bin|cb773d4b34f610d53a4a2766e0fec5d7dd2c5982
+
 # FM - from LA.UM.8.9.r1-04400-SM6xx.0
 lib/fm_helium.so|dad3dba1fd0295300a63b35e290726f6b9257fc1
 lib/libfm-hci.so|2bf37a84995d47ced41acd0498ad08065fdec356
