@@ -59,7 +59,7 @@ public:
 
 private:
     sp<IDisplayFeature> xiaomiDisplayFeatureService;
-    sp<ITouchFeature> TouchFeatureService;
+    sp<ITouchFeature> xiaomiTouchFeatureService;
     sp<IXiaomiFingerprint> xiaomiFingerprintService;
 };
 
