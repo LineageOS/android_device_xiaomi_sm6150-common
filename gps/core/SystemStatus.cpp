@@ -158,7 +158,6 @@ private:
         eAgcGlo = 20,
         eAgcBds = 21,
         eAgcGal = 22,
-        eMax0 = eAgcGal,
         eLeapSeconds = 23,
         eLeapSecUnc = 24,
         eGloBpAmpI = 25,
@@ -167,6 +166,7 @@ private:
         eBdsBpAmpQ = 28,
         eGalBpAmpI = 29,
         eGalBpAmpQ = 30,
+        eMax0 = eGalBpAmpQ,
         eTimeUncNs = 31,
         eMax
     };
@@ -660,7 +660,6 @@ private:
     {
         eTalker = 0,
         eUtcTime = 1,
-        eMin = 2 + SV_ALL_NUM_MIN*3,
         eMax = 2 + SV_ALL_NUM*3
     };
     SystemStatusPQWP7 mP7;
@@ -669,18 +668,11 @@ public:
     SystemStatusPQWP7parser(const char *str_in, uint32_t len_in)
         : SystemStatusNmeaBase(str_in, len_in)
     {
-        uint32_t svLimit = SV_ALL_NUM;
-        if (mField.size() < eMin) {
+        if (mField.size() < eMax) {
             LOC_LOGE("PQWP7parser - invalid size=%zu", mField.size());
             return;
         }
-        if (mField.size() < eMax) {
-            // Try reducing limit, accounting for possibly missing NAVIC support
-            svLimit = SV_ALL_NUM_MIN;
-        }
-
-        memset(mP7.mNav, 0, sizeof(mP7.mNav));
-        for (uint32_t i=0; i<svLimit; i++) {
+        for (uint32_t i=0; i<SV_ALL_NUM; i++) {
             mP7.mNav[i].mType   = GnssEphemerisType(atoi(mField[i*3+2].c_str()));
             mP7.mNav[i].mSource = GnssEphemerisSource(atoi(mField[i*3+3].c_str()));
             mP7.mNav[i].mAgeSec = atoi(mField[i*3+4].c_str());
@@ -1346,9 +1338,6 @@ SystemStatus::SystemStatus(const MsgTask* msgTask) :
 template <typename TYPE_REPORT, typename TYPE_ITEM>
 bool SystemStatus::setIteminReport(TYPE_REPORT& report, TYPE_ITEM&& s)
 {
-    if (s.ignore()) {
-        return false;
-    }
     if (!report.empty() && report.back().equals(static_cast<TYPE_ITEM&>(s.collate(report.back())))) {
         // there is no change - just update reported timestamp
         report.back().mUtcReported = s.mUtcReported;
