@@ -142,7 +142,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>default</instance>
         </interface>
     </hal>
-<!--    <hal format="hidl">
+    <hal format="hidl">
         <name>vendor.display.config</name>
         <transport>hwbinder</transport>
         <version>1.11</version>
@@ -150,7 +150,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <name>IDisplayConfig</name>
             <instance>default</instance>
         </interface>
-    </hal> -->
+    </hal>
     <hal format="hidl">
         <name>vendor.display.color</name>
         <transport>hwbinder</transport>
