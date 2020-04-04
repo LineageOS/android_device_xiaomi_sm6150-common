@@ -80,23 +80,23 @@ Return<void> FingerprintInscreen::onFinishEnroll() {
 
 Return<void> FingerprintInscreen::onPress() {
     set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_ON);
-    TouchFeatureService->setTouchMode(Touch_Fod_Enable, 1);
     xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_630_FOD);
     return Void();
 }
 
 Return<void> FingerprintInscreen::onRelease() {
     set(DISPPARAM_PATH, DISPPARAM_HBM_FOD_OFF);
-    TouchFeatureService->resetTouchMode(Touch_Fod_Enable);
     xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_NONE);
     return Void();
 }
 
 Return<void> FingerprintInscreen::onShowFODView() {
+    TouchFeatureService->setTouchMode(Touch_Fod_Enable, 1);
     return Void();
 }
 
 Return<void> FingerprintInscreen::onHideFODView() {
+    TouchFeatureService->resetTouchMode(Touch_Fod_Enable);
     return Void();
 }
 
