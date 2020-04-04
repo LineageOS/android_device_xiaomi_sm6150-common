@@ -1,2 +1,8 @@
 # Grant LiveDisplay access over the control nodes
 allow hal_lineage_livedisplay_qti sysfs_graphics:file rw_file_perms;
+
+# Allow binder communication with hal_displayfeature_default
+binder_call(hal_lineage_livedisplay_qti, hal_displayfeature_default)
+
+# Allow hal_lineage_livedisplay_qti to hal_displayfeature_hwservice
+allow hal_lineage_livedisplay_qti hal_displayfeature_hwservice:hwservice_manager find;

@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 The LineageOS Project
+ * Copyright (C) 2019-2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,6 +20,7 @@
 #include <hidl/MQDescriptor.h>
 #include <hidl/Status.h>
 #include <vendor/lineage/livedisplay/2.0/ISunlightEnhancement.h>
+#include <vendor/xiaomi/hardware/displayfeature/1.0/IDisplayFeature.h>
 
 namespace vendor {
 namespace lineage {
@@ -30,6 +31,7 @@ namespace implementation {
 using ::android::hardware::Return;
 using ::android::hardware::Void;
 using ::android::sp;
+using ::vendor::xiaomi::hardware::displayfeature::V1_0::IDisplayFeature;
 
 class SunlightEnhancement : public ISunlightEnhancement {
   public:
@@ -38,6 +40,8 @@ class SunlightEnhancement : public ISunlightEnhancement {
     // Methods from ::vendor::lineage::livedisplay::V2_0::ISunlightEnhancement follow.
     Return<bool> isEnabled() override;
     Return<bool> setEnabled(bool enabled) override;
+  private:
+    sp<IDisplayFeature> xiaomiDisplayFeatureService;
 };
 
 }  // namespace implementation

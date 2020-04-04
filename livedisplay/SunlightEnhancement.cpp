@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2019 The LineageOS Project
+ * Copyright (C) 2019-2020 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,14 +16,28 @@
 
 #define LOG_TAG "SunlightEnhancementService"
 
-#include <fstream>
+#include "SunlightEnhancement.h"
 
 #include <android-base/logging.h>
 #include <android-base/properties.h>
 #include <android-base/strings.h>
 #include <utils/Errors.h>
 
-#include "SunlightEnhancement.h"
+#include <fstream>
+
+namespace {
+
+/* clang-format off */
+#define PPCAT_NX(A, B) A/B
+#define PPCAT(A, B) PPCAT_NX(A, B)
+#define STRINGIFY_INNER(x) #x
+#define STRINGIFY(x) STRINGIFY_INNER(x)
+
+#define DRM(x) PPCAT(/sys/class/drm/, x)
+#define DSI(x) STRINGIFY(PPCAT(DRM(card0-DSI-1), x))
+/* clang-format on */
+
+}  // anonymous namespace
 
 namespace vendor {
 namespace lineage {
@@ -31,59 +45,26 @@ namespace livedisplay {
 namespace V2_0 {
 namespace implementation {
 
-static constexpr const char* kDispParamPath =
-        "/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/disp_param";
-static constexpr const char* kHbmStatusPath =
-        "/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/hbm_status";
-
-static constexpr const char* kDispParamHbmOff = "0xF0000";
-static constexpr const char* kDispParamHbmOn = "0x10000";
-static constexpr const char* kDispParamHbmFodOff = "0xE0000";
-static constexpr const char* kDispParamHbmFodOn = "0x20000";
-
-bool hasAmoledPanel() {
-    std::string device = android::base::GetProperty("ro.product.device", "");
-    return device == "davinci" || device == "davinciin" || device == "tucana";
-}
-
-bool hasFingerprintOnDisplay() {
-    std::string device = android::base::GetProperty("ro.product.device", "");
-    return device == "davinci" || device == "davinciin" || device == "tucana";
-}
-
 bool SunlightEnhancement::isSupported() {
-    if (hasAmoledPanel()) {
-        std::ofstream disp_param_file(kDispParamPath);
-        std::ifstream hbm_status_file(kHbmStatusPath);
-        if (!disp_param_file.is_open()) {
-            LOG(ERROR) << "Failed to open " << kDispParamPath << ", error=" << errno
-                       << " (" << strerror(errno) << ")";
-        }
-        if (!hbm_status_file.is_open()) {
-            LOG(ERROR) << "Failed to open " << kHbmStatusPath << ", error=" << errno
-                       << " (" << strerror(errno) << ")";
-        }
-        return !disp_param_file.fail() && !hbm_status_file.fail();
-    }
-    return false;
+    return true;
 }
 
 Return<bool> SunlightEnhancement::isEnabled() {
-    std::ifstream hbm_status_file(kHbmStatusPath);
+    std::ifstream hbm_status_file(DSI(hbm_status));
     int result = -1;
     hbm_status_file >> result;
     return !hbm_status_file.fail() && result > 0;
 }
 
 Return<bool> SunlightEnhancement::setEnabled(bool enabled) {
-    std::ofstream disp_param_file(kDispParamPath);
-    if (hasFingerprintOnDisplay()) {
-        disp_param_file << (enabled ? kDispParamHbmFodOn : kDispParamHbmFodOff);
+    xiaomiDisplayFeatureService = IDisplayFeature::getService();
+    if (enabled) {
+        xiaomiDisplayFeatureService->setFeature(0, 0, 2, 255);
+        xiaomiDisplayFeatureService->setFeature(0, 11, 1, 3);
     } else {
-        disp_param_file << (enabled ? kDispParamHbmOn : kDispParamHbmOff);
+        xiaomiDisplayFeatureService->setFeature(0, 11, 0, 3);
     }
-    LOG(DEBUG) << "setEnabled fail " << disp_param_file.fail();
-    return !disp_param_file.fail();
+    return false;
 }
 
 }  // namespace implementation
