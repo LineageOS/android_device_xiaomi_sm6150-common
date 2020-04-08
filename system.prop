@@ -53,7 +53,6 @@ ril.subscription.types=RUIM
 use.voice.path.for.pcm.voip=true
 
 # Time
-persist.timed.enale=true
 
 # Wireless display
 debug.sf.latch_unsignaled=1
