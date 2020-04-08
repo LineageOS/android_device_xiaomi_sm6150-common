@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e2dd1c10_57846561",
+        "filename": "system.prop",
+        "patchSetId": 2
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2020-04-08T12:53:40Z",
+      "side": 1,
+      "message": "Remove too.",
+      "range": {
+        "startLine": 55,
+        "startChar": 0,
+        "endLine": 55,
+        "endChar": 6
+      },
+      "revId": "f5ae405cb3ca8c90c74d0cbd86a7c508cb9d58d5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
