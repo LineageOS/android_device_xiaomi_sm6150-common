@@ -28,8 +28,6 @@
 #define PARAM_NIT_630_FOD 1
 #define PARAM_NIT_NONE 0
 
-#define Touch_Fod_Enable 10
-
 #define FOD_SENSOR_X 445
 #define FOD_SENSOR_Y 1931
 #define FOD_SENSOR_SIZE 190
@@ -75,7 +73,7 @@ Return<void> FingerprintInscreen::onFinishEnroll() {
 }
 
 Return<void> FingerprintInscreen::onPress() {
-    TouchFeatureService->setTouchMode(Touch_Fod_Enable, 1);
+    TouchFeatureService->setTouchMode(10, 1);
     xiaomiDisplayFeatureService->setFeature(0, 11, 1, 4);
     xiaomiDisplayFeatureService->setFeature(0, 11, 1, 3);
     xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_630_FOD);
@@ -83,7 +81,7 @@ Return<void> FingerprintInscreen::onPress() {
 }
 
 Return<void> FingerprintInscreen::onRelease() {
-    TouchFeatureService->resetTouchMode(Touch_Fod_Enable);
+    TouchFeatureService->setTouchMode(10, 0);
     xiaomiDisplayFeatureService->setFeature(0, 11, 0, 3);
     xiaomiFingerprintService->extCmd(COMMAND_NIT, PARAM_NIT_NONE);
     return Void();
