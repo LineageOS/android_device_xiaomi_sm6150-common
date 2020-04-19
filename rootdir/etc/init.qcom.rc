@@ -206,6 +206,9 @@ on late-fs
     # turn off vblank irq immediately after turning off
     write /sys/module/drm/parameters/vblankoffdelay -1
 
+    # Write build info to kdebuginfo.
+    write /sys/module/kdebuginfo/parameters/build_info "${ro.product.name}-${ro.build.type} ${ro.build.version.incremental}"
+
 on early-boot
     # Wait for devices
     wait_for_prop vendor.all.devices.ready 1
