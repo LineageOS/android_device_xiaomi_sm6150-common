@@ -48,8 +48,6 @@ vendor/bin/power_off_alarm
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
-vendor/lib/hw/vendor.qti.hardware.alarm@1.0-impl.so
-vendor/lib/vendor.qti.hardware.alarm@1.0.so
 
 # ANT+
 -lib64/libantradio.so
@@ -293,22 +291,16 @@ vendor/firmware/ipa_fws.mdt
 vendor/firmware/a618_gmu.bin|cb773d4b34f610d53a4a2766e0fec5d7dd2c5982
 
 # FM - from LA.UM.8.9.r1-04400-SM6xx.0
-lib/fm_helium.so|dad3dba1fd0295300a63b35e290726f6b9257fc1
-lib/libfm-hci.so|2bf37a84995d47ced41acd0498ad08065fdec356
 lib64/fm_helium.so|b796c4d16f4706277cffca32212fb7d9f342f9f8
 lib64/libfm-hci.so|7354307ceeafb05d6a8ae1f2cf59c215eea324cc
--product/lib/vendor.qti.hardware.fm@1.0.so|b53c182369ad961a2d7e7309233a413e1faca079
 -product/lib64/vendor.qti.hardware.fm@1.0.so|b7358cd2a52e6e0798efa01f9595f8b8e8f7b152
 vendor/bin/fm_qsoc_patches|12dba44844e32507d8638aa697e7be76bc227935
-vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so|292d95e8d13a6c39d9a4cd76e0f1fb1ce2a6cdf8
-vendor/lib/vendor.qti.hardware.fm@1.0.so|07d1d6c6412823840e56d3ba255de10c42b9de4d
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|750fe55d93426408d1770d753a624923ac656d6e
 vendor/lib64/vendor.qti.hardware.fm@1.0.so|20b23ee5efbd2e41faad2592be8d0d588a41eb17
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
-vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
 # GPS - from LA.UM.8.9.r1-07100-SM6xx.0
@@ -424,10 +416,6 @@ vendor/lib/hw/vulkan.sm6150.so
 # Keystore
 vendor/bin/hw/android.hardware.keymaster@4.0-service-qti
 vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc
-vendor/lib/libkeymasterdeviceutils.so
-vendor/lib/libkeymasterprovision.so
-vendor/lib/libkeymasterutils.so
-vendor/lib/libqtikeymaster4.so
 vendor/lib64/libkeymasterdeviceutils.so
 vendor/lib64/libkeymasterprovision.so
 vendor/lib64/libkeymasterutils.so
@@ -443,13 +431,6 @@ vendor/lib/libgcs.so
 vendor/lib/liblistensoundmodel2.so
 vendor/lib/librice.so
 vendor/lib/libsmwrapper.so
-vendor/lib64/hw/sound_trigger.primary.sm6150.so
-vendor/lib64/libgcs-calwrapper.so
-vendor/lib64/libgcs-ipc.so
-vendor/lib64/libgcs-osal.so
-vendor/lib64/libgcs.so
-vendor/lib64/liblistensoundmodel2.so
-vendor/lib64/librice.so
 
 # Media - from LA.UM.8.9.r1-04400-SM6xx.0
 vendor/etc/configstore/vpp.configstore.xml|d5095f33c326017a21fff186d19a2ce146b85d94
@@ -772,15 +753,6 @@ vendor/lib64/libscvePanorama_lite.so|ef7dbeff0c7fbfd5b2faa78dc3521ccbc90d4044
 # Sensors
 vendor/bin/sensors.qti
 vendor/etc/sensors/hals.conf
-vendor/lib/libsensorcal.so
-vendor/lib/libsensorslog.so
-vendor/lib/libsns_fastRPC_util.so
-vendor/lib/libsns_low_lat_stream_stub.so
-vendor/lib/libsnsdiaglog.so
-vendor/lib/libssc.so
-vendor/lib/libssc_default_listener.so
-vendor/lib/libssccalapi.so
-vendor/lib/sensors.ssc.so
 vendor/lib64/libsensorcal.so
 vendor/lib64/libsensorslog.so
 vendor/lib64/libsns_fastRPC_util.so
@@ -799,8 +771,7 @@ vendor/lib64/vendor.qti.hardware.soter@1.0.so
 vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
 
 # Thermal
--vendor/lib64/libthermalclient.so
--vendor/lib/libthermalclient.so
+vendor/lib64/libthermalclient.so
 
 # Time - from LA.UM.8.9.r1-04400-SM6xx.0
 -vendor/app/TimeService/TimeService.apk;:timeservice_app_cert|4a37afd1395758d946580af184a738e3c657b1e2
