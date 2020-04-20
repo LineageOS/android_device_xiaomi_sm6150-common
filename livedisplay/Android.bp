@@ -30,7 +30,7 @@ cc_binary {
         "libhidlbase",
         "libhidltransport",
         "libutils",
-        "//hardware/xiaomi:vendor.xiaomi.hardware.displayfeature@1.0",
         "vendor.lineage.livedisplay@2.0",
+        "vendor.xiaomi.hardware.displayfeature@1.0",
     ],
 }
