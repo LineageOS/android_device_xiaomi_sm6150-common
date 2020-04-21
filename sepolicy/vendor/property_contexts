@@ -75,6 +75,7 @@ ro.vendor.ril              u:object_r:public_vendor_default_prop:s0
 persist.sensor.sardisable u:object_r:sensors_prop:s0
 
 # Thermal
+sys.thermal.        u:object_r:thermal_normal_prop:s0
 vendor.sys.thermal.        u:object_r:thermal_normal_prop:s0
 
 # Touchfeature
