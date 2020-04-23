@@ -54,14 +54,18 @@ if [ -z "${SRC}" ]; then
 fi
 
 function blob_fixup() {
-        case "${1}" in
-        vendor/bin/mlipayd@1.1 | vendor/lib64/libmlipay.so | vendor/lib64/libmlipay@1.1.so )
-                patchelf --remove-needed vendor.xiaomi.hardware.mtdservice@1.0.so "${2}"
-        ;;
-        lib64/libwfdnative.so | lib64/libfm-hci.so | lib/libfm-hci.so |  vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so | vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so )
-                patchelf --remove-needed "android.hidl.base@1.0.so" "${2}"
-        ;;
-        esac
+    case "${1}" in
+    vendor/bin/mlipayd@1.1 | vendor/lib64/libmlipay.so | vendor/lib64/libmlipay@1.1.so )
+        patchelf --remove-needed vendor.xiaomi.hardware.mtdservice@1.0.so "${2}"
+    ;;
+    lib64/libwfdnative.so | lib64/libfm-hci.so | lib/libfm-hci.so |  vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.0.so | vendor/lib64/vendor.xiaomi.hardware.citsensorservice@1.1.so )
+        patchelf --remove-needed "android.hidl.base@1.0.so" "${2}"
+    ;;
+    vendor/etc/camera/camxoverridesettings.txt )
+        sed -i "s|0x10080|0|g" "${2}"
+        sed -i "s|0x1F|0x0|g" "${2}"
+    ;;
+    esac
 }
 
 # Initialize the helper for common device
