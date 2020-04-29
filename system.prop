@@ -29,7 +29,6 @@ persist.rcs.supported=1
 persist.radio.multisim.config=dsds
 ril.subscription.types=RUIM
 ro.telephony.default_cdma_sub=0
-ro.telephony.default_network=22,22
 telephony.lteOnCdmaDevice=1
 
 # Recovery
