@@ -574,9 +574,6 @@
     <!-- Enable 802.11ac for Wifi hotspot (SAP) -->
     <bool name="config_wifi_softap_ieee80211ac_supported">true</bool>
 
-    <!-- Height of the status bar -->
-     <dimen name="status_bar_height_portrait">35.0dip</dimen>
-
     <!-- Regex of wired ethernet ifaces -->
     <string translatable="false" name="config_ethernet_iface_regex">eth0</string>
 
