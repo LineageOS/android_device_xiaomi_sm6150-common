@@ -14,7 +14,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-#define LOG_TAG "android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sdm660"
+
+#define LOG_TAG "android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sm6150"
 
 #include <hardware/hw_auth_token.h>
 
@@ -262,19 +263,13 @@ fingerprint_device_t* getDeviceForVendor(const char *class_name) {
 fingerprint_device_t* getFingerprintDevice() {
     fingerprint_device_t *fp_device;
 
-    fp_device = getDeviceForVendor("fpc");
-    if (fp_device == nullptr) {
-        ALOGE("Failed to load fpc fingerprint module");
-    } else {
-        setFpVendorProp("fpc");
-        return fp_device;
-    }
+    for (const auto& vendor : std::vector<std::string>{ "fpc", "goodix", "goodix_fod", "syna" }) {
+        if ((fp_device = getDeviceForVendor(vendor.c_str())) == nullptr) {
+            ALOGE("Failed to load %s fingerprint module", vendor.c_str());
+            continue;
+        }
 
-    fp_device = getDeviceForVendor("goodix");
-    if (fp_device == nullptr) {
-        ALOGE("Failed to load goodix fingerprint module");
-    } else {
-        setFpVendorProp("goodix");
+        setFpVendorProp(vendor.c_str());
         return fp_device;
     }
 
@@ -394,7 +389,7 @@ void BiometricsFingerprint::notify(const fingerprint_msg_t *msg) {
     }
 }
 
-} // namespace implementation
+}  // namespace implementation
 }  // namespace V2_1
 }  // namespace fingerprint
 }  // namespace biometrics
