@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "56d0239b_f14f417c",
+        "filename": "vendor.prop",
+        "patchSetId": 2
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2020-05-27T22:41:06Z",
+      "side": 1,
+      "message": "Shouldn\u0027t this property be in system?",
+      "revId": "dcc569a8768f8b6c88184d1c7a78c3bf355ac174",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
