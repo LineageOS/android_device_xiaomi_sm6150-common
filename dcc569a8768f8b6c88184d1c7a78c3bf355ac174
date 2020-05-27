@@ -34,6 +34,24 @@
       "revId": "dcc569a8768f8b6c88184d1c7a78c3bf355ac174",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "366b2da6_fce517f3",
+        "filename": "vendor.prop",
+        "patchSetId": 2
+      },
+      "lineNbr": 87,
+      "author": {
+        "id": 24438
+      },
+      "writtenOn": "2020-05-27T23:43:52Z",
+      "side": 1,
+      "message": "Also as per https://source.codeaurora.org/quic/la/device/qcom/common/commit/?h\u003dLA.UM.8.9.r1-09200-SM6xx.0\u0026id\u003dd11c4ec4f57d0f9b16ee04118fea268acdee383d, I put it in vendor /O\\.\nHowever, it turns out they removed it in a later commit https://source.codeaurora.org/quic/la/device/qcom/common/commit/base.mk?h\u003dLA.UM.8.9.r1-09200-SM6xx.0\u0026id\u003d09294a2fcd7a9e589f757ce5938a237f83752490.",
+      "parentUuid": "4171a4c7_14adea55",
+      "revId": "dcc569a8768f8b6c88184d1c7a78c3bf355ac174",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
