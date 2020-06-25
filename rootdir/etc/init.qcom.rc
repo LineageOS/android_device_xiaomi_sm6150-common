@@ -655,8 +655,6 @@ on charger
 
     mkdir /mnt/vendor/persist/subsys 0770 root system
     mkdir /data/vendor/charge_logger 0771 system system
-    write /sys/class/leds/green/max_brightness 32
-    write /sys/class/leds/blue/max_brightness 32
 
 service remosaic_daemon /vendor/bin/remosaic_daemon
    class late_start
