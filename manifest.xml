@@ -489,6 +489,16 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>vppService</instance>
         </interface>
     </hal>
+    <!-- DSP Service -->
+    <hal format="hidl">
+        <name>vendor.qti.hardware.dsp</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IDspService</name>
+            <instance>dspservice</instance>
+        </interface>
+    </hal>
     <!-- WFD HAL Service -->
     <hal format="hidl">
         <name>vendor.qti.hardware.wifidisplaysession</name>
