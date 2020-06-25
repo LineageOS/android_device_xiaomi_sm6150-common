@@ -36,6 +36,7 @@ namespace {
 #define BLUE_ATTR(x) STRINGIFY(PPCAT(LEDS(blue), x))
 #define GREEN_ATTR(x) STRINGIFY(PPCAT(LEDS(green), x))
 #define RED_ATTR(x) STRINGIFY(PPCAT(LEDS(red), x))
+#define WHITE_ATTR(x) STRINGIFY(PPCAT(LEDS(white), x))
 /* clang-format on */
 
 using ::android::base::ReadFileToString;
@@ -122,7 +123,8 @@ Light::Light() {
     }
 
     if (ReadFileToString(BLUE_ATTR(max_brightness), &buf) ||
-        ReadFileToString(RED_ATTR(max_brightness), &buf)) {
+        ReadFileToString(RED_ATTR(max_brightness), &buf) ||
+        ReadFileToString(WHITE_ATTR(max_brightness), &buf)) {
         max_led_brightness_ = std::stoi(buf);
     } else {
         max_led_brightness_ = kDefaultMaxLedBrightness;
@@ -180,6 +182,7 @@ void Light::applyNotificationState(const LightState& state) {
     WriteToFile(BLUE_ATTR(breath), 0);
     WriteToFile(GREEN_ATTR(breath), 0);
     WriteToFile(RED_ATTR(breath), 0);
+    WriteToFile(WHITE_ATTR(breath), 0);
 
     if (state.flashMode == Flash::TIMED && state.flashOnMs > 0 && state.flashOffMs > 0) {
         /*
@@ -212,17 +215,21 @@ void Light::applyNotificationState(const LightState& state) {
         WriteToFile(GREEN_ATTR(step_ms), static_cast<uint32_t>(step_duration));
         WriteToFile(GREEN_ATTR(breath), 1);
 
-        // White
+        // Red
         WriteToFile(RED_ATTR(lo_idx), 0);
         WriteToFile(RED_ATTR(delay_off), static_cast<uint32_t>(pause_hi));
         WriteToFile(RED_ATTR(delay_on), static_cast<uint32_t>(state.flashOffMs));
         WriteToFile(RED_ATTR(lut_pattern), GetScaledDutyPcts(red_brightness));
         WriteToFile(RED_ATTR(step_ms), static_cast<uint32_t>(step_duration));
         WriteToFile(RED_ATTR(breath), 1);
+
+        // White
+        WriteToFile(WHITE_ATTR(breath), 1);
     } else {
         WriteToFile(BLUE_ATTR(brightness), red_brightness);
         WriteToFile(GREEN_ATTR(brightness), red_brightness);
         WriteToFile(RED_ATTR(brightness), red_brightness);
+        WriteToFile(WHITE_ATTR(brightness), red_brightness);
     }
 }
 
