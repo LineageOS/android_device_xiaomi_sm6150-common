@@ -650,9 +650,6 @@ on charger
     setprop vendor.usb.controller a600000.dwc3
     setprop sys.usb.configfs 1
 
-    mkdir /mnt/vendor/persist/subsys 0770 root system
-    mkdir /data/vendor/charge_logger 0771 system system
-
 service remosaic_daemon /vendor/bin/remosaic_daemon
    class late_start
    user camera
