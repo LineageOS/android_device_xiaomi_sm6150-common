@@ -77,7 +77,7 @@ if [ "$(getprop persist.vendor.usb.config)" == "" -a \
 	          "Dragon" | "SBC")
 	              setprop persist.vendor.usb.config diag,adb
 	          ;;
-		  "DAVINCI")
+		  "DAVINCI" | "PHOENIX")
                       if [ "$buildvariant" = "eng" ]; then
                          setprop persist.vendor.usb.config diag,serial_cdev,rmnet,dpl,qdss,adb
                       elif [ -z "$debuggable" -o "$debuggable" = "1"  ]; then
