@@ -20,6 +20,7 @@
 
 #include <android-base/file.h>
 #include <android-base/logging.h>
+#include <android-base/properties.h>
 
 namespace {
 
@@ -39,6 +40,7 @@ namespace {
 #define WHITE_ATTR(x) STRINGIFY(PPCAT(LEDS(white), x))
 /* clang-format on */
 
+using ::android::base::GetProperty;
 using ::android::base::ReadFileToString;
 using ::android::base::WriteStringToFile;
 
@@ -178,11 +180,26 @@ void Light::setLightNotification(Type type, const LightState& state) {
 void Light::applyNotificationState(const LightState& state) {
     uint32_t red_brightness = RgbaToBrightness(state.color, max_led_brightness_);
 
+    std::string device, ledcolor;
+
+    device = GetProperty("ro.product.device", "");
+
+    if (device == "davinci" || device == "davinciin") {
+        ledcolor = "blue";
+    } else if (device == "phoenix" || device == "phoenixin") {
+        ledcolor = "white";
+    } else {
+        ledcolor = "red";
+    }
     // Turn off the leds (initially)
-    WriteToFile(BLUE_ATTR(breath), 0);
-    WriteToFile(GREEN_ATTR(breath), 0);
-    WriteToFile(RED_ATTR(breath), 0);
-    WriteToFile(WHITE_ATTR(breath), 0);
+    if (ledcolor == "blue") {
+        WriteToFile(BLUE_ATTR(breath), 0);
+        WriteToFile(GREEN_ATTR(breath), 0);
+    } else if (ledcolor == "white") {
+        WriteToFile(WHITE_ATTR(breath), 0);
+    } else {
+        WriteToFile(RED_ATTR(breath), 0);
+    }
 
     if (state.flashMode == Flash::TIMED && state.flashOnMs > 0 && state.flashOffMs > 0) {
         /*
@@ -199,37 +216,43 @@ void Light::applyNotificationState(const LightState& state) {
 
         LOG(DEBUG) << __func__ << ": color=" << std::hex << state.color << std::dec
                    << " onMs=" << state.flashOnMs << " offMs=" << state.flashOffMs;
-        // BLUE
-        WriteToFile(BLUE_ATTR(lo_idx), 0);
-        WriteToFile(BLUE_ATTR(delay_off), static_cast<uint32_t>(pause_hi));
-        WriteToFile(BLUE_ATTR(delay_on), static_cast<uint32_t>(state.flashOffMs));
-        WriteToFile(BLUE_ATTR(lut_pattern), GetScaledDutyPcts(red_brightness));
-        WriteToFile(BLUE_ATTR(step_ms), static_cast<uint32_t>(step_duration));
-        WriteToFile(BLUE_ATTR(breath), 1);
+        if (ledcolor == "blue") {
+            // BLUE
+            WriteToFile(BLUE_ATTR(lo_idx), 0);
+            WriteToFile(BLUE_ATTR(delay_off), static_cast<uint32_t>(pause_hi));
+            WriteToFile(BLUE_ATTR(delay_on), static_cast<uint32_t>(state.flashOffMs));
+            WriteToFile(BLUE_ATTR(lut_pattern), GetScaledDutyPcts(red_brightness));
+            WriteToFile(BLUE_ATTR(step_ms), static_cast<uint32_t>(step_duration));
+            WriteToFile(BLUE_ATTR(breath), 1);
 
-        // GREEN
-        WriteToFile(GREEN_ATTR(lo_idx), 0);
-        WriteToFile(GREEN_ATTR(delay_off), static_cast<uint32_t>(pause_hi));
-        WriteToFile(GREEN_ATTR(delay_on), static_cast<uint32_t>(state.flashOffMs));
-        WriteToFile(GREEN_ATTR(lut_pattern), GetScaledDutyPcts(red_brightness));
-        WriteToFile(GREEN_ATTR(step_ms), static_cast<uint32_t>(step_duration));
-        WriteToFile(GREEN_ATTR(breath), 1);
-
-        // Red
-        WriteToFile(RED_ATTR(lo_idx), 0);
-        WriteToFile(RED_ATTR(delay_off), static_cast<uint32_t>(pause_hi));
-        WriteToFile(RED_ATTR(delay_on), static_cast<uint32_t>(state.flashOffMs));
-        WriteToFile(RED_ATTR(lut_pattern), GetScaledDutyPcts(red_brightness));
-        WriteToFile(RED_ATTR(step_ms), static_cast<uint32_t>(step_duration));
-        WriteToFile(RED_ATTR(breath), 1);
-
-        // White
-        WriteToFile(WHITE_ATTR(breath), 1);
+            // GREEN
+            WriteToFile(GREEN_ATTR(lo_idx), 0);
+            WriteToFile(GREEN_ATTR(delay_off), static_cast<uint32_t>(pause_hi));
+            WriteToFile(GREEN_ATTR(delay_on), static_cast<uint32_t>(state.flashOffMs));
+            WriteToFile(GREEN_ATTR(lut_pattern), GetScaledDutyPcts(red_brightness));
+            WriteToFile(GREEN_ATTR(step_ms), static_cast<uint32_t>(step_duration));
+            WriteToFile(GREEN_ATTR(breath), 1);
+        } else if (ledcolor == "white") {
+            // White
+            WriteToFile(WHITE_ATTR(breath), 1);
+        } else {
+            // Red
+            WriteToFile(RED_ATTR(lo_idx), 0);
+            WriteToFile(RED_ATTR(delay_off), static_cast<uint32_t>(pause_hi));
+            WriteToFile(RED_ATTR(delay_on), static_cast<uint32_t>(state.flashOffMs));
+            WriteToFile(RED_ATTR(lut_pattern), GetScaledDutyPcts(red_brightness));
+            WriteToFile(RED_ATTR(step_ms), static_cast<uint32_t>(step_duration));
+            WriteToFile(RED_ATTR(breath), 1);
+        }
     } else {
-        WriteToFile(BLUE_ATTR(brightness), red_brightness);
-        WriteToFile(GREEN_ATTR(brightness), red_brightness);
-        WriteToFile(RED_ATTR(brightness), red_brightness);
-        WriteToFile(WHITE_ATTR(brightness), red_brightness);
+        if (ledcolor == "blue") {
+            WriteToFile(BLUE_ATTR(brightness), red_brightness);
+            WriteToFile(GREEN_ATTR(brightness), red_brightness);
+        } else if (ledcolor == "white") {
+            WriteToFile(WHITE_ATTR(brightness), red_brightness);
+        } else {
+            WriteToFile(RED_ATTR(brightness), red_brightness);
+        }
     }
 }
 
