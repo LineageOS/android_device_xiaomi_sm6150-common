@@ -6,7 +6,7 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifneq ($(filter davinci phoenix violet,$(TARGET_DEVICE)),)
+ifneq ($(filter davinci phoenix tucana violet,$(TARGET_DEVICE)),)
 include $(call all-makefiles-under,$(LOCAL_PATH))
 
 include $(CLEAR_VARS)
