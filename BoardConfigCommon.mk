@@ -14,8 +14,6 @@
 # limitations under the License.
 #
 
-BOARD_VENDOR := xiaomi
-
 COMMON_PATH := device/xiaomi/sm6150-common
 
 # Inherit from proprietary files
