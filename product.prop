@@ -35,6 +35,9 @@ ro.surface_flinger.vsync_event_phase_offset_ns=2000000
 ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
 ro.surface_flinger.wcg_composition_dataspace=143261696
 
+# Incremental FS
+ro.incremental.enable=1
+
 # LMKD
 ro.config.low_ram=false
 ro.lmk.kill_heaviest_task=true
