@@ -16,6 +16,24 @@
       "revId": "29603d52bdb4231cecb7e047c4960d7cb4cb0b94",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "10d55c76_2d4f7d4d",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 22
+      },
+      "lineNbr": 191,
+      "author": {
+        "id": 24438
+      },
+      "writtenOn": "2020-08-07T10:35:33Z",
+      "side": 1,
+      "message": "Yes, it\u0027s referenced here: https://github.com/LineageOS/android_frameworks_opt_net_wifi/blob/a28db699f2898e1f2ed695f6adccd47e1f654bf4/libwifi_hal/Android.mk#L92",
+      "parentUuid": "87a82258_25084c07",
+      "revId": "29603d52bdb4231cecb7e047c4960d7cb4cb0b94",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
