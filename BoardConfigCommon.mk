@@ -175,9 +175,9 @@ BOARD_USES_QCOM_HARDWARE := true
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
 ifeq ($(PRODUCT_USE_DYNAMIC_PARTITIONS), true)
-TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab_dynamic.qcom
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/default/fstab_non_AB_dynamic_partition.qti
 else
-TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/rootdir/etc/default/fstab.qcom
 endif
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 TARGET_RECOVERY_UI_MARGIN_HEIGHT := 35

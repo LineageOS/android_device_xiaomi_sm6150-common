@@ -31,7 +31,6 @@ import /vendor/etc/init/hw/init.qcom.usb.rc
 on early-init
     # Disable EAS
     write /proc/sys/kernel/sched_energy_aware 0
-    mount_all /vendor/etc/fstab.persist --early
 
     # Change ownership of hw_recovery related nodes
     chown system graphics /sys/kernel/debug/dri/0/debug/dump
@@ -170,7 +169,7 @@ on init
     write /proc/sys/kernel/sched_lib_mask_force 255
 
 on fs
-    mount_all /vendor/etc/fstab.qcom --early
+    mount_all --early
     chown root system /mnt/vendor/persist
     chmod 0771 /mnt/vendor/persist
     mkdir /mnt/vendor/persist/alarm 0770 system system
@@ -205,7 +204,7 @@ on late-fs
 
     wait_for_prop hwservicemanager.ready true
     exec_start wait_for_keymaster
-    mount_all /vendor/etc/fstab.qcom --late
+    mount_all --late
 
     # turn off vblank irq immediately after turning off
     write /sys/module/drm/parameters/vblankoffdelay -1
@@ -553,7 +552,7 @@ on property:sys.boot_completed=1
 
     # Enable ZRAM on boot_complete
     rm /data/unencrypted/zram_swap
-    swapon_all /vendor/etc/fstab.qcom
+    swapon_all
     write /proc/sys/vm/swappiness 100
 
     # Setup runtime cpusets
