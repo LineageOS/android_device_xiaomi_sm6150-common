@@ -165,6 +165,10 @@ on init
     write /dev/cpuset/application/background/cpus 0-7
     write /dev/cpuset/application/cpus 0-7
 
+    # Report max frequency to unity tasks.
+    write /proc/sys/kernel/sched_lib_name "UnityMain,libunity.so"
+    write /proc/sys/kernel/sched_lib_mask_force 255
+
 on fs
     mount_all /vendor/etc/fstab.qcom --early
     chown root system /mnt/vendor/persist
