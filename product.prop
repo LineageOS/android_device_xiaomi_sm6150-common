@@ -1,7 +1,3 @@
-# Audio
-vendor.audio.noisy.broadcast.delay=600
-vendor.audio.offload.pstimeout.secs=3
-
 # Bluetooth
 persist.bluetooth.bqr.event_mask=14
 persist.bluetooth.bqr.min_interval_ms=500
