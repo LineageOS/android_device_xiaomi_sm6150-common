@@ -1,5 +1,7 @@
-on boot
+on init
+    chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display/display_mode
     chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display/hbm
+    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display/display_mode
     chown system system /sys/devices/platform/soc/soc:qcom,dsi-display/hbm
 
 service vendor.livedisplay-hal-2-0 /vendor/bin/hw/vendor.lineage.livedisplay@2.0-service.xiaomi_sm6150

@@ -17,7 +17,9 @@
 #define LOG_TAG "SunlightEnhancementService"
 
 #include "SunlightEnhancement.h"
+
 #include <android-base/logging.h>
+
 #include <fstream>
 
 namespace vendor {
@@ -26,8 +28,7 @@ namespace livedisplay {
 namespace V2_0 {
 namespace implementation {
 
-static constexpr const char* kHbmPath =
-    "/sys/devices/platform/soc/soc:qcom,dsi-display/hbm";
+static constexpr const char* kHbmPath = "/sys/devices/platform/soc/soc:qcom,dsi-display/hbm";
 
 Return<bool> SunlightEnhancement::isEnabled() {
     std::ifstream file(kHbmPath);

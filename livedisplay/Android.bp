@@ -20,7 +20,9 @@ cc_binary {
     defaults: ["hidl_defaults"],
     relative_install_path: "hw",
     srcs: [
+        ":vendor.lineage.livedisplay@2.0-sdm-pa",
         ":vendor.lineage.livedisplay@2.0-sdm-utils",
+        "DisplayModes.cpp",
         "SunlightEnhancement.cpp",
         "service.cpp",
     ],
