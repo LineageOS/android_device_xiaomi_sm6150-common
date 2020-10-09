@@ -485,6 +485,8 @@ on post-fs-data
 
     start vendor.qcrild
     start vendor.qcrild2
+    start vendor.dataqti
+    start vendor.dataadpl
 
 on charger
     start vendor.power_off_alarm
@@ -716,7 +718,7 @@ service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     socket audio_hw_socket seqpacket 0666 system system
     onrestart restart audioserver
 
-service vendor.hwcomposer-2-3 /vendor/bin/hw/android.hardware.graphics.composer@2.3-service
+service vendor.hwcomposer-2-4 /vendor/bin/hw/android.hardware.graphics.composer@2.4-service
     override
     class hal animation
     user system
