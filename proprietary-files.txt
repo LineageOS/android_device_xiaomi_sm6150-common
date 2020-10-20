@@ -394,6 +394,14 @@ vendor/lib/libhdr_tm.so
 vendor/lib64/librs_adreno.so
 vendor/lib/librs_adreno.so
 
+# Graphics (Xiaomi)
+vendor/lib64/hw/hwcomposer.sm6150.so
+vendor/lib64/libclient2slpi.notifier.so
+vendor/lib64/libsdmcore.so
+vendor/lib/hw/hwcomposer.sm6150.so
+vendor/lib/libclient2slpi.notifier.so
+vendor/lib/libsdmcore.so
+
 # Graphics (SDM)
 vendor/lib64/libqseed3.so
 vendor/lib64/libsdm-color.so
@@ -769,7 +777,7 @@ vendor/lib64/libsnsdiaglog.so
 vendor/lib64/libssc_default_listener.so
 
 # Soter
--vendor/app/SoterService/SoterService.apk
+-app/SoterService/SoterService.apk:vendor/app/SoterService/SoterService.apk
 vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
 vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
 vendor/lib64/vendor.qti.hardware.soter@1.0.so
