@@ -76,10 +76,11 @@ vendor.audio.volume.headset.gain.depcal=true
 
 # Bluetooth
 persist.bluetooth.a2dp_offload.disabled=false
-persist.vendor.bt.aac_frm_ctl.enabled=true
 persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptive
 persist.vendor.qcom.bluetooth.enable.splita2dp=true
+persist.vendor.qcom.bluetooth.soc=cherokee
 ro.bluetooth.a2dp_offload.supported=true
+vendor.qcom.bluetooth.soc=cherokee
 
 # Camera
 camera.disable_zsl_mode=1
@@ -89,6 +90,12 @@ ro.crypto.volume.filenames_mode=aes-256-cts
 
 # Display post-processing
 ro.vendor.display.sensortype=2
+
+# DPM
+persist.vendor.dpm.feature=11
+persist.vendor.dpm.loglevel=0
+persist.vendor.dpm.nsrm.bkg.evt=3955
+persist.vendor.dpmhalservice.enable=1
 
 # DRM
 drm.service.enabled=true
@@ -145,16 +152,21 @@ vendor.media.target.version=2
 
 # Netmgr
 persist.vendor.data.iwlan.enable=true
+persist.vendor.data.mode=concurrent
+ro.vendor.use_data_netmgrd=true
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
+# Power
+persist.vendor.cp.support_qc3p5=0
+persist.vendor.cp.taper_term_mv=6500
+persist.vendor.qg_cld_coff_gain=1.5
+persist.vendor.qg_coff_gain=1
+persist.vendor.qg_cold_temp=-150
+
 # RCS
 persist.rcs.supported=0
-
-# Data modules
-persist.vendor.data.mode=concurrent
-ro.vendor.use_data_netmgrd=true
 
 # Radio/RIL
 persist.radio.multisim.config=dsds
