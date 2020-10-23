@@ -2,12 +2,13 @@
 persist.bluetooth.bqr.event_mask=14
 persist.bluetooth.bqr.min_interval_ms=500
 persist.vendor.bt.a2dp.aac_whitelist=false
+persist.vendor.bt.a2dp.mac_whitelist=false
+persist.vendor.bt.aac_frm_ctl.enabled=true
+persist.vendor.btsatck.absvolfeature=true
+persist.vendor.btstack.connect.peer_earbud=true
+persist.vendor.btstack.enable.twsplus=true
+persist.vendor.btstack.enable.twsplussho=true
 ro.bluetooth.library_name=libbluetooth_qti.so
-vendor.bluetooth.soc=cherokee
-vendor.qcom.bluetooth.soc=cherokee
-
-# Camera
-vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap
 
 # CNE
 persist.vendor.cne.feature=1
@@ -16,12 +17,8 @@ persist.vendor.cne.feature=1
 persist.data.df.dev_name=rmnet_usb0
 persist.vendor.data.profile_update=true
 
-# DPM
-persist.vendor.dpm.feature=1
-persist.vendor.dpm.loglevel=0
-persist.vendor.dpm.nsrm.bkg.evt=3955
-
 # Graphics
+debug.sf.latch_unsignaled=1
 persist.demo.hdmirotationlock=false
 persist.hwc.enable_vds=1
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
@@ -62,7 +59,6 @@ ril.subscription.types=RUIM
 persist.vendor.delta_time.enable=true
 
 # Wireless display
-debug.sf.latch_unsignaled=1
 persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
 
