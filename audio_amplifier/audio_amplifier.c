@@ -16,23 +16,25 @@
  */
 
 #define LOG_TAG "amplifier_sm6150"
-//#define LOG_NDEBUG 0
+#define LOG_NDEBUG 0
 
-#include <cutils/str_parms.h>
-#include <hardware/audio_amplifier.h>
-#include <hardware/hardware.h>
 #include <log/log.h>
-#include <stdint.h>
-#include <stdlib.h>
-#include <sys/types.h>
 
 /* clang-format off */
 #include "audio_hw.h"
 #include "platform.h"
 #include "platform_api.h"
-/* clang-format on */
 
-#define UNUSED __attribute__((unused))
+#define is_spkr_out_snd_dev(x) \
+  (((x) == SND_DEVICE_OUT_SPEAKER) || \
+  ((x) == SND_DEVICE_OUT_SPEAKER_REVERSE) || \
+  ((x) == SND_DEVICE_OUT_SPEAKER_AND_HEADPHONES) || \
+  ((x) == SND_DEVICE_OUT_SPEAKER_AND_ANC_HEADSET) || \
+  ((x) == SND_DEVICE_OUT_SPEAKER_AND_HDMI) || \
+  ((x) == SND_DEVICE_OUT_SPEAKER_AND_USB_HEADSET) || \
+  ((x) == SND_DEVICE_OUT_VOICE_SPEAKER) || \
+  ((x) == SND_DEVICE_OUT_VOICE_SPEAKER_2))
+/* clang-format on */
 
 typedef struct amp_device {
     amplifier_device_t amp_dev;
@@ -43,25 +45,7 @@ typedef struct amp_device {
 
 static tfa_t* tfa_dev = NULL;
 
-static int is_speaker(uint32_t snd_device) {
-    int speaker = 0;
-    switch (snd_device) {
-        case SND_DEVICE_OUT_SPEAKER:
-        case SND_DEVICE_OUT_SPEAKER_REVERSE:
-        case SND_DEVICE_OUT_SPEAKER_AND_HEADPHONES:
-        case SND_DEVICE_OUT_VOICE_SPEAKER:
-        case SND_DEVICE_OUT_VOICE_SPEAKER_2:
-        case SND_DEVICE_OUT_SPEAKER_AND_HDMI:
-        case SND_DEVICE_OUT_SPEAKER_AND_USB_HEADSET:
-        case SND_DEVICE_OUT_SPEAKER_AND_ANC_HEADSET:
-            speaker = 1;
-            break;
-    }
-
-    return speaker;
-}
-
-int tfa98xx_start_feedback(void* adev, uint32_t snd_device) {
+int tfa98xx_feedback(void* adev, uint32_t snd_device, bool enable) {
     tfa_dev->adev = (struct audio_device*)adev;
     int pcm_dev_tx_id = 0, rc = 0;
     struct pcm_config pcm_config_tfa98xx = {
@@ -80,11 +64,13 @@ int tfa98xx_start_feedback(void* adev, uint32_t snd_device) {
         return -EINVAL;
     }
 
-    if (tfa_dev->tfa98xx_out || !is_speaker(snd_device)) return 0;
+    if (tfa_dev->tfa98xx_out || !is_spkr_out_snd_dev(snd_device)) return 0;
+
+    if (!enable) goto disable;
 
     tfa_dev->usecase_tx = (struct audio_usecase*)calloc(1, sizeof(struct audio_usecase));
     if (!tfa_dev->usecase_tx) {
-        ALOGE("%d: failed to allocate usecase", __LINE__);
+        ALOGE("%d: failed to allocate memory for usecase", __LINE__);
         return -ENOMEM;
     }
     tfa_dev->usecase_tx->id = USECASE_AUDIO_SPKR_CALIB_TX;
@@ -100,7 +86,7 @@ int tfa98xx_start_feedback(void* adev, uint32_t snd_device) {
     if (pcm_dev_tx_id < 0) {
         ALOGE("%d: Invalid pcm device for usecase (%d)", __LINE__, tfa_dev->usecase_tx->id);
         rc = -ENODEV;
-        goto error;
+        goto disable;
     }
 
     tfa_dev->tfa98xx_out =
@@ -108,64 +94,35 @@ int tfa98xx_start_feedback(void* adev, uint32_t snd_device) {
     if (!(tfa_dev->tfa98xx_out || pcm_is_ready(tfa_dev->tfa98xx_out))) {
         ALOGE("%d: %s", __LINE__, pcm_get_error(tfa_dev->tfa98xx_out));
         rc = -EIO;
-        goto error;
+        goto disable;
     }
 
     rc = pcm_start(tfa_dev->tfa98xx_out);
     if (rc < 0) {
         ALOGE("%d: pcm start for TX failed", __LINE__);
         rc = -EINVAL;
-        goto error;
+        goto disable;
     }
     return 0;
 
-error:
-    ALOGE("%s: error case", __func__);
-    if (tfa_dev->tfa98xx_out != 0) {
-        pcm_close(tfa_dev->tfa98xx_out);
-        tfa_dev->tfa98xx_out = NULL;
-    }
-    list_remove(&tfa_dev->usecase_tx->list);
-    disable_snd_device(tfa_dev->adev, tfa_dev->usecase_tx->in_snd_device);
-    disable_audio_route(tfa_dev->adev, tfa_dev->usecase_tx);
-    free(tfa_dev->usecase_tx);
-
-    return rc;
-}
-
-void tfa98xx_stop_feedback(void* adev, uint32_t snd_device) {
-    tfa_dev->adev = (struct audio_device*)adev;
-    if (!tfa_dev) {
-        ALOGE("%s: Invalid params", __func__);
-        return;
-    }
-
-    if (!is_speaker(snd_device)) return;
-
+disable:
+    ALOGV("%s: Disabling usecase", __func__);
     if (tfa_dev->tfa98xx_out) {
         pcm_close(tfa_dev->tfa98xx_out);
         tfa_dev->tfa98xx_out = NULL;
     }
-
-    disable_snd_device(tfa_dev->adev, SND_DEVICE_IN_CAPTURE_VI_FEEDBACK);
-
-    tfa_dev->usecase_tx = get_usecase_from_list(tfa_dev->adev, USECASE_AUDIO_SPKR_CALIB_TX);
+    tfa_dev->usecase_tx = get_usecase_from_list(tfa_dev->adev, tfa_dev->usecase_tx->in_snd_device);
     if (tfa_dev->usecase_tx) {
         list_remove(&tfa_dev->usecase_tx->list);
+        disable_snd_device(tfa_dev->adev, tfa_dev->usecase_tx->in_snd_device);
         disable_audio_route(tfa_dev->adev, tfa_dev->usecase_tx);
         free(tfa_dev->usecase_tx);
     }
-    return;
+    return rc;
 }
 
-static int amp_set_feedback(UNUSED amplifier_device_t* device, void* adev, uint32_t devices,
-                            bool enable) {
-    tfa_dev->adev = (struct audio_device*)adev;
-    if (enable) {
-        tfa98xx_start_feedback(tfa_dev->adev, devices);
-    } else {
-        tfa98xx_stop_feedback(tfa_dev->adev, devices);
-    }
+static int amp_set_feedback(amplifier_device_t* device, void* adev, uint32_t devices, bool enable) {
+    if (device) tfa98xx_feedback(adev, devices, enable);
     return 0;
 }
 
@@ -194,18 +151,6 @@ static int amp_module_open(const hw_module_t* module, const char* name, hw_devic
     tfa_dev->amp_dev.common.version = HARDWARE_DEVICE_API_VERSION(1, 0);
     tfa_dev->amp_dev.common.close = amp_dev_close;
 
-    tfa_dev->amp_dev.set_input_devices = NULL;
-    tfa_dev->amp_dev.set_output_devices = NULL;
-    tfa_dev->amp_dev.enable_output_devices = NULL;
-    tfa_dev->amp_dev.enable_input_devices = NULL;
-    tfa_dev->amp_dev.set_mode = NULL;
-    tfa_dev->amp_dev.output_stream_start = NULL;
-    tfa_dev->amp_dev.input_stream_start = NULL;
-    tfa_dev->amp_dev.output_stream_standby = NULL;
-    tfa_dev->amp_dev.input_stream_standby = NULL;
-    tfa_dev->amp_dev.set_parameters = NULL;
-    tfa_dev->amp_dev.out_set_parameters = NULL;
-    tfa_dev->amp_dev.in_set_parameters = NULL;
     tfa_dev->amp_dev.set_feedback = amp_set_feedback;
 
     *device = (hw_device_t*)tfa_dev;
