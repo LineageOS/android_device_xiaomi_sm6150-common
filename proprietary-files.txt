@@ -383,9 +383,9 @@ vendor/lib/libgpudataproducer.so
 vendor/lib/libgsl.so
 vendor/lib/libllvm-glnext.so
 
-# Graphics (DRM)
-vendor/lib64/libsdedrm.so
-vendor/lib/libsdedrm.so
+# Graphics (DRM - Kang) - from nubia/NX627J/NX627J:11/RKQ1.200826.002/nubia.20201029.204053:user/release-keys
+vendor/lib64/libsdedrm.so|582910d21139781ad9e414c35207584f51e035e2
+vendor/lib/libsdedrm.so|abb87737f0833482c77134c7cd5991f20b106a20
 
 # Graphics (HDR)
 vendor/lib64/libhdr_tm.so
@@ -395,20 +395,22 @@ vendor/lib/libhdr_tm.so
 vendor/lib64/librs_adreno.so
 vendor/lib/librs_adreno.so
 
+# Graphics (SDM - Kang) - from nubia/NX627J/NX627J:11/RKQ1.200826.002/nubia.20201029.204053:user/release-keys
+vendor/lib64/libsdm-color.so|b2bcf2c205b501024407ed5c216d2b290688bd64
+vendor/lib64/libsdmextension.so|0aed8ab6ecf878ae57ecba4b8a9bfb0d184ab5f7
+vendor/lib/libsdm-color.so|f83bb292a60dba8ff3b8efc643a0494e556a40c1
+vendor/lib/libsdmextension.so|51957aaf2e9481fa8aeb102ea654b33a07a204c0
+
 # Graphics (SDM)
 vendor/lib64/libqseed3.so
-vendor/lib64/libsdm-color.so
 vendor/lib64/libsdm-colormgr-algo.so
 vendor/lib64/libsdm-diag.so
 vendor/lib64/libsdm-disp-vndapis.so
-vendor/lib64/libsdmextension.so
 vendor/lib64/libtinyxml2_1.so
 vendor/lib/libqseed3.so
-vendor/lib/libsdm-color.so
 vendor/lib/libsdm-colormgr-algo.so
 vendor/lib/libsdm-diag.so
 vendor/lib/libsdm-disp-vndapis.so
-vendor/lib/libsdmextension.so
 vendor/lib/libtinyxml2_1.so
 
 # IFAA
