@@ -13,9 +13,37 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
+soong_config_module_type {
+    name: "fingerprint_ext_defaults",
+    module_type: "cc_defaults",
+    config_namespace: "xiaomiVars",
+    bool_variables: ["uses_fod_extension"],
+    properties: [
+        "cflags",
+        "shared_libs",
+        "vintf_fragments",
+    ],
+}
+
+fingerprint_ext_defaults {
+    name: "fingerprint_ext",
+    soong_config_variables: {
+        uses_fod_extension: {
+            cflags: ["-DUSES_FOD_EXTENSION"],
+            shared_libs: [
+                "vendor.xiaomi.hardware.fingerprintextension@1.0",
+            ],
+            vintf_fragments: ["vendor.xiaomi.hardware.fingerprintextension@1.0.xml"],
+        },
+    },
+}
+
 cc_binary {
     name: "android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sm6150",
-    defaults: ["hidl_defaults"],
+    defaults: [
+        "hidl_defaults",
+        "fingerprint_ext",
+    ],
     relative_install_path: "hw",
     init_rc: ["android.hardware.biometrics.fingerprint@2.1-service.xiaomi_sm6150.rc"],
     srcs: [
@@ -30,7 +58,6 @@ cc_binary {
         "libutils",
         "libcutils",
         "android.hardware.biometrics.fingerprint@2.1",
-        "vendor.xiaomi.hardware.fingerprintextension@1.0",
     ],
     proprietary: true,
 }
