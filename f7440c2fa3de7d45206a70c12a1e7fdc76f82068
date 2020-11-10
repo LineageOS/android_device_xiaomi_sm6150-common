@@ -46,6 +46,30 @@
       "revId": "f7440c2fa3de7d45206a70c12a1e7fdc76f82068",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9ea948e2_4c486a0d",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 202,
+      "author": {
+        "id": 17117
+      },
+      "writtenOn": "2020-11-10T15:09:35Z",
+      "side": 0,
+      "message": "well it isn\u0027t clear according to commit message",
+      "parentUuid": "1cc9d05d_eba70b93",
+      "range": {
+        "startLine": 202,
+        "startChar": 60,
+        "endLine": 202,
+        "endChar": 64
+      },
+      "revId": "f7440c2fa3de7d45206a70c12a1e7fdc76f82068",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
     }
   ]
 }
