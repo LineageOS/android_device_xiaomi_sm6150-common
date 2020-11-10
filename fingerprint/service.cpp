@@ -36,6 +36,7 @@ status_t BiometricsFingerprint::registerAsSystemService() {
     } else {
         ALOGI("Successfully registered IBiometricsFingerprint");
     }
+#ifdef USES_FOD_EXTENSION
 
     ret = IXiaomiFingerprint::registerAsService();
     if (ret != 0) {
@@ -44,6 +45,7 @@ status_t BiometricsFingerprint::registerAsSystemService() {
     } else {
         ALOGI("Successfully registered IXiaomiFingerprint");
     }
+#endif
 
 fail:
     return ret;
@@ -68,5 +70,5 @@ int main() {
 
     joinRpcThreadpool();
 
-    return 0; // should never get here
+    return 0;  // should never get here
 }
