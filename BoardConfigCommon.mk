@@ -225,6 +225,12 @@ BOARD_SEPOLICY_M4DEFS += \
     wcnss_service_exec=vendor_wcnss_service_exec \
     wifi_vendor_data_file=vendor_wifi_vendor_data_file
 
+# Soong
+SOONG_CONFIG_NAMESPACES += xiaomiVars
+SOONG_CONFIG_xiaomiVars += \
+    uses_fod_extension
+SOONG_CONFIG_xiaomiVars_uses_fod_extension := false
+
 # WiFi
 BOARD_HOSTAPD_DRIVER := NL80211
 BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_qcwcn
