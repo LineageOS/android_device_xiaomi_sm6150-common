@@ -36,7 +36,7 @@
 #define Touch_Aod_Enable 11
 
 #define FOD_SENSOR_X 445
-#define FOD_SENSOR_Y 1931
+#define FOD_SENSOR_Y FOD_POS_Y
 #define FOD_SENSOR_SIZE 190
 
 #define FOD_UI_PATH "/sys/devices/platform/soc/soc:qcom,dsi-display/fod_ui"
