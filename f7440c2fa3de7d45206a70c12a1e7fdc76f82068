@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f912075b_a8823d6f",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 202,
+      "author": {
+        "id": 17117
+      },
+      "writtenOn": "2020-11-10T15:01:04Z",
+      "side": 0,
+      "message": "r u sure?",
+      "range": {
+        "startLine": 202,
+        "startChar": 60,
+        "endLine": 202,
+        "endChar": 64
+      },
+      "revId": "f7440c2fa3de7d45206a70c12a1e7fdc76f82068",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
