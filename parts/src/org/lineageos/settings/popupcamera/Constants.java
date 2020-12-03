@@ -17,7 +17,6 @@
 package org.lineageos.settings.popupcamera;
 
 public class Constants {
-    public static final int FREE_FALL_SENSOR_ID = 33171042;
 
     public static final int CAMERA_EVENT_DELAY_TIME = 100; // ms
     public static final int MSG_CAMERA_CLOSED = 1001;
@@ -46,4 +45,5 @@ public class Constants {
     public static final String GREEN_LED_PATH =
             "/sys/class/leds/green/brightness";
     public static final String POPUP_SOUND_PATH = "/system/media/audio/ui/";
+
 }
