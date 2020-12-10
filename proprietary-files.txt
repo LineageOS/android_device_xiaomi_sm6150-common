@@ -322,6 +322,8 @@ vendor/lib64/libOpenCL.so
 vendor/lib64/libc2d30_bltlib.so
 vendor/lib64/libllvm-qcom.so
 vendor/lib64/libpvr.so
+vendor/lib/libC2D2.so
+vendor/lib/libc2d30_bltlib.so
 
 # Graphics (Adreno - updatable)
 -vendor/app/com.qualcomm.qti.gpudrivers.sm6150.api30/com.qualcomm.qti.gpudrivers.sm6150.api30.apk
