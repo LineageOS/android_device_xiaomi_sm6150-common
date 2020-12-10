@@ -52,7 +52,9 @@ vendor/lib/libadiertac.so
 vendor/lib/libaudcal.so
 vendor/lib/libaudioparsers.so
 vendor/lib/libdrc.so
+vendor/lib/libhdmipassthru.so
 vendor/lib/libqtigef.so
+vendor/lib/libssrec.so
 vendor/lib/libsurround_3mic_proc.so
 
 # Audio FX modules
