@@ -301,7 +301,7 @@ PRODUCT_PACKAGES += \
     fstab.persist \
     fstab.qcom \
     init.insmod.sh \
-    init.msm.usb.configfs.rc \
+    init.mi.usb.sh \
     init.power.rc \
     init.qcom.rc \
     init.qcom.usb.rc \
