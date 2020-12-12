@@ -13,6 +13,7 @@
 
 # Executable
 /vendor/bin/init\.insmod\.sh    u:object_r:init-insmod-sh_exec:s0
+/vendor/bin/init\.mi\.usb\.sh   u:object_r:vendor_qti_init_shell_exec:s0
 
 # Elliptic
 /dev/elliptic[0-9]              u:object_r:ultrasound_device:s0
