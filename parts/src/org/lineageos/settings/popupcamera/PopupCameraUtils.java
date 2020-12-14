@@ -20,15 +20,25 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.hardware.Sensor;
+import android.hardware.SensorManager;
 import android.os.UserHandle;
+
+import org.lineageos.settings.sensors.SensorsUtils;
 
 public class PopupCameraUtils {
 
     private static final String TAG = "PopupCameraUtils";
     private static final boolean DEBUG = false;
 
+    private static final boolean isPopUpMotorAvailable(Context context) {
+        SensorManager mSensorManager = context.getSystemService(SensorManager.class);
+        Sensor mRaiseCameraSensor = SensorsUtils.getSensor(mSensorManager, "xiaomi.sensor.raise_camera");
+        return mRaiseCameraSensor != null ? true : false;
+    }
+
     public static void startService(Context context) {
-        final boolean enable = Constants.isPopUpMotorAvailable();
+        final boolean enable = isPopUpMotorAvailable(context);
         context.startServiceAsUser(new Intent(context, PopupCameraService.class),
                 UserHandle.CURRENT);
         PackageManager pm = context.getPackageManager();

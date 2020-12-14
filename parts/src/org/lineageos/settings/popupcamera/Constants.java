@@ -16,10 +16,7 @@
 
 package org.lineageos.settings.popupcamera;
 
-import java.io.File;
-
 public class Constants {
-    public static final int FREE_FALL_SENSOR_ID = 33171042;
 
     public static final int CAMERA_EVENT_DELAY_TIME = 100; // ms
     public static final int MSG_CAMERA_CLOSED = 1001;
@@ -49,9 +46,4 @@ public class Constants {
             "/sys/class/leds/green/brightness";
     public static final String POPUP_SOUND_PATH = "/system/media/audio/ui/";
 
-    public static final String POPUP_MOTOR_DEV = "/dev/drv8846_dev";
-
-    public static final boolean isPopUpMotorAvailable() {
-        return new File(POPUP_MOTOR_DEV).exists();
-    }
 }
