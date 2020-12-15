@@ -40,6 +40,7 @@ import android.view.WindowManager;
 import android.widget.Toast;
 
 import org.lineageos.settings.R;
+import org.lineageos.settings.sensors.ProximitySensor;
 import org.lineageos.settings.sensors.SensorsUtils;
 import org.lineageos.settings.utils.FileUtils;
 
@@ -65,6 +66,7 @@ public class PopupCameraService extends Service implements Handler.Callback {
     private SensorManager mSensorManager;
     private Sensor mFreeFallSensor;
     private SoundPool mSoundPool;
+    private ProximitySensor mProximitySensor;
 
     private CameraManager.AvailabilityCallback availabilityCallback =
             new CameraManager.AvailabilityCallback() {
@@ -138,6 +140,7 @@ public class PopupCameraService extends Service implements Handler.Callback {
                     mSoundPool.load(Constants.POPUP_SOUND_PATH + soundNames[i], 1);
         }
 
+        mProximitySensor = new ProximitySensor(this);
         try {
             mMotor = IMotor.getService();
             mMotorStatusCallback = new MotorStatusCallback();
@@ -170,6 +173,7 @@ public class PopupCameraService extends Service implements Handler.Callback {
     public int onStartCommand(Intent intent, int flags, int startId) {
         if (DEBUG)
             Log.d(TAG, "Starting service");
+        mProximitySensor.enable();
         return START_STICKY;
     }
 
@@ -177,6 +181,7 @@ public class PopupCameraService extends Service implements Handler.Callback {
     public void onDestroy() {
         if (DEBUG)
             Log.d(TAG, "Destroying service");
+        mProximitySensor.disable();
         super.onDestroy();
     }
 
@@ -186,7 +191,7 @@ public class PopupCameraService extends Service implements Handler.Callback {
     }
 
     private void updateMotor(String cameraState) {
-        if (mMotor == null) {
+        if (mMotor == null || mProximitySensor.mSawNear) {
             return;
         }
         final Runnable r = () -> {
