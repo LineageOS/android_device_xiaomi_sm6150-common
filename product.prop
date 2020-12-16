@@ -57,6 +57,9 @@ persist.vendor.radio.enable_temp_dds=true
 persist.vendor.radio.force_on_dc=true
 ril.subscription.types=RUIM
 
+# Shutdown
+ro.build.shutdown_timeout=2
+
 # Time
 persist.vendor.delta_time.enable=true
 
