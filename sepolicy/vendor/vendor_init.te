@@ -7,3 +7,5 @@ allow vendor_init {
   proc_dirty
   proc_sched_energy_aware
 }:file w_file_perms;
+
+allow vendor_qti_init_shell configfs:dir create_dir_perms;
