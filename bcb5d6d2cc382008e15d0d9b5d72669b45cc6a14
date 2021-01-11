@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "10b74bff_8f5e077b",
+        "filename": "parts/src/org/lineageos/settings/popupcamera/PopupCameraUtils.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2021-01-11T21:13:03Z",
+      "side": 1,
+      "message": "This is not a member variable.",
+      "range": {
+        "startLine": 36,
+        "startChar": 15,
+        "endLine": 36,
+        "endChar": 33
+      },
+      "revId": "bcb5d6d2cc382008e15d0d9b5d72669b45cc6a14",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": true
+    }
+  ]
+}
