@@ -436,9 +436,6 @@ vendor/lib64/libmlipay.so
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so
 vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so
 
-# Perf
-vendor/lib64/libqti-perfd-client.so
-
 # Peripheral
 vendor/bin/pm-proxy
 vendor/bin/pm-service
