@@ -27,6 +27,10 @@
 /sys/devices/platform/soc/soc:qcom,dsi-display/hbm                   u:object_r:sysfs_hbm:s0
 /sys/devices/platform/soc/soc:qcom,dsi-display/doze_mode             u:object_r:sysfs_doze:s0
 
+# Elliptic
+/dev/elliptic[0-9]                                                   u:object_r:ultrasound_device:s0
+/dev/mius(.*)?                                                       u:object_r:ultrasound_device:s0
+
 # Fingerprint
 /dev/fortsense_fp                                                    u:object_r:fingerprint_device:s0
 /dev/goodix_fp                                                       u:object_r:fingerprint_device:s0
