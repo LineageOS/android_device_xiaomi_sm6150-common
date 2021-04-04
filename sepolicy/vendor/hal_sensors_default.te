@@ -8,6 +8,7 @@ allow hal_sensors_default audio_socket:sock_file rw_file_perms;
 
 allow hal_sensors_default iio_device:chr_file rw_file_perms;
 allow hal_sensors_default vendor_elliptic_device:chr_file rw_file_perms;
+allow hal_sensors_default vendor_sound_device:chr_file rw_file_perms;
 allow hal_sensors_default vendor_sysfs_iio:dir r_dir_perms;
 allow hal_sensors_default vendor_sysfs_iio:file rw_file_perms;
 
