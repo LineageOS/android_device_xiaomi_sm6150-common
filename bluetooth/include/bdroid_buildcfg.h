@@ -23,12 +23,13 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#pragma push_macro("PROPERTY_VALUE_MAX")
 
 #include <cutils/properties.h>
 #include <string.h>
 
 #include "osi/include/osi.h"
+
+#pragma push_macro("PROPERTY_VALUE_MAX")
 
 typedef struct {
     const char *product_device;
