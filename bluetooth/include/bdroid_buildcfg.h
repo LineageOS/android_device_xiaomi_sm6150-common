@@ -23,16 +23,10 @@
 #ifndef _BDROID_BUILDCFG_H
 #define _BDROID_BUILDCFG_H
 
-#include <stdint.h>
-#include <string.h>
+#pragma push_macro("PROPERTY_VALUE_MAX")
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-int property_get(const char *key, char *value, const char *default_value);
-#ifdef __cplusplus
-}
-#endif
+#include <cutils/properties.h>
+#include <string.h>
 
 #include "osi/include/osi.h"
 
@@ -53,8 +47,8 @@ static const device_t devices[] = {
 
 static inline const char *BtmGetDefaultName()
 {
-    char product_device[92];
-    char product_region[92];
+    char product_device[PROPERTY_VALUE_MAX];
+    char product_region[PROPERTY_VALUE_MAX];
     property_get("ro.product.device", product_device, "");
     property_get("ro.boot.hwc", product_region, "");
 
@@ -79,5 +73,6 @@ static inline const char *BtmGetDefaultName()
 #define BLE_VND_INCLUDED   TRUE
 #define GATT_MAX_PHY_CHANNEL  10
 
-#define AVDT_NUM_SEPS 35
+#pragma pop_macro("PROPERTY_VALUE_MAX")
+
 #endif
