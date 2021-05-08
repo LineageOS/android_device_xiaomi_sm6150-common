@@ -35,8 +35,8 @@ public class PopupCameraUtils {
 
     private static final boolean isPopUpMotorAvailable(Context context) {
         mSensorManager = context.getSystemService(SensorManager.class);
-        Sensor mRaiseCameraSensor = SensorsUtils.getSensor(mSensorManager, "xiaomi.sensor.raise_camera");
-        return mRaiseCameraSensor != null ? true : false;
+        Sensor RaiseCameraSensor = SensorsUtils.getSensor(mSensorManager, "xiaomi.sensor.raise_camera");
+        return RaiseCameraSensor != null ? true : false;
     }
 
     public static void startService(Context context) {
