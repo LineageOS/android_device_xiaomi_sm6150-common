@@ -57,3 +57,6 @@ genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/wakeup                 
 
 # Power
 genfscon proc /sys/kernel/sched_energy_aware u:object_r:proc_sched_energy_aware:s0
+
+# Touchpanel
+genfscon sysfs /devices/virtual/touch/touch_dev/        u:object_r:sysfs_touchpanel:s0
