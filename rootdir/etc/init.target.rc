@@ -139,20 +139,20 @@ service vendor.pd_mapper /vendor/bin/pd-mapper
     class core
     user system
     group system
-    writepid /dev/cpuset/system-background/tasks
+    task_profiles ServiceCapacityLow
 
 service vendor.per_mgr /vendor/bin/pm-service
     class core
     user system
     group system
     ioprio rt 4
-    writepid /dev/cpuset/system-background/tasks
+    task_profiles ServiceCapacityLow
 
 service vendor.per_proxy /vendor/bin/pm-proxy
     class core
     user system
     group system
-    writepid /dev/cpuset/system-background/tasks
+    task_profiles ServiceCapacityLow
     disabled
 
 on property:init.svc.vendor.per_mgr=running
@@ -181,19 +181,19 @@ service vendor.thermal-engine /vendor/bin/thermal-engine
     socket thermal-recv-passive-client stream 0666 system system
     socket thermal-send-rule stream 0660 system system
     group root
-    writepid /dev/cpuset/system-background/tasks
+    task_profiles ServiceCapacityLow
 
 service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
     class main
     user root
     group system wakelock
-    writepid /dev/cpuset/system-background/tasks
+    task_profiles ServiceCapacityLow
 
 service vendor.remosaic_daemon /vendor/bin/remosaic_daemon
     class late_start
     user camera
     group camera
-    writepid /dev/cpuset/system-background/tasks
+    task_profiles ServiceCapacityLow
 
 service vendor.nv_mac /vendor/bin/nv_mac
     class main
