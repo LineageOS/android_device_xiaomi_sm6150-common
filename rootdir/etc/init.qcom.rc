@@ -237,20 +237,20 @@ service vendor.qrtr-ns /vendor/bin/qrtr-ns -f
     user vendor_qrtr
     group vendor_qrtr
     capabilities NET_BIND_SERVICE
-    writepid /dev/cpuset/system-background/tasks
+    task_profiles ServiceCapacityLow
 
 service irsc_util /vendor/bin/irsc_util "/vendor/etc/sec_config"
     class core
     user root
     oneshot
-    writepid /dev/cpuset/system-background/tasks
+    task_profiles ServiceCapacityLow
 
 service vendor.cnss-daemon /vendor/bin/cnss-daemon -n -l
     class late_start
     user system
     group system inet net_admin wifi
     capabilities NET_ADMIN
-    writepid /dev/cpuset/system-background/tasks
+    task_profiles ServiceCapacityLow
 
 on property:sys.shutdown.requested=*
     write /sys/kernel/shutdown_wlan/shutdown 1
@@ -260,7 +260,7 @@ service vendor.loc_launcher /vendor/bin/loc_launcher
     class late_start
     user gps
     group gps
-    writepid /dev/cpuset/system-background/tasks
+    task_profiles ServiceCapacityLow
 
 on property:persist.sys.xtra-daemon.enabled=*
     restart vendor.loc_launcher
@@ -285,7 +285,7 @@ service vendor.msm_irqbalance /vendor/bin/msm_irqbalance -f /vendor/etc/msm_irqb
     class core
     user root
     group root
-    writepid /dev/cpuset/system-background/tasks
+    task_profiles ServiceCapacityLow
 
 service vendor.power_off_alarm /vendor/bin/power_off_alarm
     class core
