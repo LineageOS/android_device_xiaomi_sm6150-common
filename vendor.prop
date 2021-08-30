@@ -191,6 +191,7 @@ persist.dbg.wfc_avail_ovr=1
 
 # Media
 debug.stagefright.c2inputsurface=-1
+ro.odm.build.media_performance_class=30
 vendor.media.omx=0
 
 # Netflix
