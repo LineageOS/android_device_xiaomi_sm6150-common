@@ -141,7 +141,6 @@ debug.sf.enable_egl_image_tracker=1
 debug.sf.enable_hwc_vds=1
 debug.sf.hw=0
 debug.sf.predict_hwc_composition_strategy=0
-debug.sf.latch_unsignaled=1
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 ro.opengles.version=196610
