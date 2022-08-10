@@ -116,6 +116,10 @@ ro.soc.manufacturer=QTI
 # CNE
 persist.vendor.cne.feature=1
 
+# Crypto
+ro.crypto.dm_default_key.options_format.version=2
+ro.crypto.volume.metadata.method=dm-default-key
+
 # Dalvik
 dalvik.vm.systemuicompilerfilter=speed
 
