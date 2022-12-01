@@ -292,7 +292,7 @@ service vendor.audio-hal /vendor/bin/hw/android.hardware.audio.service
     user audioserver
     # media gid needed for /dev/fm (radio) and for /data/misc/media (tee)
     group audio camera drmrpc inet media mediadrm net_bt net_bt_admin net_bw_acct oem_2901 wakelock context_hub
-    capabilities BLOCK_SUSPEND
+    capabilities BLOCK_SUSPEND SYS_NICE
     # setting RLIMIT_RTPRIO allows binder RT priority inheritance
     rlimit rtprio 10 10
     ioprio rt 4
