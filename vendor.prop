@@ -137,6 +137,7 @@ debug.egl.hw=0
 debug.mdpcomp.logs=0
 debug.sf.auto_latch_unsignaled=0
 debug.sf.disable_client_composition_cache=1
+debug.sf.enable_adpf_cpu_hint=true
 debug.sf.enable_gl_backpressure=1
 debug.sf.enable_transaction_tracing=false
 debug.sf.use_phase_offsets_as_durations=1
@@ -185,6 +186,9 @@ persist.sys.sf.color_mode=9
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
+
+# HWUI
+debug.hwui.use_hint_manager=true
 
 # IMS
 persist.dbg.volte_avail_ovr=1
