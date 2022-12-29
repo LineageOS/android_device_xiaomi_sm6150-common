@@ -68,7 +68,6 @@ on fs
     mkdir /mnt/vendor/persist/data 0700 system system
     mkdir /mnt/vendor/persist/audio 0755 system system
     mkdir /mnt/vendor/persist/alarm 0770 system system
-    mkdir /mnt/vendor/persist/time 0770 system system
     mkdir /mnt/vendor/persist/camera 0777 root root
 
 on late-fs

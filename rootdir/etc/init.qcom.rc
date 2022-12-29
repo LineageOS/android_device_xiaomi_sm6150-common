@@ -189,9 +189,6 @@ on post-fs-data
     # Create directories for wifihal services
     mkdir /dev/socket/wifihal 2770 wifi wifi
 
-    # Create /data/vendor/time folder for time-services
-    mkdir /data/vendor/time 0700 system system
-
     # Create FM dir for patchdownloader
     mkdir /data/vendor/fm 0770 system system
     chmod 0770 /data/vendor/fm
