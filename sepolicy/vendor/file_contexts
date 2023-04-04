@@ -35,6 +35,9 @@
 # Remosaic
 /vendor/bin/remosaic_daemon                                          u:object_r:remosaic_daemon_exec:s0
 
+# SD card
+/dev/block/mmcblk0p1                                                 u:object_r:sdcard_block_device:s0
+
 # WiFi
 /vendor/bin/nv_mac                                                   u:object_r:vendor_wcnss_service_exec:s0
 
