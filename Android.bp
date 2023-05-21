@@ -5,3 +5,12 @@ soong_namespace {
         "hardware/xiaomi",
     ],
 }
+
+prebuilt_hidl_interfaces {
+    name: "hidl_vppservice_interface",
+    interfaces: [
+        "vendor.qti.hardware.vpp@1.1::IHidlVppService",
+        "vendor.qti.hardware.vpp@1.2::IHidlVppService",
+        "vendor.qti.hardware.vpp@1.3::IHidlVppService",
+    ],
+}
