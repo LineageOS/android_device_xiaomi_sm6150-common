@@ -85,6 +85,7 @@ on post-fs-data
     mkdir /data/vendor/fpc 0770 system system
     mkdir /data/vendor/goodix 0770 system system
     mkdir /mnt/vendor/persist/fpc 0770 system system
+    mkdir /data/vendor/fpdump 0770 system system
 
 on boot
     start rmt_storage
@@ -122,6 +123,7 @@ on boot
 
     # Create fingerprint related directory
     mkdir /mnt/vendor/persist/goodix 0770 system system
+    mkdir /mnt/vendor/persist/fpc 0770 system system
 
 on property:sys.boot_completed=1
     # Set allocstall_threshold to 0
