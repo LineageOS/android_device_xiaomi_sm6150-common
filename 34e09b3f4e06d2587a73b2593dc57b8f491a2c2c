@@ -16,6 +16,29 @@
       "message": "i\u0027d prefer to do a seperate change for the camera property renaming",
       "revId": "34e09b3f4e06d2587a73b2593dc57b8f491a2c2c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "5c2bc3b7_56ba8dbc",
+        "filename": "sepolicy/vendor/property_contexts",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2023-06-03T20:07:29Z",
+      "side": 1,
+      "message": "1) These are already labelled by the rule at line 2, at most you can just remove those\n2) Are you sure Xiaomi also renamed those props on the camera HAL? Of course just renaming them in sepolicy won\u0027t rename them on the blobs",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 74
+      },
+      "revId": "34e09b3f4e06d2587a73b2593dc57b8f491a2c2c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
