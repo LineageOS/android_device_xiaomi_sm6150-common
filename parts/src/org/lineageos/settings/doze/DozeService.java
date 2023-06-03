@@ -72,9 +72,6 @@ public class DozeService extends Service {
     private void onDisplayOn() {
         if (DEBUG)
             Log.d(TAG, "Display on");
-        if (DozeUtils.isAlwaysOnEnabled(this)) {
-            DozeUtils.setDozeStatus(DozeUtils.DOZE_STATUS_DISABLED);
-        }
         if (DozeUtils.isPickUpEnabled(this)) {
             mPickupSensor.disable();
         }
@@ -89,9 +86,6 @@ public class DozeService extends Service {
     private void onDisplayOff() {
         if (DEBUG)
             Log.d(TAG, "Display off");
-        if (DozeUtils.isAlwaysOnEnabled(this)) {
-            DozeUtils.setDozeStatus(DozeUtils.DOZE_STATUS_ENABLED);
-        }
         if (DozeUtils.isPickUpEnabled(this)) {
             mPickupSensor.enable();
         }
