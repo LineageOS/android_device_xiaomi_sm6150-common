@@ -16,6 +16,24 @@
       "message": "commit message is incomplete",
       "revId": "344380cfb3cf7f351f66df650ba3e77eabb9f83b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2380fcbd_ef1bcc26",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2023-06-03T20:57:47Z",
+      "side": 1,
+      "message": "fixed",
+      "parentUuid": "65ddbcd0_23a0d04e",
+      "revId": "344380cfb3cf7f351f66df650ba3e77eabb9f83b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
