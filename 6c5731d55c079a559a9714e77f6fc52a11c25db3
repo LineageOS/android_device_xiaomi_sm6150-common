@@ -71,6 +71,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "eb612168_f2961e98",
+        "filename": "sepolicy/vendor/property_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 22465
+      },
+      "writtenOn": "2023-06-03T20:40:32Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "01c37b57_32c0d60a",
+      "revId": "6c5731d55c079a559a9714e77f6fc52a11c25db3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ad873052_846033bb",
