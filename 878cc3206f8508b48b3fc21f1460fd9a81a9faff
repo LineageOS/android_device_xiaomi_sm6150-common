@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f08f0623_ab4afdfd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2023-06-03T19:58:53Z",
+      "side": 1,
+      "message": "we might want to do I070b1e41978aa80eb64b536ab635e9f38a2413c3 instead and fully revert https://github.com/LineageOS/android_device_xiaomi_sm6150-common/commit/a13246a7fc2a121aa8adbb6c865038e067aa145d",
+      "revId": "878cc3206f8508b48b3fc21f1460fd9a81a9faff",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
