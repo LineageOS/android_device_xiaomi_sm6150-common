@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f65fc239_57af2e91",
+        "filename": "sepolicy/vendor/property_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2023-06-03T19:54:27Z",
+      "side": 0,
+      "message": "lgtm",
+      "revId": "6c5731d55c079a559a9714e77f6fc52a11c25db3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "00869a51_12fbfb27",
+        "filename": "sepolicy/vendor/property_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2023-06-03T19:54:27Z",
+      "side": 0,
+      "message": "this still exists",
+      "revId": "6c5731d55c079a559a9714e77f6fc52a11c25db3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ad873052_846033bb",
+        "filename": "sepolicy/vendor/property_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2023-06-03T19:54:27Z",
+      "side": 0,
+      "message": "This might have been replaved with vendor.panel.display:\narian@home:~/android/lineage-20/device/xiaomi/sm6150-common$ strings ../../../vendor/xiaomi/davinci/proprietary/vendor/lib64/libgf_hal.so | grep panel.display\n[%s] Failed getting sys.panel.display property\nvendor.panel.display",
+      "revId": "6c5731d55c079a559a9714e77f6fc52a11c25db3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
