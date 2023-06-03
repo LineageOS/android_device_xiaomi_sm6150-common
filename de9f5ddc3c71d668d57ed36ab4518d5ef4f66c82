@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d5b96659_ba3d2e4c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2023-06-03T20:24:22Z",
+      "side": 1,
+      "message": "where does this come from? stock doesn\u0027t seem to have that in manifest at all and clo has this as 1.0",
+      "revId": "de9f5ddc3c71d668d57ed36ab4518d5ef4f66c82",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
