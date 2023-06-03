@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1c6289ea_09fd1894",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2023-06-03T20:01:39Z",
+      "side": 1,
+      "message": "i\u0027d prefer to do a seperate change for the camera property renaming",
+      "revId": "34e09b3f4e06d2587a73b2593dc57b8f491a2c2c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
