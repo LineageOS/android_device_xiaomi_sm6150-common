@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "823e0945_f91b9e1f",
+        "filename": "sepolicy/vendor/property_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 22465
+      },
+      "writtenOn": "2023-06-03T19:58:33Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "f65fc239_57af2e91",
+      "revId": "6c5731d55c079a559a9714e77f6fc52a11c25db3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "00869a51_12fbfb27",
@@ -37,6 +55,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "01c37b57_32c0d60a",
+        "filename": "sepolicy/vendor/property_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 22465
+      },
+      "writtenOn": "2023-06-03T19:58:33Z",
+      "side": 0,
+      "message": "Will move it to the other change",
+      "parentUuid": "00869a51_12fbfb27",
+      "revId": "6c5731d55c079a559a9714e77f6fc52a11c25db3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "ad873052_846033bb",
         "filename": "sepolicy/vendor/property_contexts",
         "patchSetId": 1
@@ -48,6 +84,24 @@
       "writtenOn": "2023-06-03T19:54:27Z",
       "side": 0,
       "message": "This might have been replaved with vendor.panel.display:\narian@home:~/android/lineage-20/device/xiaomi/sm6150-common$ strings ../../../vendor/xiaomi/davinci/proprietary/vendor/lib64/libgf_hal.so | grep panel.display\n[%s] Failed getting sys.panel.display property\nvendor.panel.display",
+      "revId": "6c5731d55c079a559a9714e77f6fc52a11c25db3",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "20788731_3c6bffbe",
+        "filename": "sepolicy/vendor/property_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 22465
+      },
+      "writtenOn": "2023-06-03T19:58:33Z",
+      "side": 0,
+      "message": "Same as gf.debug",
+      "parentUuid": "ad873052_846033bb",
       "revId": "6c5731d55c079a559a9714e77f6fc52a11c25db3",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
