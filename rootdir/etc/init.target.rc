@@ -96,9 +96,7 @@ on boot
 
     # Set doze mode permissions
     chown system system /sys/devices/platform/soc/soc:qcom,dsi-display/doze_mode
-    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display/doze_status
     chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display/doze_mode
-    chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display/doze_status
 
     # Set xiaomi touch permissions
     chown system system /dev/xiaomi-touch
