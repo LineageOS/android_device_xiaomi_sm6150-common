@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6b31bcde_88ad85a7",
+        "filename": "parts/src/org/lineageos/settings/doze/DozeUtils.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 22465
+      },
+      "writtenOn": "2023-06-03T20:42:58Z",
+      "side": 0,
+      "message": "Perhaps this shouldn\u0027t be changed?",
+      "revId": "1a20122ab97daeb97f959fd12f8ff8f90cb0c8d9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
