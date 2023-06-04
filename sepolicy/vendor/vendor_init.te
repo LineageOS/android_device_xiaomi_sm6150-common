@@ -1,4 +1,1 @@
 set_prop(vendor_init, vendor_fp_prop)
-
-# Allow vendor_init to relabel unlabeled files and directories
-allow vendor_init unlabeled:{ dir file } { getattr relabelfrom };
