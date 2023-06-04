@@ -113,6 +113,10 @@ camera.disable_zsl_mode=1
 # Chipset
 ro.soc.manufacturer=QTI
 
+# Crypto
+ro.crypto.dm_default_key.options_format.version=2
+ro.crypto.volume.metadata.method=dm-default-key
+
 # Dalvik
 dalvik.vm.systemuicompilerfilter=speed
 
