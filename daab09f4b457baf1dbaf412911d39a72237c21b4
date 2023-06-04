@@ -16,6 +16,23 @@
       "message": "why is that necessary?",
       "revId": "daab09f4b457baf1dbaf412911d39a72237c21b4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "856764ab_349b9bd1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 27502
+      },
+      "writtenOn": "2023-06-04T09:01:31Z",
+      "side": 1,
+      "message": "Build fails without these.",
+      "revId": "daab09f4b457baf1dbaf412911d39a72237c21b4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
