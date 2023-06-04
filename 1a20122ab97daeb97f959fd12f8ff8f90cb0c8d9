@@ -16,6 +16,24 @@
       "message": "Perhaps this shouldn\u0027t be changed?",
       "revId": "1a20122ab97daeb97f959fd12f8ff8f90cb0c8d9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "54b46f7c_f5bad6a3",
+        "filename": "parts/src/org/lineageos/settings/doze/DozeUtils.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2023-06-04T09:56:13Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "6b31bcde_88ad85a7",
+      "revId": "1a20122ab97daeb97f959fd12f8ff8f90cb0c8d9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
