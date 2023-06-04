@@ -1,6 +1,14 @@
 # Audio
 /dev/socket/audio_hw_socket                                          u:object_r:audio_socket:s0
 
+# Block devices
+/dev/block/platform/soc/1d84000\.ufshc/by-name/cust                  u:object_r:system_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/system                u:object_r:system_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/vendor                u:object_r:system_block_device:s0
+/dev/block/platform/soc/7c4000\.sdhci/by-name/cust                   u:object_r:system_block_device:s0
+/dev/block/platform/soc/7c4000\.sdhci/by-name/system                 u:object_r:system_block_device:s0
+/dev/block/platform/soc/7c4000\.sdhci/by-name/vendor                 u:object_r:system_block_device:s0
+
 # Camera
 /mnt/vendor/persist/camera(/.*)?                                     u:object_r:vendor_persist_camera_file:s0
 
