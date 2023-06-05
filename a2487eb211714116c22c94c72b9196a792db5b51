@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7376191c_4dd2a7de",
+        "filename": "sepolicy/vendor/file_contexts",
+        "patchSetId": 3
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2023-06-05T15:16:27Z",
+      "side": 1,
+      "message": "move to here",
+      "revId": "a2487eb211714116c22c94c72b9196a792db5b51",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
