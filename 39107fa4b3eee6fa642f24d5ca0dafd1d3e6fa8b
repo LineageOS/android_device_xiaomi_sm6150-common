@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "aba93a6e_a951a7e6",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 91,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2023-06-05T05:27:13Z",
+      "side": 1,
+      "message": "this seems to be dead",
+      "revId": "39107fa4b3eee6fa642f24d5ca0dafd1d3e6fa8b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
