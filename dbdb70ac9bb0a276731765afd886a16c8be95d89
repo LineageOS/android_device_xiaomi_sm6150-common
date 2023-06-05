@@ -16,6 +16,24 @@
       "message": "default is false\nhttps://cs.android.com/android/platform/superproject/+/android-13.0.0_r49:frameworks/base/libs/hwui/Properties.cpp;l\u003d137",
       "revId": "dbdb70ac9bb0a276731765afd886a16c8be95d89",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9473c729_6f1bb47a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2023-06-05T05:23:51Z",
+      "side": 1,
+      "message": "thanks!",
+      "parentUuid": "b9818649_473f3720",
+      "revId": "dbdb70ac9bb0a276731765afd886a16c8be95d89",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
