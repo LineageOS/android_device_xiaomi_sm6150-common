@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b9818649_473f3720",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29080
+      },
+      "writtenOn": "2023-06-05T04:20:27Z",
+      "side": 1,
+      "message": "default is false\nhttps://cs.android.com/android/platform/superproject/+/android-13.0.0_r49:frameworks/base/libs/hwui/Properties.cpp;l\u003d137",
+      "revId": "dbdb70ac9bb0a276731765afd886a16c8be95d89",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
