@@ -17,14 +17,19 @@
 #
 
 import common
+import os
 import re
+
+TARGET_PRODUCT = os.getenv('TARGET_PRODUCT')
 
 def FullOTA_Assertions(info):
   AddBasebandAssertion(info, info.input_zip)
+  AddTouchScreenAssertion(info)
   return
 
 def IncrementalOTA_Assertions(info):
   AddBasebandAssertion(info, info.input_zip)
+  AddTouchScreenAssertion(info)
   return
 
 def FullOTA_InstallEnd(info):
@@ -62,3 +67,8 @@ def AddBasebandAssertion(info, input_zip):
         cmd = 'assert(getprop("ro.boot.hwc") == "{0}" && (xiaomi.verify_baseband("{1}") == "1" || abort("ERROR: This package requires firmware from MIUI {2} or newer. Please upgrade firmware and retry!");) || true);'
         info.script.AppendExtra(cmd.format(hwc, modem_version, firmware_version))
   return
+
+def AddTouchScreenAssertion(info):
+  if TARGET_PRODUCT == 'lineage_sweet':
+    cmd = 'assert(run_program("/sbin/sh", "-c", "[ $(cat /sys/module/goodix_core/parameters/is_goodix_ts) == Y ]") == 0 || abort("This package does not support your device touchscreen"));'
+    info.script.AppendExtra(cmd)
