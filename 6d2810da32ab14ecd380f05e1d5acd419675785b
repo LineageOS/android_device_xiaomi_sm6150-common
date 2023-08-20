@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "32b8c7c7_5bcb82b4",
+        "filename": "sepolicy/private/property_contexts",
+        "patchSetId": 5
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2023-08-20T16:33:07Z",
+      "side": 1,
+      "message": "wrong sorting",
+      "revId": "6d2810da32ab14ecd380f05e1d5acd419675785b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
