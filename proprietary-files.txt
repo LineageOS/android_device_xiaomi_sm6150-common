@@ -328,6 +328,7 @@ vendor/etc/seccomp_policy/imsrtp.policy
 -vendor/lib64/com.qualcomm.qti.uceservice@2.1.so
 -vendor/lib64/com.qualcomm.qti.uceservice@2.2.so
 -vendor/lib64/com.qualcomm.qti.uceservice@2.3.so
+-vendor/lib64/deviceInfoServiceModule.so
 -vendor/lib64/lib-imscmservice.so
 -vendor/lib64/lib-imsdpl.so
 -vendor/lib64/lib-imsqimf.so
