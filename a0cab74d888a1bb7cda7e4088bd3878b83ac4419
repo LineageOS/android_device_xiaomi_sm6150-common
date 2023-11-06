@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1936e132_6fa769ab",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2023-11-06T09:10:03Z",
+      "side": 1,
+      "message": "Seems to fix an issue where the device (when powered on) still used to reboot before the alarm rang.",
+      "revId": "a0cab74d888a1bb7cda7e4088bd3878b83ac4419",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
