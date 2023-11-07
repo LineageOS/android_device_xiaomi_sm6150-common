@@ -178,28 +178,20 @@ public class DozeSettingsFragment extends PreferenceFragment
         mPocketPreference.setEnabled(isChecked);
     }
 
-    private static class HelpDialogFragment extends DialogFragment {
-        @Override
-        public Dialog onCreateDialog(Bundle savedInstanceState) {
-            return new AlertDialog.Builder(getActivity())
-                    .setTitle(R.string.doze_settings_help_title)
-                    .setMessage(R.string.doze_settings_help_text)
-                    .setNegativeButton(R.string.dialog_ok, (dialog, which) -> dialog.cancel())
-                    .create();
-        }
-
-        @Override
-        public void onCancel(DialogInterface dialog) {
-            getActivity()
-                    .getSharedPreferences("doze_settings", Activity.MODE_PRIVATE)
-                    .edit()
-                    .putBoolean("first_help_shown", true)
-                    .commit();
-        }
-    }
-
     private void showHelp() {
-        HelpDialogFragment fragment = new HelpDialogFragment();
-        fragment.show(getFragmentManager(), "help_dialog");
+        AlertDialog fragment = new AlertDialog.Builder(getActivity())
+                .setTitle(R.string.doze_settings_help_title)
+                .setMessage(R.string.doze_settings_help_text)
+                .setPositiveButton(R.string.dialog_ok,
+                        (dialog, which) -> {
+                            getActivity()
+                                    .getSharedPreferences("doze_settings", Activity.MODE_PRIVATE)
+                                    .edit()
+                                    .putBoolean("first_help_shown", true)
+                                    .commit();
+                            dialog.cancel();
+                        })
+                .create();
+        fragment.show();
     }
 }
