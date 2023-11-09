@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f804f175_a3319c7e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2023-11-09T09:35:17Z",
+      "side": 1,
+      "message": "let\u0027s use https://review.lineageos.org/c/LineageOS/android_device_xiaomi_msm8998-common/+/373305/1 instead",
+      "revId": "9558ce8461e63338084f6e59fd5022c158254053",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
