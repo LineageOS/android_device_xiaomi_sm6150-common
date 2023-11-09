@@ -51,6 +51,24 @@
       "message": "If anything, replace it with I4eebc60f10fbea6a66127ed3e08441db32536f78",
       "revId": "7f9c10d230a5b5432a9ceb2da9759419efcc3aca",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e6a2eb10_8e942e3f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 16779
+      },
+      "writtenOn": "2023-11-09T15:49:12Z",
+      "side": 1,
+      "message": "This is built as a dependency of the compat lib, so it\u0027s indeed not needed\n\nhttps://github.com/LineageOS/android_hardware_lineage_compat/blob/e8f0e4b7a0c69eec258afbe3ee36bb2af71c3bdf/Android.bp#L354",
+      "parentUuid": "549fc146_ef1edffc",
+      "revId": "7f9c10d230a5b5432a9ceb2da9759419efcc3aca",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
