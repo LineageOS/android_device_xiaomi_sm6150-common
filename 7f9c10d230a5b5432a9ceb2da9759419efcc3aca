@@ -87,6 +87,24 @@
       "parentUuid": "e6a2eb10_8e942e3f",
       "revId": "7f9c10d230a5b5432a9ceb2da9759419efcc3aca",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f129fb5f_6aba8226",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2023-11-09T16:00:07Z",
+      "side": 1,
+      "message": "Since the lite one was introduced in AOSP again (https://android.googlesource.com/platform/prebuilts/misc/+/e50c7362efa1580324ad9e12eb73859ba98b0dbf) [without the dependency to the full one] this might come in handy soon when it gets merged into lineage too.",
+      "parentUuid": "2e9e369c_781661a2",
+      "revId": "7f9c10d230a5b5432a9ceb2da9759419efcc3aca",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ],
   "submitRequirementResults": []
