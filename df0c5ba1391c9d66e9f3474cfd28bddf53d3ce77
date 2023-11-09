@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ccc621b9_6e880c88",
+        "filename": "parts/AndroidManifest.xml",
+        "patchSetId": 1
+      },
+      "lineNbr": 45,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2023-11-09T15:52:38Z",
+      "side": 1,
+      "message": "others mark this as exported.\nAccording to https://developer.android.com/privacy-and-security/risks/android-exported it\u0027s also relevant for \"service\" hence might be a good choice.",
+      "range": {
+        "startLine": 45,
+        "startChar": 9,
+        "endLine": 45,
+        "endChar": 16
+      },
+      "revId": "df0c5ba1391c9d66e9f3474cfd28bddf53d3ce77",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
