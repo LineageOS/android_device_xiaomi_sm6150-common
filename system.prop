@@ -1,9 +1,6 @@
 # Bluetooth
 vendor.bluetooth.soc=cherokee
 
-# Charger
-ro.charger.enable_suspend=true
-
 # CNE
 persist.vendor.cne.feature=1
 
