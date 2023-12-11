@@ -115,6 +115,7 @@ on boot
     chown system system /sys/bus/platform/devices/soc:fingerprint_fpc/finger_irq
     chown system system /sys/bus/platform/devices/soc:fingerprint_fpc/request_vreg
     chown system system /sys/bus/platform/devices/soc:fingerprint_fpc/power_cfg
+    chown system system /sys/bus/platform/devices/soc:fingerprint_fpc/compatible_all
 
     chown system system /sys/bus/platform/devices/soc/soc:fpc1020/irq
     chown system system /sys/bus/platform/devices/soc/soc:fpc1020/wakeup_enable
