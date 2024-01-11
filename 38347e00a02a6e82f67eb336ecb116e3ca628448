@@ -51,6 +51,23 @@
       "parentUuid": "d4080c1c_7fbe0b6c",
       "revId": "38347e00a02a6e82f67eb336ecb116e3ca628448",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d823d365_c3ae3718",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 31890
+      },
+      "writtenOn": "2024-01-11T11:53:40Z",
+      "side": 1,
+      "message": "Wrong author.\n\nhttps://github.com/LineageOS/android_device_10or_G/commit/dbe316ff73a7fa294287040b8e07edb1f87e1d44",
+      "revId": "38347e00a02a6e82f67eb336ecb116e3ca628448",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
