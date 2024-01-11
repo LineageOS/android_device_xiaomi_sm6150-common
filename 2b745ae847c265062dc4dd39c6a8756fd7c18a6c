@@ -50,6 +50,24 @@
       "message": "No, they are bugged.\nPlatform tools version 34.0.5-10900879 (last)\n\nPS C:\\Users\\alexa\\Desktop\\platform-tools\u003e .\\fastboot.exe --version\nfastboot version 34.0.5-10900879\n\nPS C:\\Users\\alexa\\Desktop\\platform-tools\u003e .\\fastboot.exe wipe-super ..\\super_empty.img\n[liblp] bool android::fs_mgr::ReadMetadataHeader(Reader *, LpMetadata *) read failed: No error\nfastboot: error: Could not parse image: ..\\super_empty.img\n\nAnd I\u0027m not the only one, other people that use Windows can\u0027t flash it too, but everyone who uses Linux has no problems",
       "revId": "2b745ae847c265062dc4dd39c6a8756fd7c18a6c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "45d03fd5_996c20b9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29230
+      },
+      "writtenOn": "2024-01-11T13:18:29Z",
+      "side": 1,
+      "message": "C:\\Users\\karde\\Downloads\\platform-tools_r34.0.5-windows\\platform-tools\u003efastboot wipe-super C:\\Users\\karde\\Downloads\\super_empty.img\nSending \u0027system\u0027 (264 KB)                          OKAY [  0.030s]\nWriting \u0027system\u0027                                   OKAY [  0.027s]\nSending \u0027oem\u0027 (0 KB)                               OKAY [  0.031s]\nWriting \u0027oem\u0027                                      OKAY [  0.023s]\nFinished. Total time: 0.324s\n\nC:\\Users\\karde\\Downloads\\platform-tools_r34.0.5-windows\\platform-tools\u003efastboot.exe --version\nfastboot version 34.0.5-10900879\nInstalled as C:\\Users\\karde\\Downloads\\platform-tools_r34.0.5-windows\\platform-tools\\fastboot.exe\n\nWorks fine on G with retrofit",
+      "parentUuid": "eac25e7b_771cf666",
+      "revId": "2b745ae847c265062dc4dd39c6a8756fd7c18a6c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
