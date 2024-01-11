@@ -33,6 +33,23 @@
       "message": "Platform tools are not bugged for Windows. Make sure you\u0027re using an up-to-date version of them and not a tool like minimal adb/fastboot.",
       "revId": "2b745ae847c265062dc4dd39c6a8756fd7c18a6c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "eac25e7b_771cf666",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33356
+      },
+      "writtenOn": "2024-01-11T12:53:04Z",
+      "side": 1,
+      "message": "No, they are bugged.\nPlatform tools version 34.0.5-10900879 (last)\n\nPS C:\\Users\\alexa\\Desktop\\platform-tools\u003e .\\fastboot.exe --version\nfastboot version 34.0.5-10900879\n\nPS C:\\Users\\alexa\\Desktop\\platform-tools\u003e .\\fastboot.exe wipe-super ..\\super_empty.img\n[liblp] bool android::fs_mgr::ReadMetadataHeader(Reader *, LpMetadata *) read failed: No error\nfastboot: error: Could not parse image: ..\\super_empty.img\n\nAnd I\u0027m not the only one, other people that use Windows can\u0027t flash it too, but everyone who uses Linux has no problems",
+      "revId": "2b745ae847c265062dc4dd39c6a8756fd7c18a6c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
