@@ -294,6 +294,9 @@ PRODUCT_ENFORCE_RRO_TARGETS += *
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/flash_super_dummy.sh:install/bin/flash_super_dummy.sh
+
 # Perf
 PRODUCT_PACKAGES += \
     libqti-perfd-client
