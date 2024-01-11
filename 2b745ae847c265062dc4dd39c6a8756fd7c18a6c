@@ -16,6 +16,23 @@
       "message": "Sorry for the wrong author, fixed this",
       "revId": "2b745ae847c265062dc4dd39c6a8756fd7c18a6c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "667475ae_16c7b7fb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2024-01-11T12:27:48Z",
+      "side": 1,
+      "message": "Platform tools are not bugged for Windows. Make sure you\u0027re using an up-to-date version of them and not a tool like minimal adb/fastboot.",
+      "revId": "2b745ae847c265062dc4dd39c6a8756fd7c18a6c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
