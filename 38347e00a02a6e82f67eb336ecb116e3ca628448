@@ -33,6 +33,24 @@
       "message": "Unfortunately platform tools for windows are bugged, and wipe-super is impossible. This commit resolves this by doing it during OTA flashing",
       "revId": "38347e00a02a6e82f67eb336ecb116e3ca628448",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "937c8369_bea4d0af",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2024-01-11T11:41:25Z",
+      "side": 1,
+      "message": "cringe",
+      "parentUuid": "d4080c1c_7fbe0b6c",
+      "revId": "38347e00a02a6e82f67eb336ecb116e3ca628448",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
