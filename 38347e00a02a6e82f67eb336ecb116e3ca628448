@@ -16,6 +16,23 @@
       "message": "can\u0027t you just set is_retrofit_dynamic_partitions on wiki?",
       "revId": "38347e00a02a6e82f67eb336ecb116e3ca628448",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d4080c1c_7fbe0b6c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 33356
+      },
+      "writtenOn": "2024-01-11T11:39:05Z",
+      "side": 1,
+      "message": "Unfortunately platform tools for windows are bugged, and wipe-super is impossible. This commit resolves this by doing it during OTA flashing",
+      "revId": "38347e00a02a6e82f67eb336ecb116e3ca628448",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
