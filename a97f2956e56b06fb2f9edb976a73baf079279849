@@ -34,6 +34,24 @@
       "parentUuid": "3e07f027_ad461556",
       "revId": "a97f2956e56b06fb2f9edb976a73baf079279849",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "27ace9c8_0f95fd24",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2024-02-11T19:42:56Z",
+      "side": 1,
+      "message": "I don\u0027t think the original commit message was right, I was following the props name and the AOSP change https://github.com/LineageOS/android_frameworks_native/commit/b15ef13974e62fe2c93f6557222f9d8ed0b2cdb1",
+      "parentUuid": "51c3407b_b25a0b3d",
+      "revId": "a97f2956e56b06fb2f9edb976a73baf079279849",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
