@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "15792b4e_140a157f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2024-02-16T18:56:50Z",
+      "side": 1,
+      "message": "Xiaomi added some more isMiuiRom(). Leaving the new patch here for future reference - https://katb.in/xifosibaraw/raw",
+      "revId": "6fb5ad67fbcb3697a70b69f18c07b0d2f2557027",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
