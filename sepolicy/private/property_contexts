@@ -14,4 +14,4 @@ ro.boot.hwversion                  u:object_r:exported_default_prop:s0
 ro.build.flavor                    u:object_r:exported_default_prop:s0
 ro.cust.test                       u:object_r:exported_system_prop:s0
 ro.miui.                           u:object_r:exported_system_prop:s0
-ro.product.mod_device              u:object_r:build_prop:s0
+ro.product.mod_device              u:object_r:exported_default_prop:s0
