@@ -171,6 +171,8 @@ vendor/etc/init/qseecomd.rc
 -vendor/lib64/libops.so
 -vendor/lib64/libqisl.so
 -vendor/lib64/librpmb.so
+-vendor/lib64/libsecureui.so
+-vendor/lib64/libsecureui_svcsock.so
 -vendor/lib64/libssd.so
 -vendor/lib64/libtrustedapploader.so
 
