@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cb61fa56_cdf057c3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6360
+      },
+      "writtenOn": "2024-04-06T17:48:02Z",
+      "side": 1,
+      "message": "sm6150 also has a76.\na76 \u003e a55",
+      "revId": "5107dc3160c3b7e55816b52d9a9d65a033cd3e16",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
