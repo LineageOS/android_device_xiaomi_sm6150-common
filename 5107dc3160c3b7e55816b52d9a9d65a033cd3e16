@@ -16,6 +16,41 @@
       "message": "sm6150 also has a76.\na76 \u003e a55",
       "revId": "5107dc3160c3b7e55816b52d9a9d65a033cd3e16",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "08a0caa1_4f382364",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2024-04-08T02:07:32Z",
+      "side": 1,
+      "message": "This lets us set armv8-2a for 32-bit without I620aa16d6cc563687d35916fc0cd56fb08f9ca71. Alex also mentioned that A76 gets replaced with A55 in soong and they have the same features enabled in art.",
+      "parentUuid": "cb61fa56_cdf057c3",
+      "revId": "5107dc3160c3b7e55816b52d9a9d65a033cd3e16",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "73676248_8c5df5ba",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2024-04-08T02:07:32Z",
+      "side": 1,
+      "message": "This lets us set",
+      "revId": "5107dc3160c3b7e55816b52d9a9d65a033cd3e16",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
