@@ -2,6 +2,7 @@
 # NX627J: NX627J-user 11 RKQ1.200826.002 nubia.20201029.204053 release-keys
 # dada: dada-user 16 BP2A.250605.015 OS2.0.217.0.WOCMIXM release-keys
 # mojito: mojito-user 12 SKQ1.210908.001 V14.0.9.0.SKGMIXM release-keys
+# FP5: Fairphone/FP5/FP5:14/UKQ1.230924.001/UT2L:user/release-keys
 
 # ADSP
 vendor/bin/adsprpcd
@@ -196,8 +197,8 @@ vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 vendor/lib/vendor.qti.hardware.dsp@1.0.so
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
-# eUICC - from unknown
-system/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED
+# eUICC - from FP5
+system/priv-app/EuiccGoogle/EuiccGoogle.apk;PRESIGNED|2d238bfe14473b8f578bf0d4ea61246f61d0f618
 
 # FM
 system_ext/lib64/fm_helium.so
