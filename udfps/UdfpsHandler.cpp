@@ -108,6 +108,18 @@ class XiaomiUdfpsHander : public UdfpsHandler {
         ioctl(touch_fd_.get(), TOUCH_IOC_SETMODE, &arg);
     }
 
+    void preEnroll() {
+        // nothing
+    }
+
+    void enroll() {
+        // nothing
+    }
+
+    void postEnroll() {
+        // nothing
+    }
+
   private:
     fingerprint_device_t* mDevice;
     android::base::unique_fd touch_fd_;
