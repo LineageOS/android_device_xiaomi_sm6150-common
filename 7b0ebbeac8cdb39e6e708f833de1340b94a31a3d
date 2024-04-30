@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "edc8949a_92ecd1f8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2024-04-30T00:06:48Z",
+      "side": 1,
+      "message": "Depends on I35adade47e1e17c4ec8b1380542f53d7d3f4d217 getting merged",
+      "revId": "7b0ebbeac8cdb39e6e708f833de1340b94a31a3d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
