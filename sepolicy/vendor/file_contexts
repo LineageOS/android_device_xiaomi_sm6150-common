@@ -25,7 +25,9 @@
 /sys/devices/platform/soc/soc:qcom,dsi-display/doze_mode             u:object_r:sysfs_doze:s0
 
 # Fingerprint
+/dev/fortsense_fp                                                    u:object_r:fingerprint_device:s0
 /dev/goodix_fp                                                       u:object_r:fingerprint_device:s0
+/data/vendor/fortsense(/.*)?                                         u:object_r:fingerprint_data_file:s0
 /data/vendor/fpc(/.*)?                                               u:object_r:fingerprint_data_file:s0
 /data/vendor/fpdump(/.*)?                                            u:object_r:fingerprint_data_file:s0
 /data/vendor/goodix(/.*)?                                            u:object_r:fingerprint_data_file:s0
