@@ -1,4 +1,5 @@
 type hal_fingerprint_hwservice_xiaomi, hwservice_manager_type;
+type hal_swfingerprint_hwservice, hwservice_manager_type;
 type fingerprint_device, dev_type;
 type fingerprint_data_file, data_file_type, file_type;
 type vendor_sysfs_fod, sysfs_type, fs_type;
@@ -24,3 +25,4 @@ set_prop(hal_fingerprint_default, vendor_fp_prop)
 hal_client_domain(hal_fingerprint_default, vendor_hal_perf)
 
 add_hwservice(hal_fingerprint_default, hal_fingerprint_hwservice_xiaomi)
+add_hwservice(hal_fingerprint_default, hal_swfingerprint_hwservice)
