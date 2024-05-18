@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b186cfd1_125ff238",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-05-18T12:49:38Z",
+      "side": 1,
+      "message": "Be sure to update to the latest patchet from mi845.",
+      "revId": "591527a402f04cb8a1453e3dcd4c8938d7c06a0e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
