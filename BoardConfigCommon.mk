@@ -151,6 +151,7 @@ TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
 
 # Sepolicy
 TARGET_SEPOLICY_DIR := msmsteppe
+include device/lineage/sepolicy/libperfmgr/sepolicy.mk
 include device/qcom/sepolicy_vndr/SEPolicy.mk
 
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
