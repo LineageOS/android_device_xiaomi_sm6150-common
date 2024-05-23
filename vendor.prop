@@ -133,7 +133,7 @@ persist.vendor.dpmhalservice.enable=1
 
 # Display
 debug.sf.auto_latch_unsignaled=0
-debug.sf.enable_gl_backpressure=1
+debug.sf.enable_gl_backpressure=0
 debug.sf.use_phase_offsets_as_durations=1
 debug.sf.late.sf.duration=15666666
 debug.sf.late.app.duration=13666666
