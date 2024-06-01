@@ -32,6 +32,12 @@ on early-init
     setprop ro.soc.model ${ro.vendor.qti.soc_model}
 
 on init
+    # Goodix fingerprint
+    chmod 0666 /dev/goodix_fp
+    chown system system /dev/goodix_fp
+    chmod 0664 /dev/fortsense_fp
+    chown system system /dev/fortsense_fp
+
     wait /dev/block/platform/soc/${ro.boot.bootdevice}
     symlink /dev/block/platform/soc/${ro.boot.bootdevice} /dev/block/bootdevice
 
@@ -75,6 +81,7 @@ on post-fs-data
     mkdir /data/vendor/thermal/config 0771 root system
 
     # Create fingerprint related directory
+    mkdir /data/vendor/fortsense 0770 system system
     mkdir /data/vendor/fpc 0770 system system
     mkdir /data/vendor/goodix 0770 system system
     mkdir /mnt/vendor/persist/fpc 0770 system system
