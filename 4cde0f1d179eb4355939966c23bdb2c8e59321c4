@@ -16,6 +16,24 @@
       "message": "This depends just on the libperfmgr HAL?",
       "revId": "4cde0f1d179eb4355939966c23bdb2c8e59321c4",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "55f1423c_3282a921",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2024-06-17T19:14:17Z",
+      "side": 1,
+      "message": "Not sure about that yet. Only did this because libperfmgr supports ADPF and it is enabled in https://github.com/LineageOS/android_hardware_google_pixel/blob/lineage-21.0/power-libperfmgr/aidl/device.mk#L11-L14 which all pixels include",
+      "parentUuid": "b29cd7e1_de2db06c",
+      "revId": "4cde0f1d179eb4355939966c23bdb2c8e59321c4",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
