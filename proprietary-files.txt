@@ -1,4 +1,4 @@
-# These proprietary files are extracted from Redmi Note 12 Pro 4G (codenamed `sweet_k6a`) OS1.0.3.0.THGMIXM, unless pinned
+# These proprietary files are extracted from Redmi Note 12 Pro 4G (codenamed `sweet_k6a`) OS1.0.5.0.THGMIXM, unless pinned
 
 # ADSP
 -vendor/bin/adsprpcd
@@ -274,7 +274,7 @@ vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml
 -system_ext/lib64/vendor.qti.diaghal@1.0.so
 -system_ext/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE=vendor.qti.imsrtpservice@3.0_system_ext
 -system_ext/lib64/vendor.qti.imsrtpservice@3.1.so;MODULE=vendor.qti.imsrtpservice@3.1_system_ext
-system_ext/priv-app/ims/ims.apk|5964afafa029d267cfecc29b85c89e51c946df66
+system_ext/priv-app/ims/ims.apk|a79cc8000a0419e1d4d4664db839bf6cea2eb0b9
 -vendor/bin/ims_rtp_daemon
 -vendor/bin/imsdatadaemon
 -vendor/bin/imsqmidaemon
