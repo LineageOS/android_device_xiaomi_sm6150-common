@@ -418,7 +418,6 @@ system_ext/framework/qcrilhook.jar
 system_ext/framework/qti-telephony-common.jar
 system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/bin/adpl
-vendor/bin/hw/qcrild
 vendor/bin/netmgrd
 vendor/bin/qti
 vendor/bin/rmt_storage
@@ -431,7 +430,6 @@ vendor/etc/init/netmgrd.rc
 vendor/etc/init/qcrild.rc
 vendor/etc/init/vendor.qti.rmt_storage.rc
 vendor/etc/init/vendor.qti.tftp.rc
-vendor/lib64/deviceInfoServiceModule.so
 vendor/lib64/libconfigdb.so
 vendor/lib64/libdsi_netctrl.so
 vendor/lib64/liblqe.so
@@ -446,7 +444,6 @@ vendor/lib64/libqcrilFramework.so
 vendor/lib64/libqcrildatactl.so
 vendor/lib64/libqdi.so
 vendor/lib64/libqdp.so
-vendor/lib64/libril-qc-hal-qmi.so
 vendor/lib64/libril-qc-logger.so
 vendor/lib64/librilqmiservices.so
 vendor/lib64/libsystem_health_mon.so
