@@ -446,7 +446,6 @@ vendor/lib64/libqcrilFramework.so
 vendor/lib64/libqcrildatactl.so
 vendor/lib64/libqdi.so
 vendor/lib64/libqdp.so
-vendor/lib64/libril-qc-hal-qmi.so
 vendor/lib64/libril-qc-logger.so
 vendor/lib64/librilqmiservices.so
 vendor/lib64/libsystem_health_mon.so
