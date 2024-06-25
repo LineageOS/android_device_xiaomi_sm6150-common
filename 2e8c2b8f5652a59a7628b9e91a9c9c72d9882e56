@@ -16,6 +16,24 @@
       "message": "Adding as reviewer since I picked the original commit from sdm845-common, wasn\u0027t sure if this was missed or it is just not needed",
       "revId": "2e8c2b8f5652a59a7628b9e91a9c9c72d9882e56",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1f80b404_9c20071c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 25732
+      },
+      "writtenOn": "2024-06-25T12:24:05Z",
+      "side": 1,
+      "message": "Not really needed, this just imports libperfmgr targets to all subtree Android.bp files\n\nSince you also keep namespace imports in Android.bp it\u0027s coherent to do this",
+      "parentUuid": "b556cd34_95b7bf08",
+      "revId": "2e8c2b8f5652a59a7628b9e91a9c9c72d9882e56",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
