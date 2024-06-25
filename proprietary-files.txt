@@ -503,9 +503,6 @@ vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql
 
-# RIL - from Redmi Note 10 V14.0.2.0.SKGMIXM
--vendor/lib64/libril-qc-hal-qmi.so|31380a6e821c840a385be40b6029f290030b2c13
-
 # Soter
 vendor/app/SoterService/SoterService.apk
 -vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
