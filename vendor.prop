@@ -191,10 +191,6 @@ persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 
-# Media
-debug.stagefright.ccodec=1
-debug.stagefright.omx_default_rank=0
-
 # Netflix
 vendor.netflix.bsp_rev=Q6150-17263-1
 
