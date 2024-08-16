@@ -145,7 +145,7 @@ system_ext/etc/permissions/com.qti.dpmframework.xml
 system_ext/etc/permissions/dpmapi.xml
 system_ext/framework/com.qti.dpmframework.jar
 system_ext/framework/dpmapi.jar
--system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so;MODULE=com.qualcomm.qti.dpm.api@1.0_system_ext
+-system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so
 -system_ext/lib64/libdpmctmgr.so
 -system_ext/lib64/libdpmfdmgr.so
 -system_ext/lib64/libdpmframework.so
@@ -153,7 +153,7 @@ system_ext/framework/dpmapi.jar
 system_ext/priv-app/dpmserviceapp/dpmserviceapp.apk
 -vendor/bin/dpmQmiMgr
 vendor/etc/init/dpmQmiMgr.rc
--vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so;MODULE=com.qualcomm.qti.dpm.api@1.0_vendor
+-vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so;MODULE_SUFFIX=-vendor
 -vendor/lib64/libdpmqmihal.so
 
 # DRM
