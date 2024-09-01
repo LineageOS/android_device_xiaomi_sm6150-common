@@ -1,7 +1,29 @@
+# BMS
+genfscon sysfs /devices/platform/soc/884000.i2c/i2c-3/3-0055/power_supply/bms                u:object_r:vendor_sysfs_battery_supply:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm6150@0:qpnp,qg/power_supply/qcom-bms u:object_r:vendor_sysfs_battery_supply:s0
+
+# bq2597x charge pump
+genfscon sysfs /devices/platform/soc/890000.i2c/i2c-4/4-0066/power_supply/bq2597x-slave      u:object_r:vendor_sysfs_usb_supply:s0
+genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-0051/power_supply/bq2597x-standalone u:object_r:vendor_sysfs_usb_supply:s0
+genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-0066/power_supply/bq2597x-master     u:object_r:vendor_sysfs_usb_supply:s0
+genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-0066/power_supply/bq2597x-standalone u:object_r:vendor_sysfs_usb_supply:s0
+
 # Display
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/idle_encoder_mask         u:object_r:vendor_sysfs_graphics:s0
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/idle_state                u:object_r:vendor_sysfs_graphics:s0
 genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/idle_timeout_ms           u:object_r:vendor_sysfs_graphics:s0
+
+# ds28e16 battery verify
+genfscon sysfs /devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify u:object_r:vendor_sysfs_battery_supply:s0
+
+# Fingerprint
+genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/compatible_all         u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/device_prepare         u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/fingerdown_wait        u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/irq                    u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/power_cfg              u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/request_vreg           u:object_r:vendor_sysfs_fingerprint:s0
+genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/wakeup_enable          u:object_r:vendor_sysfs_fingerprint:s0
 
 # LED
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-05/c440000.qcom,spmi:qcom,pm6150l@5:qcom,leds@d000/leds/left u:object_r:vendor_sysfs_graphics:s0
@@ -14,8 +36,14 @@ genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-04/c440000.q
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm6150@0:qcom,qpnp-smb5/wakeup                                                                u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/88e0000.qcom,msm-eud/wakeup                                                                                                                            u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm6150@0:qcom,pm6150_rtc/wakeup                                                               u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/884000.i2c/i2c-3/3-005a/wakeup                                                                                                                         u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/884000.i2c/i2c-3/3-0055/power_supply/bms/wakeup                                                                                                        u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/884000.i2c/i2c-3/3-0055/wakeup                                                                                                                         u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/888000.i2c/i2c-0/0-0028/wakeup                                                                                                                         u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/890000.i2c/i2c-4/4-0066/power_supply/bq2597x-slave/wakeup                                                                                              u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/890000.i2c/i2c-4/4-0066/wakeup                                                                                                                         u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/18800000.qcom,icnss/wakeup                                                                                                                             u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm6150@0:qpnp,qg/power_supply/qcom-bms/wakeup                                                 u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm6150@0:qcom,qpnp-smb5/power_supply/dc/wakeup                                                u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm6150@0:qcom,qpnp-smb5/power_supply/usb/wakeup                                               u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-00/c440000.qcom,spmi:qcom,pm6150@0:qcom,qpnp-smb5/power_supply/main/wakeup                                              u:object_r:sysfs_wakeup:s0
@@ -30,10 +58,13 @@ genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-005a/wakeup             
 genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-0010/a8c000.i2c:qcom,smb1390@10:qcom,charge_pump/power_supply/charge_pump_master/wakeup                                             u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-0051/wakeup                                                                                                                         u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-0051/power_supply/bq2597x-standalone/wakeup                                                                                         u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-0065/wakeup                                                                                                                         u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-0066/wakeup                                                                                                                         u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-0066/power_supply/bq2597x-standalone/wakeup                                                                                         u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-0066/power_supply/bq2597x-master/wakeup                                                                                             u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:maxim_ds28e16/power_supply/batt_verify/wakeup                                                                                                      u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/wakeup                                                                                                                             u:object_r:sysfs_wakeup:s0
+genfscon sysfs /devices/virtual/input/input1/wakeup                                                                                                                                         u:object_r:sysfs_wakeup:s0
 
 # Touchpanel
 genfscon sysfs /devices/virtual/touch/touch_dev/        u:object_r:sysfs_touchpanel:s0
