@@ -1,6 +1,9 @@
 # Audio
 /dev/socket/audio_hw_socket                                          u:object_r:audio_socket:s0
 
+# Battery secret
+/vendor/bin/batterysecret                                            u:object_r:batterysecret_exec:s0
+
 # Block devices
 /dev/block/mmcblk0p1                                                 u:object_r:sdcard_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/cust                  u:object_r:system_block_device:s0
@@ -37,9 +40,28 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.xiaomi u:object_r:hal_fingerprint_default_exec:s0
 /vendor/bin/hw/android\.hardware\.light-service\.xiaomi                    u:object_r:hal_light_default_exec:s0
 /vendor/bin/hw/vendor\.lineage\.livedisplay@2\.1-service\.xiaomi_sm6150    u:object_r:hal_lineage_livedisplay_qti_exec:s0
+/vendor/bin/hw/vendor\.xiaomi\.hardware\.motor@1\.0-service                u:object_r:hal_motor_default_exec:s0
 
 # IR
+/dev/lirc[0-9]+                                                      u:object_r:lirc_device:s0
 /dev/spidev[0-9]\.1                                                  u:object_r:lirc_device:s0
+/vendor/bin/hw/android\.hardware\.ir-service\.xiaomi                 u:object_r:hal_ir_default_exec:s0
+
+# Motor
+/dev/akm09970                                                        u:object_r:hall_device:s0
+/dev/drv8846_dev                                                     u:object_r:motor_device:s0
+
+# NFC
+/vendor/bin/hw/android\.hardware\.nfc-service\.nxp                   u:object_r:hal_nfc_default_exec:s0
+
+# Persist subsystem
+/mnt/vendor/persist/subsys(/.*)?                                     u:object_r:persist_subsys_file:s0
+
+# Proximity
+/dev/elliptic0                                                       u:object_r:vendor_elliptic_device:s0
+/sys/bus/iio/devices                                                 u:object_r:vendor_sysfs_iio:s0
+/sys/devices/platform/soc/c440000.qcom,spmi/spmi-0/spmi0-04/c440000.qcom,spmi:qcom,pm6150l@4:vadc@3100/iio:device1(/.*)? u:object_r:vendor_sysfs_iio:s0
+/sys/devices/platform/us_prox.0/iio:device2(/.*)?                    u:object_r:vendor_sysfs_iio:s0
 
 # Remosaic
 /vendor/bin/remosaic_daemon                                          u:object_r:remosaic_daemon_exec:s0
