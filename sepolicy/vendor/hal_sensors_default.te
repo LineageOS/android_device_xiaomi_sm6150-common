@@ -1,7 +1,15 @@
+type vendor_sysfs_iio, fs_type, sysfs_type;
+type vendor_elliptic_device, dev_type;
+
 vendor_internal_prop(persist_sensors_prop)
 
 allow hal_sensors_default hal_audio_default:unix_stream_socket connectto;
 allow hal_sensors_default audio_socket:sock_file rw_file_perms;
+
+allow hal_sensors_default iio_device:chr_file rw_file_perms;
+allow hal_sensors_default vendor_elliptic_device:chr_file rw_file_perms;
+allow hal_sensors_default vendor_sysfs_iio:dir r_dir_perms;
+allow hal_sensors_default vendor_sysfs_iio:file rw_file_perms;
 
 get_prop(hal_sensors_default, persist_sensors_prop)
 get_prop(hal_sensors_default, vendor_adsprpc_prop)
