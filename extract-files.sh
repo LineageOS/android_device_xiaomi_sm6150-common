@@ -70,6 +70,10 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        vendor/lib64/libwvhidl.so)
+            [ "$2" = "" ] && return 0
+            "${PATCHELF}" --replace-needed "libcrypto.so" "libcrypto-v34.so" "${2}"
+            ;;
         *)
             return 1
             ;;
