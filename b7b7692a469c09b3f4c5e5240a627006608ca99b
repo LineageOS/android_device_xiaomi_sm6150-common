@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "13d4ffcb_56c50ec3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 22465
+      },
+      "writtenOn": "2024-09-28T08:20:02Z",
+      "side": 1,
+      "message": "I removed libdng_sdk.vendor, it\u0027s a dependency of com.qti.node.watermark.so in vendor/xiaomi/sweet and should be automatically build by its shared_libs property.",
+      "revId": "b7b7692a469c09b3f4c5e5240a627006608ca99b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
