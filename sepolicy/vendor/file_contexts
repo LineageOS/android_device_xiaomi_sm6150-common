@@ -37,7 +37,7 @@
 /sys/devices/virtual/touch/tp_dev/fp_state                           u:object_r:vendor_sysfs_sensors:s0
 
 # HALs
-/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint@2\.3-service\.xiaomi u:object_r:hal_fingerprint_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.biometrics\.fingerprint-service\.xiaomi u:object_r:hal_fingerprint_default_exec:s0
 /vendor/bin/hw/android\.hardware\.light-service\.xiaomi                    u:object_r:hal_light_default_exec:s0
 /vendor/bin/hw/vendor\.lineage\.livedisplay@2\.1-service\.xiaomi_sm6150    u:object_r:hal_lineage_livedisplay_qti_exec:s0
 /vendor/bin/hw/vendor\.xiaomi\.hardware\.motor@1\.0-service                u:object_r:hal_motor_default_exec:s0
