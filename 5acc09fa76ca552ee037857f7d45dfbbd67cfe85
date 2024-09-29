@@ -34,6 +34,24 @@
       "parentUuid": "22e59f21_56c9dcf2",
       "revId": "5acc09fa76ca552ee037857f7d45dfbbd67cfe85",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a63a4acc_edcd3b1e",
+        "filename": "sm6150.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 346,
+      "author": {
+        "id": 22465
+      },
+      "writtenOn": "2024-09-29T16:32:12Z",
+      "side": 0,
+      "message": "My bad, it\u0027s dynamically loaded by arcsoft libs.",
+      "parentUuid": "d71b79be_9d1847e6",
+      "revId": "5acc09fa76ca552ee037857f7d45dfbbd67cfe85",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
