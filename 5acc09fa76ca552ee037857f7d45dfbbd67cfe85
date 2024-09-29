@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1a9e9bb7_c27fd170",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 22465
+      },
+      "writtenOn": "2024-09-29T16:18:50Z",
+      "side": 1,
+      "message": "Per Bruno\u0027s comment, I moved libril* and libvulkan removal to a separate change (404239) as none are direct dependencies of the (prebuilt) vendor libraries.",
+      "revId": "5acc09fa76ca552ee037857f7d45dfbbd67cfe85",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
