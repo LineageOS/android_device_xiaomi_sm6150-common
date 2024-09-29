@@ -16,6 +16,24 @@
       "message": "This belongs in the previous change",
       "revId": "5acc09fa76ca552ee037857f7d45dfbbd67cfe85",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d71b79be_9d1847e6",
+        "filename": "sm6150.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 346,
+      "author": {
+        "id": 22465
+      },
+      "writtenOn": "2024-09-29T16:30:09Z",
+      "side": 0,
+      "message": "It was intentional, libvulkan isn\u0027t a direct dependency of the vendor libs so I moved it here. It\u0027s not built either in a full build so it seems its not used at all.",
+      "parentUuid": "22e59f21_56c9dcf2",
+      "revId": "5acc09fa76ca552ee037857f7d45dfbbd67cfe85",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
