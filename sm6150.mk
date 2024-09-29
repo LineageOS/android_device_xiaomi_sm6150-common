@@ -258,9 +258,7 @@ PRODUCT_COPY_FILES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    CarrierConfigOverlay \
-    libril \
-    librilutils
+    CarrierConfigOverlay
 
 # Recovery
 PRODUCT_PACKAGES += \
