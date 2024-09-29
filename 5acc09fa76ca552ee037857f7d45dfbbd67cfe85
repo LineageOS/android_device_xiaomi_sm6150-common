@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "22e59f21_56c9dcf2",
+        "filename": "sm6150.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 346,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2024-09-29T16:28:23Z",
+      "side": 0,
+      "message": "This belongs in the previous change",
+      "revId": "5acc09fa76ca552ee037857f7d45dfbbd67cfe85",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
