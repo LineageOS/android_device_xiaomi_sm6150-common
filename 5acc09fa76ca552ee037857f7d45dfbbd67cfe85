@@ -34,6 +34,24 @@
       "parentUuid": "1a9e9bb7_c27fd170",
       "revId": "5acc09fa76ca552ee037857f7d45dfbbd67cfe85",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4489d885_6ebf8678",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 22465
+      },
+      "writtenOn": "2024-09-29T16:35:32Z",
+      "side": 1,
+      "message": "It\u0027s dynamically loaded by arcsoft libraries, so we need to build it explicitly.",
+      "parentUuid": "be439dfb_f6bc9879",
+      "revId": "5acc09fa76ca552ee037857f7d45dfbbd67cfe85",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
