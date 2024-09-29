@@ -53,6 +53,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "75ecf0ed_8d8db383",
+        "filename": "sm6150.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 266,
+      "author": {
+        "id": 22465
+      },
+      "writtenOn": "2024-09-29T16:11:59Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "19e29a5a_ac9f1ddf",
+      "revId": "b7b7692a469c09b3f4c5e5240a627006608ca99b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "9c054a4b_ddc0c71a",
@@ -66,6 +84,24 @@
       "writtenOn": "2024-09-29T15:40:40Z",
       "side": 1,
       "message": "Can\u0027t this be removed too?",
+      "revId": "b7b7692a469c09b3f4c5e5240a627006608ca99b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9aa07329_8580c7d5",
+        "filename": "sm6150.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 349,
+      "author": {
+        "id": 22465
+      },
+      "writtenOn": "2024-09-29T16:11:59Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9c054a4b_ddc0c71a",
       "revId": "b7b7692a469c09b3f4c5e5240a627006608ca99b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
