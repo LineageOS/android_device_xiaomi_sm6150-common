@@ -16,6 +16,23 @@
       "message": "I removed libdng_sdk.vendor, it\u0027s a dependency of com.qti.node.watermark.so in vendor/xiaomi/sweet and should be automatically build by its shared_libs property.",
       "revId": "b7b7692a469c09b3f4c5e5240a627006608ca99b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4e0c4cdf_3b0a2838",
+        "filename": "sm6150.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 266,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2024-09-29T15:36:06Z",
+      "side": 1,
+      "message": "do we need these libril* packages at all?",
+      "revId": "b7b7692a469c09b3f4c5e5240a627006608ca99b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
