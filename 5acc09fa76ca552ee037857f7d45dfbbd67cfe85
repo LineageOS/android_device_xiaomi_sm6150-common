@@ -52,6 +52,24 @@
       "parentUuid": "d71b79be_9d1847e6",
       "revId": "5acc09fa76ca552ee037857f7d45dfbbd67cfe85",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4a16312b_d625fa4a",
+        "filename": "sm6150.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 346,
+      "author": {
+        "id": 22465
+      },
+      "writtenOn": "2024-09-29T16:34:26Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "a63a4acc_edcd3b1e",
+      "revId": "5acc09fa76ca552ee037857f7d45dfbbd67cfe85",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
