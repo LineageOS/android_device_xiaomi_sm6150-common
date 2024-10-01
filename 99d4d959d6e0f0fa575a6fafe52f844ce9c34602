@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3efe5e9a_2cf0d48c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2024-10-01T03:34:09Z",
+      "side": 1,
+      "message": "Using the AIDL from https://github.com/basamaryan/android_hardware_xiaomi/commits/lineage-22/ for now",
+      "revId": "99d4d959d6e0f0fa575a6fafe52f844ce9c34602",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
