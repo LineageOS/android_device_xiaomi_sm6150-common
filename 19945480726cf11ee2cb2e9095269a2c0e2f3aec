@@ -16,6 +16,24 @@
       "message": "Join both blobs in a \"list\" like done in, for example, line 41.",
       "revId": "19945480726cf11ee2cb2e9095269a2c0e2f3aec",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "758f7638_ef12a000",
+        "filename": "extract-files.py",
+        "patchSetId": 4
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2024-10-19T22:54:33Z",
+      "side": 1,
+      "message": "Done in 404323",
+      "parentUuid": "d888431f_8f744acb",
+      "revId": "19945480726cf11ee2cb2e9095269a2c0e2f3aec",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
