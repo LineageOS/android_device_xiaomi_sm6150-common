@@ -69,6 +69,24 @@
       "parentUuid": "04b132dd_2aae70e0",
       "revId": "6a174f380d90d1fa3950dc4fe6352a02b7714cf2",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "779f696b_e685b893",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2024-12-17T20:40:42Z",
+      "side": 1,
+      "message": "Yeah, thanks. I just compared it with Xiaomi\u0027s latest build for sweet_k6a and saw it there. Added it in a few more places and reordered them as on stock.",
+      "parentUuid": "fb1b51c2_40e2460d",
+      "revId": "6a174f380d90d1fa3950dc4fe6352a02b7714cf2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
