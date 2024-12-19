@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5b5fed04_37057cc0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2024-12-19T17:22:27Z",
+      "side": 1,
+      "message": "Fixes the missing symlink and an issue where audio in apps like Teams would sound like a chipmunk or whatever (audio_hw_extn: spkr_prot_feature_init: Called with feature Enabled, vendor_enhanced_info 0x0 -\u003e audio_hw_extn: spkr_prot_feature_init: Called with feature Enabled, vendor_enhanced_info 0x3 - thanks luk)",
+      "revId": "4f0537cfcf65a6306e9a7303a37ccc1a2bae7499",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
