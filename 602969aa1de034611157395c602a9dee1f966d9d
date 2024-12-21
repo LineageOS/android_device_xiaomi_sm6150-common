@@ -16,6 +16,23 @@
       "message": "For 22.1",
       "revId": "602969aa1de034611157395c602a9dee1f966d9d",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "86100ed8_e032a3f8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2024-12-21T07:27:30Z",
+      "side": 1,
+      "message": "actually nvm it\u0027s for 22.0 as well - https://github.com/LineageOS/android_frameworks_base/blob/lineage-22.0/core/res/res/values/symbols.xml#L3441",
+      "revId": "602969aa1de034611157395c602a9dee1f966d9d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
