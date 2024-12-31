@@ -111,9 +111,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.memtrack-service
 
 PRODUCT_PACKAGES += \
-    hwcomposer.qcom
-
-PRODUCT_PACKAGES += \
     disable_configstore
 
 PRODUCT_COPY_FILES += \
