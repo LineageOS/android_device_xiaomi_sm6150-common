@@ -111,8 +111,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.memtrack-service
 
 PRODUCT_PACKAGES += \
-    gralloc.sm6150 \
-    hwcomposer.sm6150
+    gralloc.qcom \
+    hwcomposer.qcom
 
 PRODUCT_PACKAGES += \
     disable_configstore
