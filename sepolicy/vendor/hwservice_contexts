@@ -1,4 +1,5 @@
 vendor.goodix.hardware.biometrics.fingerprint::IGoodixFingerprintDaemon u:object_r:hal_fingerprint_hwservice_xiaomi:s0
+vendor.qti.hardware.radio.qcriNvOpt::IqcriNvOpt u:object_r:hal_rilnv_hwservice:s0
 vendor.sw.swfingerprint::ISwfingerprint u:object_r:hal_swfingerprint_hwservice:s0
 vendor.xiaomi.hardware.fingerprintextension::IXiaomiFingerprint u:object_r:hal_fingerprint_hwservice_xiaomi:s0
 vendor.xiaomi.hardware.motor::IMotor u:object_r:hal_motor_hwservice_xiaomi:s0
