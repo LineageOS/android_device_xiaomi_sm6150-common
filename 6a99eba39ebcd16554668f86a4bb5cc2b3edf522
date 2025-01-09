@@ -16,6 +16,24 @@
       "message": "Not sure if I should just rm configs/media/media_codecs_vendor_audio.xml as well",
       "revId": "6a99eba39ebcd16554668f86a4bb5cc2b3edf522",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "351d52e9_49082004",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 4550
+      },
+      "writtenOn": "2025-01-09T20:34:02Z",
+      "side": 1,
+      "message": "It looks like you have c2, which means you could remove OMX completely, you can look at oneplus sm8250 changes for example",
+      "parentUuid": "d52fea0e_a965adbf",
+      "revId": "6a99eba39ebcd16554668f86a4bb5cc2b3edf522",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
