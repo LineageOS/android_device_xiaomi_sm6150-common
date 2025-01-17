@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3b39d587_8e8c5c74",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2025-01-17T19:08:38Z",
+      "side": 1,
+      "message": "Apparently fixes call distortion when a notification arrives",
+      "revId": "99d2b66cfaca33ebff82e86ac9bfdc125faa6845",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
