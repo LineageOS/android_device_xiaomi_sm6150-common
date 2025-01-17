@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9282c0ea_3098385a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2025-01-17T19:20:58Z",
+      "side": 1,
+      "message": "It was pinned because the one from sweet didn\u0027t work with violet, since that doesn\u0027t ship anymore it\u0027s fine unpinning it and using the one from sweet_k6a",
+      "revId": "7dc5ca350315c93ffe1059fc3f80549765e64e08",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
