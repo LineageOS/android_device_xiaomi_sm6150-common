@@ -525,7 +525,7 @@ vendor/lib64/libtime_genoff.so
 vendor/bin/cnss-daemon
 
 # WiFi Display (system) - from dodge AP3A.240617.008
-system/framework/WfdCommon.jar|7f5fa507edca51663be2d243a3bc72799c1a31e2
+system/framework/WfdCommon.jar;BOOT_JAR|7f5fa507edca51663be2d243a3bc72799c1a31e2
 system_ext/bin/wfdservice64|710637051aaf51050e4c9a102a65fc859fbdfdfd
 system_ext/etc/init/wfdservice.rc|907def8565d8f91f531ca7dfad880af05d540b0c|3dfd29a44f37c971b7707b6e47b2b601a9119d12
 system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml|6669d5ee462c981663b8ac573d84d334e4eed96c
