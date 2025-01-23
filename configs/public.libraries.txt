@@ -1,12 +1,38 @@
+libHalSuperSensorServer.so
+libOpenCL.so
+libSNPE.so 64
+libSuperSensor.so
+libSuperSensorCPU.so
+libVDClearShot.so
+libVDSuperPhotoAPI.so
+lib_sr_models.so 64
 libadsprpc.so
 libalAILDC.so
 libalCFR.so
 libalhLDC.so
+libarcsoft_beautyshot.so 64
+libarcsoft_distortion_correction.so 64
+libarcsoft_dualcam_refocus.so 64
+libarcsoft_dualcam_refocus_front.so 64
+libarcsoft_dualcam_refocus_rear_t.so 64
+libarcsoft_dualcam_refocus_rear_w.so 64
+libarcsoft_portrait_lighting.so 64
+libarcsoft_portrait_lighting_c.so 64
+libbeauty_face_interface.so 64
 libcdsprpc.so
-libHalSuperSensorServer.so
-libOpenCL.so
+libhta_hexagon_runtime.so
+libhvx_interface.so 64
+libmiai_portraitsupernight.so 64
+libmialgo_ie_capture.so 64
+libmialgo_utils.so
+libmialgoengine.so 64
+libmibokeh_712.so 64
+libmpbase.so 64
+librelight_only.so 64
+libsdk_sr.so 64
 libsdsprpc.so
-libSuperSensorCPU.so
-libSuperSensor.so
-libVDClearShot.so
-libVDSuperPhotoAPI.so
+libsnpe_dsp_domains_v2.so 64
+libsymphony-cpu.so 64
+libxmi_hdr_checker.so 64
+libxmi_high_dynamic_range.so 64
+libxml2_vendor.so 64
