@@ -16,6 +16,24 @@
       "message": "why?",
       "revId": "78f198e36085e034ca8f1a2b4c45393dddf68491",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e80f5711_b6b0fa76",
+        "filename": "vendor.prop",
+        "patchSetId": 2
+      },
+      "lineNbr": 193,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2025-01-23T18:41:48Z",
+      "side": 1,
+      "message": "ah, fixed in PS3",
+      "parentUuid": "60582570_7038e6fe",
+      "revId": "78f198e36085e034ca8f1a2b4c45393dddf68491",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
