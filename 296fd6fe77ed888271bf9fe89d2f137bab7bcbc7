@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "96b82a0a_d7b2b5be",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2025-01-23T20:35:32Z",
+      "side": 1,
+      "message": "let\u0027s not change the sort style in this commit (LC_ALL\u003den_GB.UTF8). If you want make a separate change for that (before adding the new ones i\u0027d say) or just keep the old sorting to keep git blame intact.",
+      "revId": "296fd6fe77ed888271bf9fe89d2f137bab7bcbc7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
