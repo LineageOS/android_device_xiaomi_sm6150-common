@@ -16,6 +16,24 @@
       "message": "What\u0027s the point of decommonizing this?",
       "revId": "5c16995d5118ecaa6978fc06fb998c54754c6973",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "13e4a867_ca58f405",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2025-01-23T20:12:06Z",
+      "side": 1,
+      "message": "Well it\u0027s quite different on devices: https://github.com/xiaomi-sm6150/android_device_xiaomi_davinci/blob/048b74bf73b6b0aaa84fed266e909278a17eb769/configs/public.libraries.txt vs https://github.com/xiaomi-sm6150/android_device_xiaomi_sweet/blob/d01cf8129513fff7cd8ff2030eba122b321f5f28/configs/public.libraries.txt and I wasn\u0027t really sure how to deal with that as updating it from a newer device removed some blobs used on the older device.",
+      "parentUuid": "18c03fb9_cb88c57d",
+      "revId": "5c16995d5118ecaa6978fc06fb998c54754c6973",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
