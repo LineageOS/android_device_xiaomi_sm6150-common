@@ -1,4 +1,22 @@
 {
-  "comments": [],
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "114f55fd_cc535bc6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10258
+      },
+      "writtenOn": "2025-01-24T03:38:50Z",
+      "side": 1,
+      "message": "I\u0027m afraid you need to set either vendor.media.omx\u003d0 to disable omx service or TARGET_SUPPORTS_OMX_SERVICE\u003dfalse to exclude it from the build entirely.",
+      "revId": "344199bfe33caee2a2883e17b2338014a120ca40",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ],
   "submitRequirementResults": []
 }
