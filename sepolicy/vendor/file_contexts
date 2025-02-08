@@ -50,9 +50,6 @@
 /dev/akm09970                                                        u:object_r:hall_device:s0
 /dev/drv8846_dev                                                     u:object_r:motor_device:s0
 
-# NFC
-/vendor/bin/hw/android\.hardware\.nfc-service\.nxp                   u:object_r:hal_nfc_default_exec:s0
-
 # Persist subsystem
 /mnt/vendor/persist/subsys(/.*)?                                     u:object_r:persist_subsys_file:s0
 
