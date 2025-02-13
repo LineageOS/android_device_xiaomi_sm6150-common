@@ -69,6 +69,23 @@
       "parentUuid": "1982e625_91a1ff9a",
       "revId": "443517f7c8058488e1d9aa943bfc3adc2f79de91",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "eb74695c_5ebfd3e0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29080
+      },
+      "writtenOn": "2025-02-13T18:15:40Z",
+      "side": 1,
+      "message": "might as well just drop it \u0027cause it\u0027s the default value",
+      "revId": "443517f7c8058488e1d9aa943bfc3adc2f79de91",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
