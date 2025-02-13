@@ -51,6 +51,24 @@
       "message": "iirc 100 was taken from sunfish?  https://github.com/LineageOS/android_device_google_gs101/commit/1540e87a66c7137be7d9996562a304e1125d7c23 google decreased it to 60 on gs101 and above",
       "revId": "443517f7c8058488e1d9aa943bfc3adc2f79de91",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "557f5741_b485b85a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2025-02-13T17:33:50Z",
+      "side": 1,
+      "message": "just checked sunfish commits, the value (100) comes from its initial commit and remains unchanged... qcom sets it to 100 everywhere",
+      "parentUuid": "1982e625_91a1ff9a",
+      "revId": "443517f7c8058488e1d9aa943bfc3adc2f79de91",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
