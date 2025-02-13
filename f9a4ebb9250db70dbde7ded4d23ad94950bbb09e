@@ -34,6 +34,24 @@
       "parentUuid": "d91864d1_a7d32c06",
       "revId": "f9a4ebb9250db70dbde7ded4d23ad94950bbb09e",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c51bb2d8_62327b4a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2025-02-13T11:56:48Z",
+      "side": 1,
+      "message": "uh btw, the usb init rc mostly does USB mode switching, which will be handled by the HAL instead on the next commit. handling by HAL should be a better approach I think, and the init rc based rules is considered \"legacy\" by AOSP anyway",
+      "parentUuid": "8499925d_c3de5a6e",
+      "revId": "f9a4ebb9250db70dbde7ded4d23ad94950bbb09e",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
