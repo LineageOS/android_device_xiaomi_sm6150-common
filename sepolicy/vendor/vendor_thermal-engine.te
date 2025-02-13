@@ -1,0 +1,6 @@
+allow vendor_thermal-engine thermal_data_file:file r_file_perms;
+
+# persist.sys.thermal.config
+dontaudit vendor_thermal-engine system_prop:file read;
+# sys.thermal.type%d
+dontaudit vendor_thermal-engine system_prop:property_service set;
