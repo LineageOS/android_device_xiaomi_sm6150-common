@@ -22,6 +22,30 @@
       },
       "revId": "ef4b24e099b911b5d4f30c2d9819ff1d0c85da88",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a39c9532_10f99f0d",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2025-02-13T12:31:51Z",
+      "side": 1,
+      "message": "tried this, doesn\u0027t seem to work\n\nhttps://review.lineageos.org/c/LineageOS/android_kernel_xiaomi_sm6150/+/418707",
+      "parentUuid": "1b429b0a_cb443b63",
+      "range": {
+        "startLine": 9,
+        "startChar": 2,
+        "endLine": 9,
+        "endChar": 53
+      },
+      "revId": "ef4b24e099b911b5d4f30c2d9819ff1d0c85da88",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
