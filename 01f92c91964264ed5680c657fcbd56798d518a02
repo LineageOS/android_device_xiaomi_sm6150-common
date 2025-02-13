@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "de1a9787_3f0f4978",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2025-02-13T11:10:48Z",
+      "side": 1,
+      "message": "decommonizing just the qcrild binary but not the related blobs seems to ask for problems to occur. Can\u0027t we pin the blob again from some modern device without xiaomi changes?",
+      "revId": "01f92c91964264ed5680c657fcbd56798d518a02",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
