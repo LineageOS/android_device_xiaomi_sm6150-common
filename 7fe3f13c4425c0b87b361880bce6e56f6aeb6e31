@@ -16,6 +16,24 @@
       "message": "is the hwversion property set for all our devices?\nWe need to drop https://github.com/LineageOS/android_device_xiaomi_davinci/commit/da9befeb9c25cc6f9105a57e73861c80107881db then",
       "revId": "7fe3f13c4425c0b87b361880bce6e56f6aeb6e31",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c2f49648_c51df271",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2025-02-13T11:53:55Z",
+      "side": 1,
+      "message": "tho even if it\u0027s not set on all devices, there\u0027s still something else being shown",
+      "parentUuid": "7881cff6_242bf09e",
+      "revId": "7fe3f13c4425c0b87b361880bce6e56f6aeb6e31",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
