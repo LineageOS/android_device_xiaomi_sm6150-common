@@ -16,6 +16,24 @@
       "message": "decommonizing just the qcrild binary but not the related blobs seems to ask for problems to occur. Can\u0027t we pin the blob again from some modern device without xiaomi changes?",
       "revId": "01f92c91964264ed5680c657fcbd56798d518a02",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "92bdaec8_c6dbba8b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2025-02-13T11:41:35Z",
+      "side": 1,
+      "message": "The idea is still to keep the other 2 blobs synced, it\u0027s just idk if there\u0027s any other way to workaround that for now...\n\nI\u0027m not familiar with sm6150 devices yet, dunno which one to take from",
+      "parentUuid": "de1a9787_3f0f4978",
+      "revId": "01f92c91964264ed5680c657fcbd56798d518a02",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
