@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1b429b0a_cb443b63",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2025-02-13T11:08:01Z",
+      "side": 1,
+      "message": "https://github.com/LineageOS/android_kernel_xiaomi_sm6150/blob/lineage-22.1/arch/arm64/boot/dts/qcom/xiaomi/dsi-panel-ft8719-tianma-fhd-video.dtsi#L129\nhttps://github.com/LineageOS/android_kernel_xiaomi_sm6150/blob/lineage-22.1/arch/arm64/boot/dts/qcom/xiaomi/dsi-panel-nt36672a-shenchao-fhd-video.dtsi#L280\nboth violet panels seem to support hbm? You might need to add support for that in kernel",
+      "range": {
+        "startLine": 9,
+        "startChar": 2,
+        "endLine": 9,
+        "endChar": 53
+      },
+      "revId": "ef4b24e099b911b5d4f30c2d9819ff1d0c85da88",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
