@@ -18,5 +18,8 @@ ro.vendor.oem.sno                  u:object_r:vendor_sno_prop:s0
 persist.vendor.radio.imei          u:object_r:vendor_deviceid_prop:s0
 persist.vendor.radio.meid          u:object_r:vendor_deviceid_prop:s0
 
+# WiFi
+persist.vendor.cnss-daemon.        u:object_r:vendor_wcnss_service_prop:s0
+
 # Xiaomi thermal daemon
 vendor.sys.thermal.                u:object_r:vendor_thermal_normal_prop:s0
