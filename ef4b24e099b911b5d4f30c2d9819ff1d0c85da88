@@ -63,6 +63,24 @@
       "message": "It ~should~ work, something is probably missing for it. Worst case scenario just set SOONG_CONFIG_xiaomiSm6150Vars_livedisplay_support_sunlight_enhancement to false?",
       "revId": "ef4b24e099b911b5d4f30c2d9819ff1d0c85da88",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "93d4f19d_7f40cee6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2025-02-17T13:55:32Z",
+      "side": 1,
+      "message": "\u003e It ~should~ work\n\nnope, at least I wasn\u0027t able to see any difference with it enabled/disabled\n\nhttps://review.lineageos.org/c/LineageOS/android_kernel_xiaomi_sm6150/+/418707\n\n\u003e Worst case scenario just set\n\nso there\u0027s only AntiFlicker left - which violet doesn\u0027t even have the sysfs node",
+      "parentUuid": "96b18496_1fdb026c",
+      "revId": "ef4b24e099b911b5d4f30c2d9819ff1d0c85da88",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
