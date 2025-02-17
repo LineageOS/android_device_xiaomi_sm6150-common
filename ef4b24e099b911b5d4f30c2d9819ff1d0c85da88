@@ -81,6 +81,24 @@
       "parentUuid": "96b18496_1fdb026c",
       "revId": "ef4b24e099b911b5d4f30c2d9819ff1d0c85da88",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cef4cf8e_75b05ceb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2025-02-17T14:04:00Z",
+      "side": 1,
+      "message": "Well, I assume something else is missing for it? It should be able to work on violet at least from what I\u0027ve seen. Anti-Flicker is set to false by default.",
+      "parentUuid": "93d4f19d_7f40cee6",
+      "revId": "ef4b24e099b911b5d4f30c2d9819ff1d0c85da88",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
