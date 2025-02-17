@@ -46,6 +46,23 @@
       },
       "revId": "ef4b24e099b911b5d4f30c2d9819ff1d0c85da88",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "96b18496_1fdb026c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2025-02-17T13:35:31Z",
+      "side": 1,
+      "message": "It ~should~ work, something is probably missing for it. Worst case scenario just set SOONG_CONFIG_xiaomiSm6150Vars_livedisplay_support_sunlight_enhancement to false?",
+      "revId": "ef4b24e099b911b5d4f30c2d9819ff1d0c85da88",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
