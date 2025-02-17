@@ -99,6 +99,24 @@
       "parentUuid": "93d4f19d_7f40cee6",
       "revId": "ef4b24e099b911b5d4f30c2d9819ff1d0c85da88",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7106ab32_c18cba19",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2025-02-17T14:13:34Z",
+      "side": 1,
+      "message": "... I have no idea at all then\n\n\u003e Anti-Flicker is set to false by default\n\n**if** all modes are sure to be broken, what\u0027s the purpose of keep having the HAL installed then...",
+      "parentUuid": "cef4cf8e_75b05ceb",
+      "revId": "ef4b24e099b911b5d4f30c2d9819ff1d0c85da88",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
