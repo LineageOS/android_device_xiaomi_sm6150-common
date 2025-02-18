@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5a74510f_88a7d6cd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2025-02-18T13:27:22Z",
+      "side": 1,
+      "message": "Why? This looks rather pointless or even wrong. AOSP loads media_codecs.xml and intends to do so if c2 is used. \"TODO: remove these c2-specific files once product moved to default file names\" this comment in AOSP indicates that loading of media_codecs_c2 could be dropped in the future. The setup before this commit would still work fine then, while this commit will break it. If, for some reason, we must merge the two files, they should be merged into a media_codecs.xml (without _c2) imo.",
+      "revId": "6f56d9c817df9a7a6a1152f20abfe864b31185ff",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
