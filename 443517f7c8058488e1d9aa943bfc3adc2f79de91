@@ -86,6 +86,24 @@
       "message": "might as well just drop it \u0027cause it\u0027s the default value",
       "revId": "443517f7c8058488e1d9aa943bfc3adc2f79de91",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2d05a7c0_e4994e58",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2025-02-18T13:34:02Z",
+      "side": 1,
+      "message": "This should be mentioned in the commit message (or instead pick the gs101 change you linked)",
+      "parentUuid": "557f5741_b485b85a",
+      "revId": "443517f7c8058488e1d9aa943bfc3adc2f79de91",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
