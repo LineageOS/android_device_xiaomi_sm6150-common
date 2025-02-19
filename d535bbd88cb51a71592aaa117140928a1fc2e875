@@ -70,6 +70,24 @@
       "parentUuid": "8e57d2c3_2acc3287",
       "revId": "d535bbd88cb51a71592aaa117140928a1fc2e875",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7bdb60be_e3538980",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2025-02-19T14:17:18Z",
+      "side": 1,
+      "message": "I think I had to do something like that while labeling ultrasound sepolicy just so it builds without the broken flag, don\u0027t remember though.",
+      "parentUuid": "42bce6ed_d7ea39f1",
+      "revId": "d535bbd88cb51a71592aaa117140928a1fc2e875",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
