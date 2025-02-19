@@ -34,6 +34,24 @@
       "parentUuid": "625e7447_0a162339",
       "revId": "d535bbd88cb51a71592aaa117140928a1fc2e875",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8e57d2c3_2acc3287",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2025-02-19T13:51:25Z",
+      "side": 1,
+      "message": "can\u0027t you place them in sepolicy/private/property_contexts",
+      "parentUuid": "9ee781db_47346f71",
+      "revId": "d535bbd88cb51a71592aaa117140928a1fc2e875",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
