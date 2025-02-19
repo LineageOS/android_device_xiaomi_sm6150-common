@@ -88,6 +88,24 @@
       "parentUuid": "42bce6ed_d7ea39f1",
       "revId": "d535bbd88cb51a71592aaa117140928a1fc2e875",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8db44399_12e9d296",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2025-02-19T14:26:33Z",
+      "side": 1,
+      "message": "well, some old devices (not specifically to pre-Treble) does use non-vendor prefix props in vendor... and they doesn\u0027t need a BROKEN flag to build, violet doesn\u0027t need it too\n\nviolet stock rom labels these props in vendor also\n\nthe prop prefix enforcement begins from R launch",
+      "parentUuid": "7bdb60be_e3538980",
+      "revId": "d535bbd88cb51a71592aaa117140928a1fc2e875",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
