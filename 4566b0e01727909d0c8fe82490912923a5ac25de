@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "15d04bdc_bd25e41e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2025-03-04T19:17:26Z",
+      "side": 1,
+      "message": "Maybe I6adbca2fab9a3fe0477d17f9786166828b786710 instead to no deviate from other devices?",
+      "revId": "4566b0e01727909d0c8fe82490912923a5ac25de",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
