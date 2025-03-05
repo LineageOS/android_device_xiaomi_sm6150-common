@@ -117,6 +117,24 @@
       "parentUuid": "cef4cf8e_75b05ceb",
       "revId": "ef4b24e099b911b5d4f30c2d9819ff1d0c85da88",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e109e214_6f98edd2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2025-03-05T04:19:01Z",
+      "side": 1,
+      "message": "Because it is fixable (it used to work at some point), I don\u0027t wanna deal with the pain of building it per device or guard it when it is actually common",
+      "parentUuid": "7106ab32_c18cba19",
+      "revId": "ef4b24e099b911b5d4f30c2d9819ff1d0c85da88",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
