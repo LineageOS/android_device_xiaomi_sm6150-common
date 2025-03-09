@@ -16,6 +16,23 @@
       "message": "works fine on violet",
       "revId": "10b41df9f3eaff2ec7971089e9482d7392e29be0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b9ba0b0d_a8e16724",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2025-03-09T12:38:06Z",
+      "side": 1,
+      "message": "https://github.com/me-cafebabe-backyard/proprietary_vendor_xiaomi_sm6150-common/commit/a775c55c610f4ea2af1915df8f7b681c190ca237",
+      "revId": "10b41df9f3eaff2ec7971089e9482d7392e29be0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
