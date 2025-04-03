@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f48220d5_3ad51e1e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-04-03T20:27:15Z",
+      "side": 1,
+      "message": "see discussion @ https://review.lineageos.org/c/LineageOS/android_device_xiaomi_sm8350-common/+/425657",
+      "revId": "23142a9fb5f095556ba6dd7f26d562832575d412",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
