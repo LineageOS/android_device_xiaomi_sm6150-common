@@ -95,7 +95,6 @@ TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
 
 # Media
 TARGET_USES_ION := true
-TARGET_DISABLED_UBWC := true
 
 # Partitions
 -include vendor/lineage/config/BoardConfigReservedSize.mk
