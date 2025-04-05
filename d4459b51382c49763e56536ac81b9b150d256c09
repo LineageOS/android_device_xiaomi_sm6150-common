@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e3ef5ea8_b8b336ec",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32548
+      },
+      "writtenOn": "2025-04-05T15:09:28Z",
+      "side": 1,
+      "message": "Can you share vendor tree?",
+      "revId": "d4459b51382c49763e56536ac81b9b150d256c09",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
