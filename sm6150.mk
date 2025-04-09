@@ -259,6 +259,7 @@ PRODUCT_PACKAGES += \
 
 # Recovery
 PRODUCT_PACKAGES += \
+    hvdcp_opti_recovery \
     librecovery_updater_xiaomi
 
 PRODUCT_COPY_FILES += \

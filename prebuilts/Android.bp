@@ -1,0 +1,27 @@
+cc_prebuilt_binary {
+    name: "hvdcp_opti_recovery",
+    stem: "hvdcp_opti",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "hvdcp_opti",
+            ],
+            shared_libs: [
+                "libcutils",
+                "libutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    recovery: true,
+}
