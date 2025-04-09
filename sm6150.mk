@@ -262,8 +262,8 @@ PRODUCT_PACKAGES += \
     librecovery_updater_xiaomi
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/init.recovery.qcom.rc:recovery/root/init.recovery.qcom.rc \
-    vendor/xiaomi/sm6150-common/proprietary/vendor/bin/hvdcp_opti:recovery/root/system/bin/hvdcp_opti
+    $(LOCAL_PATH)/rootdir/etc/init.recovery.qcom.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.qcom.rc \
+    vendor/xiaomi/sm6150-common/proprietary/vendor/bin/hvdcp_opti:$(TARGET_COPY_OUT_RECOVERY)/root/system/bin/hvdcp_opti
 
 # Sensors
 PRODUCT_COPY_FILES += \
