@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "86169800_9f87680f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2025-04-14T01:48:17Z",
+      "side": 1,
+      "message": "It built fine, vendor is on xiaomi-sm6150. I\u0027m too lazy to try WFD for now so if you get a chance to before me that\u0027ll be nice but it should work",
+      "revId": "481c84e00fa4fd0836831349862904b5e7658545",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
