@@ -34,6 +34,24 @@
       "parentUuid": "b099ec8f_05d368a5",
       "revId": "e0df71e298d7fcefd641c542a9656f36b76d8fb7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e9cea104_0e8156a0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2025-04-23T12:24:39Z",
+      "side": 1,
+      "message": "Sure, extract utils supports it:\n\nvendor/bin/hvdcp_opti:recovery/root/vendor/bin/hvdcp_opti\n\nDavinci charges without it for me.",
+      "parentUuid": "86968c58_a447f21f",
+      "revId": "e0df71e298d7fcefd641c542a9656f36b76d8fb7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
