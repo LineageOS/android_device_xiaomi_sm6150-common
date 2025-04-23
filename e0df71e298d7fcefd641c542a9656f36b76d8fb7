@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b099ec8f_05d368a5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2025-04-23T11:49:41Z",
+      "side": 1,
+      "message": "Do we have to provide the module here? I\u0027d prefer to copy it twice in vendor/xiaomi/sm6150-common to avoid cluttering this repo with it. Also do we really want it? Charging works as is and i don\u0027t think we need fast charging in recovery?",
+      "revId": "e0df71e298d7fcefd641c542a9656f36b76d8fb7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
