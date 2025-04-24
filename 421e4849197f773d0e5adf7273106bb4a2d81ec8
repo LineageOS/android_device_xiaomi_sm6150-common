@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fe45c772_29f3b155",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2025-04-24T16:59:29Z",
+      "side": 1,
+      "message": "as long as it really works (doesn\u0027t have long delay on MI logo after factory reset), sure",
+      "revId": "421e4849197f773d0e5adf7273106bb4a2d81ec8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
