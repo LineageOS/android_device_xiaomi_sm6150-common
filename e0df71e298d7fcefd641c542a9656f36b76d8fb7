@@ -52,6 +52,24 @@
       "parentUuid": "86968c58_a447f21f",
       "revId": "e0df71e298d7fcefd641c542a9656f36b76d8fb7",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a3ea7f12_04aad577",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32245
+      },
+      "writtenOn": "2025-04-27T13:35:00Z",
+      "side": 1,
+      "message": "```\nParsing device/xiaomi/sm6150-common/proprietary-files.txt\nrecovery/root/system/bin/hvdcp_opti: does not match known package rules\nTraceback (most recent call last):\n  File \"/android/LineageOS/22/device/xiaomi/sm6150-common/./extract-files.py\", line 69, in \u003cmodule\u003e\n    utils.run()\n  File \"/android/LineageOS/22/tools/extract-utils/extract_utils/main.py\", line 217, in run\n    self.write_makefiles()\n  File \"/android/LineageOS/22/tools/extract-utils/extract_utils/main.py\", line 158, in write_makefiles\n    module.write_makefiles(\n  File \"/android/LineageOS/22/tools/extract-utils/extract_utils/module.py\", line 682, in write_makefiles\n    proprietary_file.write_makefiles(self, ctx)\n  File \"/android/LineageOS/22/tools/extract-utils/extract_utils/module.py\", line 204, in write_makefiles\n    write_product_packages(\n  File \"/android/LineageOS/22/tools/extract-utils/extract_utils/makefiles.py\", line 537, in write_product_packages\n    assert not list(base_file_tree)\nAssertionError\n```",
+      "parentUuid": "e9cea104_0e8156a0",
+      "revId": "e0df71e298d7fcefd641c542a9656f36b76d8fb7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
