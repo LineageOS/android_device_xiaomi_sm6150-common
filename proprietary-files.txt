@@ -2,6 +2,7 @@
 # NX627J: NX627J-user 11 RKQ1.200826.002 nubia.20201029.204053 release-keys
 # dada: dada-user 16 BP2A.250605.015 OS2.0.217.0.WOCMIXM release-keys
 # mojito: mojito-user 12 SKQ1.210908.001 V14.0.9.0.SKGMIXM release-keys
+# spes: spes_global-user 13 TKQ1.221114.001 V816.0.8.0.TGCMIXM release-keys
 
 # ADSP
 vendor/bin/adsprpcd
@@ -38,20 +39,20 @@ system_ext/framework/audiosphere.jar
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libshoebox.so
 
-# Bluetooth
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
-vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
-vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so
-vendor/lib/libbluetooth_audio_session_qti.so
-vendor/lib/libbluetooth_audio_session_qti_2_1.so
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
-vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
-vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
-vendor/lib64/libbtnv.so
-vendor/lib64/libsoc_helper.so
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
-vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
+# Bluetooth - from spes
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|458aea3e8d0dec4a3e17fd476f4dea2392edc0e2
+vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc|f4ee3b2da2b08647447869ade86ec63f7340accc
+vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.1-impl.so|a83e30d60645db71d5fcb57ef1dd708af95ed662
+vendor/lib/libbluetooth_audio_session_qti.so|cef0687502bbe2d10d5bf067ca8ac5d8bcf40d3d
+vendor/lib/libbluetooth_audio_session_qti_2_1.so|a5c922a69da299f570fffec1eaa741ede8909e42
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|ea3fd18c1ec5757bc61b07c59087a9c7cbe05a71
+vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so|156ec51ccb53f667605cf99422abf9357888b4b6
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so|a9685a3bc4d4c5a0afbd915ec7babd2ba3e929ff
+vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so|3e1a8c52d73ef5e67bea68610906627226aabe21
+vendor/lib64/libbtnv.so|0c74a43550b939b9496b03b3285fa950cf560c48
+vendor/lib64/libsoc_helper.so|a7de8fae284f55adf21ca161155b41d6df9dae56
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so|23706dcfa35cc6f7dee934e13886c19a56a9aa12
+vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so|ece3dafc4447e8302109851c3a6b0d3978b3506d
 
 # Charger
 vendor/bin/hvdcp_opti;RECOVERY_AVAILABLE
