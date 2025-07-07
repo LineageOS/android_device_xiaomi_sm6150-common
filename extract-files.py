@@ -53,7 +53,8 @@ blob_fixups: blob_fixups_user_type = {
     'system_ext/lib64/libwfdnative.so': blob_fixup()
         .remove_needed('android.hidl.base@1.0.so'),
     'system_ext/lib64/libwfdservice.so': blob_fixup()
-        .add_needed('libaudioclient_shim.so'),
+        .add_needed('libaudioclient_shim.so')
+        .replace_needed('android.hardware.common-V2-ndk_platform.so', 'android.hardware.common-V2-ndk.so'),
     ('vendor/lib64/mediadrm/libwvdrmengine.so', 'vendor/lib64/libwvhidl.so'): blob_fixup()
         .add_needed('libcrypto_shim.so'),
 }  # fmt: skip
