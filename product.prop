@@ -1,2 +1,5 @@
+# BPF
+ro.bpf.kver_override=5.4.186
+
 # SystemUI
 persist.sysui.disableBlur=true
