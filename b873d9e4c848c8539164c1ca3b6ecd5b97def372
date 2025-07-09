@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9a912116_df0d09c2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2025-07-09T15:57:27Z",
+      "side": 1,
+      "message": "Waiting for it to get merged on qcom_sm8150 but it works",
+      "revId": "b873d9e4c848c8539164c1ca3b6ecd5b97def372",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
