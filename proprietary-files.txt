@@ -161,8 +161,8 @@ vendor/lib64/libdpmqmihal.so
 
 # DRM
 vendor/bin/qseecomd
-vendor/etc/gpfspath_oem_config.xml
 vendor/etc/init/qseecomd.rc
+vendor/etc/gpfspath_oem_config.xml
 vendor/lib64/libGPreqcancel.so
 vendor/lib64/libGPreqcancel_svc.so
 vendor/lib64/libQSEEComAPI.so
@@ -182,8 +182,8 @@ vendor/lib64/libtrustedapploader.so
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
-vendor/lib64/libwvhidl.so
 vendor/lib64/mediadrm/libwvdrmengine.so
+vendor/lib64/libwvhidl.so
 
 # DSP
 vendor/bin/dspservice
@@ -415,8 +415,8 @@ system_ext/etc/permissions/qcrilhook.xml|30397e293b2c40e6b7a1d11c2a615cdd05de625
 system_ext/framework/qcrilhook.jar|f251fd8cf621c66a970597954c257d69b6136eda
 system_ext/framework/qti-telephony-common.jar|0ec7f3f9c70a126388595b969c086c0081bacba4
 system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|3d8fe8b564f844a2d721f018a3a0e64ebc3c7488
-vendor/bin/adpl|e267176086e515486a992c98f2bc540da6e8c555
 vendor/bin/hw/qcrild|77d0168fbad7db01eec8abd9df25f19c05411eb4
+vendor/bin/adpl|e267176086e515486a992c98f2bc540da6e8c555
 vendor/bin/netmgrd|b8df33d93b08d4c57f718457e9f2f71066e8227d
 vendor/bin/qti|dfee6189c14989429bb3320066fdc4b9edbca2d7
 vendor/bin/rmt_storage|626b20ddd58a5b70905a593b4eaa46d4dc6c1b2a
@@ -474,7 +474,6 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so|5ec80005a20a2ef6
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so|663b65448ec8f5972337e1bbdc08ef5d4b08e8fa
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so|3ffb7301b6c185b114157c5423de604e5ba93ade
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so|75a58827c0b4e06e2ca8163b6a904dab2af3be6a
-vendor/radio/qcril_database/qcril.db|f5d830834cbca2dc5cb90d003e0b395e385483cb
 vendor/radio/qcril_database/upgrade/0_initial.sql|e2dfb672711e09330accb3563634f34f907d31ba
 vendor/radio/qcril_database/upgrade/10_version_update_ecc_table.sql|47dc91c45a59a1d5138b4945b2a49f47161baa16
 vendor/radio/qcril_database/upgrade/11_version_update_ecc_table.sql|b0351c39bb0ab6a328ff4f639343f42817bd4161
@@ -505,6 +504,7 @@ vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql|93340d59f05cd
 vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql|9a76d5747da2876b87b214579c9d74ae92d218d7
 vendor/radio/qcril_database/upgrade/8_version_update_ecc_table.sql|f6c7e947859f56312e687cba70082ce143821351
 vendor/radio/qcril_database/upgrade/9_version_update_ecc_table_127531.sql|3629f96ea40e6c4051da9387d62129c057e5c94b
+vendor/radio/qcril_database/qcril.db|f5d830834cbca2dc5cb90d003e0b395e385483cb
 
 # Soter
 vendor/app/SoterService/SoterService.apk
