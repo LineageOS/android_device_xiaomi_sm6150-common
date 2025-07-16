@@ -1,4 +1,8 @@
 [
+ {
+    "repository": "android_device_qcom_wfd",
+    "target_path": "device/qcom/wfd"
+  },
   {
     "repository": "android_kernel_xiaomi_sm6150",
     "target_path": "kernel/xiaomi/sm6150"
