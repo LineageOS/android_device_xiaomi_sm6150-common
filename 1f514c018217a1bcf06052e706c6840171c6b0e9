@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0c3b5169_ef3110fc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2025-08-04T08:46:40Z",
+      "side": 1,
+      "message": "./extract-files.py https://bn.d.miui.com/OS2.0.217.0.WOCMIXM/dada_global-ota_full-OS2.0.217.0.WOCMIXM-user-16.0-0be7332545.zip --only-common --section \"*dada*\" --kang",
+      "revId": "1f514c018217a1bcf06052e706c6840171c6b0e9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
