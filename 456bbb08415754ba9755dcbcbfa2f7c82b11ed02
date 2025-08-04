@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "aa91bd52_0d402c8d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2025-08-04T08:45:21Z",
+      "side": 1,
+      "message": "./extract-files.py https://bn.d.miui.com/OS1.0.19.0.THGMIXM/miui_SWEETK6AGlobal_OS1.0.19.0.THGMIXM_edf1713bf0_13.0.zip --only-common",
+      "revId": "456bbb08415754ba9755dcbcbfa2f7c82b11ed02",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
