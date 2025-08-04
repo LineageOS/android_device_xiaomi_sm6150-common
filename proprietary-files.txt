@@ -1,5 +1,6 @@
 # These proprietary files are extracted from Redmi Note 12 Pro 4G (codenamed `sweet_k6a`) OS1.0.19.0.THGMIXM, unless pinned
-# mojito: Redmi/mojito/mojito:12/RKQ1.210614.002/V14.0.8.0.SKGMIXM:user/release-keys
+# mojito: mojito-user 12 SKQ1.210908.001 V14.0.9.0.SKGMIXM release-keys
+# NX627J: NX627J-user 11 RKQ1.200826.002 nubia.20201029.204053 release-keys
 
 # ADSP
 vendor/bin/adsprpcd
@@ -136,7 +137,7 @@ vendor/lib64/libsdm-disp-vndapis.so
 vendor/lib64/libsdmextension.so
 vendor/lib64/libtinyxml2_1.so
 
-# Display - from NX627J 20201029.204053
+# Display - from NX627J
 vendor/lib64/libsdedrm.so|582910d21139781ad9e414c35207584f51e035e2
 
 # DPM
