@@ -14,50 +14,58 @@
  * limitations under the License.
  */
 
-#define LOG_TAG "vendor.lineage.livedisplay@2.1-service.xiaomi_sm6150"
+#define LOG_TAG "vendor.lineage.livedisplay-service.xiaomi_sm6150"
 
 #include <android-base/logging.h>
+#include <android/binder_manager.h>
+#include <android/binder_process.h>
 #include <binder/ProcessState.h>
-#include <hidl/HidlTransportSupport.h>
 #include <livedisplay/sdm/PictureAdjustment.h>
 
 #include "AntiFlicker.h"
 #include "SunlightEnhancement.h"
 
-using ::vendor::lineage::livedisplay::V2_0::sdm::PictureAdjustment;
-using ::vendor::lineage::livedisplay::V2_0::sdm::SDMController;
-using ::vendor::lineage::livedisplay::V2_1::IAntiFlicker;
-using ::vendor::lineage::livedisplay::V2_1::ISunlightEnhancement;
-using ::vendor::lineage::livedisplay::V2_1::implementation::AntiFlicker;
-using ::vendor::lineage::livedisplay::V2_1::implementation::SunlightEnhancement;
+using ::aidl::vendor::lineage::livedisplay::AntiFlicker;
+using ::aidl::vendor::lineage::livedisplay::SunlightEnhancement;
+using ::aidl::vendor::lineage::livedisplay::sdm::PictureAdjustment;
+using ::aidl::vendor::lineage::livedisplay::sdm::SDMController;
 
 int main() {
-    std::shared_ptr<SDMController> controller = std::make_shared<SDMController>();
-    android::sp<PictureAdjustment> pictureAdjustment = new PictureAdjustment(controller);
+    android::ProcessState::self()->setThreadPoolMaxThreadCount(1);
+    android::ProcessState::self()->startThreadPool();
 
-    android::hardware::configureRpcThreadpool(1, true /*callerWillJoin*/);
+    std::shared_ptr<SDMController> controller = std::make_shared<SDMController>();
+    std::shared_ptr<PictureAdjustment> pictureAdjustment =
+            ndk::SharedRefBase::make<PictureAdjustment>(controller);
+    std::string instance = std::string() + PictureAdjustment::descriptor + "/default";
+    if (AServiceManager_addService(pictureAdjustment->asBinder().get(), instance.c_str()) !=
+        STATUS_OK) {
+        LOG(ERROR) << "Cannot register picture adjustment HAL service.";
+        return 1;
+    }
 
 #ifdef SUPPORT_ANTI_FLICKER
-    android::sp<IAntiFlicker> antiFlicker = new AntiFlicker();
-    if (antiFlicker->registerAsService() != android::OK) {
+    std::shared_ptr<AntiFlicker> antiFlicker = ndk::SharedRefBase::make<AntiFlicker>();
+    instance = std::string() + AntiFlicker::descriptor + "/default";
+    if (AServiceManager_addService(antiFlicker->asBinder().get(), instance.c_str()) != STATUS_OK) {
         LOG(ERROR) << "Cannot register anti flicker HAL service.";
         return 1;
     }
 #endif
-    if (pictureAdjustment->registerAsService() != android::OK) {
-        LOG(ERROR) << "Cannot register picture adjustment HAL service.";
-        return 1;
-    }
+
 #ifdef SUPPORT_SUNLIGHT_ENHANCEMENT
-    android::sp<ISunlightEnhancement> sunlightEnhancement = new SunlightEnhancement();
-    if (sunlightEnhancement->registerAsService() != android::OK) {
+    std::shared_ptr<SunlightEnhancement> sunlightEnhancement =
+            ndk::SharedRefBase::make<SunlightEnhancement>();
+    instance = std::string() + SunlightEnhancement::descriptor + "/default";
+    if (AServiceManager_addService(sunlightEnhancement->asBinder().get(), instance.c_str()) !=
+        STATUS_OK) {
         LOG(ERROR) << "Cannot register sunlight enhancement HAL service.";
         return 1;
     }
 #endif
     LOG(INFO) << "LiveDisplay HAL service is ready.";
 
-    android::hardware::joinRpcThreadpool();
+    ABinderProcess_joinThreadPool();
 
     LOG(ERROR) << "LiveDisplay HAL service failed to join thread pool.";
     return 1;

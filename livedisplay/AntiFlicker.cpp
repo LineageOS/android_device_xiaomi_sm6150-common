@@ -22,34 +22,33 @@
 
 #include "AntiFlicker.h"
 
+namespace aidl {
 namespace vendor {
 namespace lineage {
 namespace livedisplay {
-namespace V2_1 {
-namespace implementation {
 
 static constexpr const char* kAntiFlickerStatusPath =
         "/sys/devices/platform/soc/soc:qcom,dsi-display/dc_enable";
 
-Return<bool> AntiFlicker::isEnabled() {
+ndk::ScopedAStatus AntiFlicker::getEnabled(bool* aidl_return) {
     std::string buf;
     if (!android::base::ReadFileToString(kAntiFlickerStatusPath, &buf)) {
         LOG(ERROR) << "Failed to read " << kAntiFlickerStatusPath;
-        return false;
+        return ndk::ScopedAStatus::fromExceptionCode(EX_UNSUPPORTED_OPERATION);
     }
-    return std::stoi(android::base::Trim(buf)) == 1;
+    *aidl_return = std::stoi(android::base::Trim(buf)) == 1;
+    return ndk::ScopedAStatus::ok();
 }
 
-Return<bool> AntiFlicker::setEnabled(bool enabled) {
+ndk::ScopedAStatus AntiFlicker::setEnabled(bool enabled) {
     if (!android::base::WriteStringToFile((enabled ? "1" : "0"), kAntiFlickerStatusPath)) {
         LOG(ERROR) << "Failed to write " << kAntiFlickerStatusPath;
-        return false;
+        return ndk::ScopedAStatus::fromExceptionCode(EX_UNSUPPORTED_OPERATION);
     }
-    return true;
+    return ndk::ScopedAStatus::ok();
 }
 
-}  // namespace implementation
-}  // namespace V2_1
 }  // namespace livedisplay
 }  // namespace lineage
 }  // namespace vendor
+}  // namespace aidl

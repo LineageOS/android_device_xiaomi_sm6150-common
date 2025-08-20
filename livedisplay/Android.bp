@@ -1,5 +1,5 @@
 //
-// Copyright (C) 2019-2024 The LineageOS Project
+// Copyright (C) 2019-2025 The LineageOS Project
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,22 +14,21 @@
 // limitations under the License.
 
 cc_binary {
-    name: "vendor.lineage.livedisplay@2.1-service.xiaomi_sm6150",
-    defaults: ["hidl_defaults"],
+    name: "vendor.lineage.livedisplay-service.xiaomi_sm6150",
     vintf_fragments: select(soong_config_variable("xiaomiSm6150Vars", "livedisplay_support_anti_flicker"), {
-        "true": ["vendor.lineage.livedisplay@2.1_IAntiFlicker.xml"],
+        "true": ["vendor.lineage.livedisplay_IAntiFlicker.xml"],
         default: [],
     }) + select(soong_config_variable("xiaomiSm6150Vars", "livedisplay_support_sunlight_enhancement"), {
-        "true": ["vendor.lineage.livedisplay@2.1_ISunlightEnhancement.xml"],
+        "true": ["vendor.lineage.livedisplay_ISunlightEnhancement.xml"],
         default: [],
     }) + [
-        "vendor.lineage.livedisplay@2.1-service.xiaomi_sm6150.xml",
+        "vendor.lineage.livedisplay-service.xiaomi_sm6150.xml",
     ],
-    init_rc: ["vendor.lineage.livedisplay@2.1-service.xiaomi_sm6150.rc"],
+    init_rc: ["vendor.lineage.livedisplay-service.xiaomi_sm6150.rc"],
     relative_install_path: "hw",
     srcs: [
-        ":vendor.lineage.livedisplay@2.0-sdm-pa",
-        ":vendor.lineage.livedisplay@2.0-sdm-utils",
+        ":vendor.lineage.livedisplay-sdm-pa",
+        ":vendor.lineage.livedisplay-sdm-utils",
         "AntiFlicker.cpp",
         "SunlightEnhancement.cpp",
         "service.cpp",
@@ -37,14 +36,13 @@ cc_binary {
     vendor: true,
     shared_libs: [
         "libbase",
+        "libbinder_ndk",
         "libbinder",
-        "libhidlbase",
         "libutils",
-        "vendor.lineage.livedisplay@2.0",
-        "vendor.lineage.livedisplay@2.1",
+        "vendor.lineage.livedisplay-V1-ndk",
     ],
     header_libs: [
-        "vendor.lineage.livedisplay@2.0-sdm-headers",
+        "vendor.lineage.livedisplay-sdm-headers",
     ],
     cflags: select(soong_config_variable("xiaomiSm6150Vars", "livedisplay_support_anti_flicker"), {
         "true": ["-DSUPPORT_ANTI_FLICKER"],
