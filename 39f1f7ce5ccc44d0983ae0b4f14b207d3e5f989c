@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fb847fae_a81b56cf",
+        "filename": "livedisplay/service.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 10067
+      },
+      "writtenOn": "2025-08-21T16:42:50Z",
+      "side": 1,
+      "message": "you want this instead:\n\n```\n    android::ProcessState::self()-\u003esetThreadPoolMaxThreadCount(1);\n    android::ProcessState::self()-\u003estartThreadPool();\n```\n\notherwise it\u0027ll complain about qdisplay service.",
+      "range": {
+        "startLine": 39,
+        "startChar": 0,
+        "endLine": 41,
+        "endChar": 0
+      },
+      "revId": "39f1f7ce5ccc44d0983ae0b4f14b207d3e5f989c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
