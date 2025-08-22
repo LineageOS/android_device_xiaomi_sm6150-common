@@ -22,6 +22,30 @@
       },
       "revId": "39f1f7ce5ccc44d0983ae0b4f14b207d3e5f989c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e73617da_99b2bf73",
+        "filename": "livedisplay/service.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2025-08-22T00:09:29Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "fb847fae_a81b56cf",
+      "range": {
+        "startLine": 39,
+        "startChar": 0,
+        "endLine": 41,
+        "endChar": 0
+      },
+      "revId": "39f1f7ce5ccc44d0983ae0b4f14b207d3e5f989c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
