@@ -16,9 +16,9 @@
 -->
 <resources>
     <string-array name="doze_brightness_level">
-        <item>Low brightness</item>
-        <item>High brightness</item>
-        <item>Adaptive brightness</item>
+        <item>@string/doze_brightness_low</item>
+        <item>@string/doze_brightness_high</item>
+        <item>@string/doze_brightness_adaptive</item>
     </string-array>
     <string-array name="doze_brightness_level_mode">
         <item>0</item>
