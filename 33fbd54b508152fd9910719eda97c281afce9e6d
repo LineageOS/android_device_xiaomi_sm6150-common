@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6bf583fb_cf93f3d0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2025-11-06T21:39:20Z",
+      "side": 1,
+      "message": "davinci:\n\nSummary (Test executed with 1 devices.)\n-------\narm64-v8a CtsSensorPrivacyTestCases: Passed: 32, Failed: 0, Ignored: 1, Assumption Failed: 8  \n\nAll tests passed!",
+      "revId": "33fbd54b508152fd9910719eda97c281afce9e6d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
