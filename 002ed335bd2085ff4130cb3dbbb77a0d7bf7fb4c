@@ -1,0 +1,72 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "510511fe_bfe5ee5f",
+        "filename": "sepolicy/vendor/file.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 22465
+      },
+      "writtenOn": "2025-11-09T12:32:00Z",
+      "side": 1,
+      "message": "There is no need to add a new type, in stock, /dev/elliptic* and /dev/mius* don\u0027t follow the same type.\n\nElliptic is currently using vendor_elliptic_device, which is already allowed for hal_sensors_default.",
+      "revId": "002ed335bd2085ff4130cb3dbbb77a0d7bf7fb4c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a01f083c_ee6d10bf",
+        "filename": "sepolicy/vendor/file_contexts",
+        "patchSetId": 2
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 22465
+      },
+      "writtenOn": "2025-11-09T12:32:00Z",
+      "side": 1,
+      "message": "Stock uses vendor_sound_device, might use that rather than using a new type.\n```suggestion\n/dev/mius(.*)?                                                       u:object_r:vendor_sound_device:s0\n```",
+      "revId": "002ed335bd2085ff4130cb3dbbb77a0d7bf7fb4c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "71dd942b_31c379c8",
+        "filename": "sepolicy/vendor/file_contexts",
+        "patchSetId": 2
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 22465
+      },
+      "writtenOn": "2025-11-09T12:32:00Z",
+      "side": 1,
+      "message": "elliptic0 is already labelled here, you should edit this line to match [0-9].\n```suggestion\n/dev/elliptic[0-9]                                                       u:object_r:vendor_elliptic_device:s0\n```",
+      "revId": "002ed335bd2085ff4130cb3dbbb77a0d7bf7fb4c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "a07de349_a59f72eb",
+        "filename": "sepolicy/vendor/hal_sensors_default.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 22465
+      },
+      "writtenOn": "2025-11-09T12:32:00Z",
+      "side": 1,
+      "message": "```suggestion\nallow hal_sensors_default vendor_sound_device:chr_file rw_file_perms;\n```",
+      "revId": "002ed335bd2085ff4130cb3dbbb77a0d7bf7fb4c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
