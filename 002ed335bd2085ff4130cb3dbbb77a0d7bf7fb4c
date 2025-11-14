@@ -157,6 +157,24 @@
       "parentUuid": "7a86d3c5_a62c0083",
       "revId": "002ed335bd2085ff4130cb3dbbb77a0d7bf7fb4c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b67ea2cc_a8b49abe",
+        "filename": "sepolicy/vendor/hal_sensors_default.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 22465
+      },
+      "writtenOn": "2025-11-14T10:18:25Z",
+      "side": 1,
+      "message": "If that\u0027s the case, let\u0027s then use the same type for both nodes.",
+      "parentUuid": "5ecb6624_74becc0f",
+      "revId": "002ed335bd2085ff4130cb3dbbb77a0d7bf7fb4c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
