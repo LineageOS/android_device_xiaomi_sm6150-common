@@ -52,6 +52,24 @@
       "parentUuid": "af3b301d_73260042",
       "revId": "e5f3cc21b862c7b05eefd0a11d63d6f8ef727983",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "629e0bd2_0dd6936b",
+        "filename": "parts/src/org/lineageos/settings/doze/DozeSettingsFragment.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2025-12-03T20:13:42Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c6b49f46_4fd0a659",
+      "revId": "e5f3cc21b862c7b05eefd0a11d63d6f8ef727983",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
