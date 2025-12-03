@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "bf218a5a_4ca11c92",
+        "filename": "parts/src/org/lineageos/settings/doze/DozeSettingsActivity.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2025-12-03T20:01:34Z",
+      "side": 0,
+      "message": "keep the formatting",
+      "revId": "54427c6a2b07c4768a6de9e3748a65c2912f88aa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
