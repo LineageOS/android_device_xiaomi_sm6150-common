@@ -22,6 +22,30 @@
       },
       "revId": "436f660fb163c5494b2ea49ab27c516ceaa71bb8",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "57b2cb18_42f4d744",
+        "filename": "parts/src/org/lineageos/settings/doze/DozeSettingsActivity.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 36179
+      },
+      "writtenOn": "2025-12-16T13:38:35Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "08071680_1380a85a",
+      "range": {
+        "startLine": 32,
+        "startChar": 0,
+        "endLine": 35,
+        "endChar": 22
+      },
+      "revId": "436f660fb163c5494b2ea49ab27c516ceaa71bb8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
