@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "aa9e31c9_a5632f5a",
+        "filename": "parts/src/org/lineageos/settings/doze/DozeSettingsFragment.java",
+        "patchSetId": 2
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-12-16T09:17:33Z",
+      "side": 1,
+      "message": "You can remove this.",
+      "range": {
+        "startLine": 66,
+        "startChar": 41,
+        "endLine": 66,
+        "endChar": 64
+      },
+      "revId": "613ce8396d17ac18e08e34bd9f40e29ea2e75dcf",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
