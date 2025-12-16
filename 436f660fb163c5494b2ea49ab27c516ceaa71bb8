@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "08071680_1380a85a",
+        "filename": "parts/src/org/lineageos/settings/doze/DozeSettingsActivity.java",
+        "patchSetId": 4
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2025-12-16T09:15:42Z",
+      "side": 1,
+      "message": "Indentation was correct before the edit. Now it\u0027s not. Don\u0027t touch this part.",
+      "range": {
+        "startLine": 32,
+        "startChar": 0,
+        "endLine": 35,
+        "endChar": 22
+      },
+      "revId": "436f660fb163c5494b2ea49ab27c516ceaa71bb8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
