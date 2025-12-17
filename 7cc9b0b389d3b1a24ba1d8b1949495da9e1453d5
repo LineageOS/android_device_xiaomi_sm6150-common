@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "7be4ac40_89fc258a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2025-12-17T23:13:51Z",
+      "side": 1,
+      "message": "Feel free to submit patches for davinci if you\u0027d like or Arian will take a look at it when we ship a newer version.",
+      "parentUuid": "3e8cde0a_222c4a62",
+      "revId": "7cc9b0b389d3b1a24ba1d8b1949495da9e1453d5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "0f1a6e78_599f3803",
