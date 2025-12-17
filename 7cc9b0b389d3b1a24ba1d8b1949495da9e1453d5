@@ -51,6 +51,24 @@
       "parentUuid": "0f1a6e78_599f3803",
       "revId": "7cc9b0b389d3b1a24ba1d8b1949495da9e1453d5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "31d7abc1_0d508b4c",
+        "filename": "parts/src/org/lineageos/settings/doze/DozeSettingsFragment.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2025-12-17T23:13:17Z",
+      "side": 1,
+      "message": "Didn\u0027t realize that it was left since it picked without conflicts over the clean-up imports. Thanks!",
+      "parentUuid": "ef82a9de_bb0f9c02",
+      "revId": "7cc9b0b389d3b1a24ba1d8b1949495da9e1453d5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
