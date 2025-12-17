@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3e8cde0a_222c4a62",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29669
+      },
+      "writtenOn": "2025-12-17T07:00:25Z",
+      "side": 1,
+      "message": "Is the motor repo in xiaomi davici\n\n( https://github.com/LineageOS/android_device_xiaomi_davinci/commits/lineage-23.0/motor )\n\nalso going to get these changes ?\n\nAs one commit was missed there in past\n\nhttps://review.lineageos.org/q/Ic1cbaba37d499da1855af9c3930f2df426e2d3af\n\nThis is needed as we have a toggle present motor settings here\n\nhttps://github.com/LineageOS/android_device_xiaomi_davinci/blob/lineage-23.0/motor/res/xml/popup_settings.xml#L5",
+      "revId": "7cc9b0b389d3b1a24ba1d8b1949495da9e1453d5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
