@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "499e952a_f23a9f60",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2026-01-16T08:07:02Z",
+      "side": 1,
+      "message": "Requires https://github.com/basamaryan/android_external_libjxl/commit/b1da369af38593f4193d3681db2e7be652ebf67e",
+      "revId": "c166af78895885f80cd14deb19a97585fe0b6cf7",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
