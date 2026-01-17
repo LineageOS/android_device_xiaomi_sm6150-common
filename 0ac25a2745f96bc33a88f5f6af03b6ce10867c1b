@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "542e915a_b3cde4d3",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 5
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2026-01-17T17:49:06Z",
+      "side": 1,
+      "message": "kalama doens\u0027t seem to use 15666666 but 10500000 duration according to hardware/qcom-caf/sm8550/display/config/display-product.mk",
+      "range": {
+        "startLine": 7,
+        "startChar": 42,
+        "endLine": 7,
+        "endChar": 48
+      },
+      "revId": "0ac25a2745f96bc33a88f5f6af03b6ce10867c1b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
