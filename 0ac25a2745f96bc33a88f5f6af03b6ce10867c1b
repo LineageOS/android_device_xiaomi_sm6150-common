@@ -22,6 +22,30 @@
       },
       "revId": "0ac25a2745f96bc33a88f5f6af03b6ce10867c1b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "de762407_ccf5e46f",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 5
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 28223
+      },
+      "writtenOn": "2026-01-19T17:31:58Z",
+      "side": 1,
+      "message": "https://git.codelinaro.org/clo/la/platform/hardware/qcom/display/-/commit/67b0de876bc21cddbf7d77259b5e5dec158a2511",
+      "parentUuid": "542e915a_b3cde4d3",
+      "range": {
+        "startLine": 7,
+        "startChar": 42,
+        "endLine": 7,
+        "endChar": 48
+      },
+      "revId": "0ac25a2745f96bc33a88f5f6af03b6ce10867c1b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
