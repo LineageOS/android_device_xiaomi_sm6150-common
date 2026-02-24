@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ca162e6a_5b8695c4",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 36466
+      },
+      "writtenOn": "2026-02-24T06:40:03Z",
+      "side": 1,
+      "message": "```suggestion\nsm6150-common: Update Bluetooth blobs from mojito V14.0.9.0.SKGMIXM\n```",
+      "range": {
+        "startLine": 7,
+        "startChar": 15,
+        "endLine": 7,
+        "endChar": 46
+      },
+      "revId": "66ea01facf6c7664d4bde15ea88506fd62e40b2d",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
