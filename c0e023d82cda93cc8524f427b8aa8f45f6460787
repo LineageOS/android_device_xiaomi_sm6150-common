@@ -16,6 +16,24 @@
       "message": "you\u0027re not exactly doing whatever the commit message states here",
       "revId": "c0e023d82cda93cc8524f427b8aa8f45f6460787",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c09f540a_3d2de60e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29230
+      },
+      "writtenOn": "2026-03-15T10:51:06Z",
+      "side": 1,
+      "message": "Updated the commit message.",
+      "parentUuid": "4a8014e9_c181cd89",
+      "revId": "c0e023d82cda93cc8524f427b8aa8f45f6460787",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
