@@ -1,0 +1,9 @@
+//
+// Copyright (C) 2026 The 2by2 Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+runtime_resource_overlay {
+    name: "EuiccOverlay",
+    vendor: true,
+}

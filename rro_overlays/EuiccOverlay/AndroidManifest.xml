@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2026 The 2by2 Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.google.android.euicc.xiaomi_sm6150">
+    <overlay android:targetPackage="com.google.android.euicc"
+             android:isStatic="true"
+             android:priority="999" />
+</manifest>
